@@ -69,7 +69,23 @@ const groupSort = (a, b) => {
         return 0;
     }
 
-    if (a.pts > b.pts || a.gd > b.gd || a.gf > b.gf) {
+    if (a.pts > b.pts) {
+        return -3;
+    }
+
+    if (a.pts < b.pts) {
+        return 3;
+    }
+
+    if (a.gd > b.gd) {
+        return -2;
+    }
+
+    if (a.gd < b.gd) {
+        return 2;
+    }
+
+    if (a.gf > b.gf) {
         return -1;
     }
 
