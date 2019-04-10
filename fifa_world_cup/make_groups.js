@@ -1,3 +1,5 @@
+// node make_groups.js > wc-xxxxx/groups.json
+
 const fs = require("fs");
 
 const utils = require("./utils");
@@ -28,7 +30,7 @@ function sequence(N) {
 //     return array;
 // }
 
-function makeRounds(num) {
+function makeMatches(num) {
     //
     // I want to generate an algorithm that creates the below. I know
     // how to write it but I don't want to do that right now so I'm hard-coding
@@ -71,16 +73,16 @@ function makeRounds(num) {
             [3, 4]
         ];
     }
-    const rounds = [];
+    const matches = [];
     for (const ii of sequence(num)) {
         for (const jj of sequence(num - ii)) {
             jval = jj + ii;
             if (ii !== jval) {
-                rounds.push([ii, jval]);
+                matches.push([ii, jval]);
             }
         }
     }
-    return rounds.sort((a, b) => {
+    return matches.sort((a, b) => {
         const val0 = b[0] - a[0];
         const val1 = b[1] - a[1];
         if (val1 - val0 === 0) {
@@ -94,7 +96,7 @@ fs.readFile("2019/teams.csv", "utf8", function(err, contents) {
     const lines = contents.split("\n").filter(line => line !== "");
     lines.splice(0, 1);
 
-    const teams = lines.map(line => {
+    let teams = lines.map(line => {
         const vals = line.split(",");
         return {
             team: vals[0],
@@ -114,6 +116,7 @@ fs.readFile("2019/teams.csv", "utf8", function(err, contents) {
     });
 
     // console.log(teams);
+    teams = teams.map(team => team.team);
 
     const numTeams = teams.length;
     // const groupSize = Math.floor(numTeams / NUM_GROUPS);
@@ -135,7 +138,7 @@ fs.readFile("2019/teams.csv", "utf8", function(err, contents) {
     //
     let groups = [];
     for (let groupIndex of sequence(NUM_GROUPS)) {
-        let group = [];
+        let group = { teams: [], matches: [] };
         groups.push(group);
 
         for (let potIndex of sequence(pots.length)) {
@@ -146,16 +149,47 @@ fs.readFile("2019/teams.csv", "utf8", function(err, contents) {
             let index = Math.floor(Math.random() * pot.length);
             let team = pot[index];
             pots[potIndex].splice(index, 1);
-            group.push(team);
+            group.teams.push(team);
         }
     }
 
     // console.log(groups);
 
-    // Now automatially create rounds like the following using a sequence and some sort of
+    // Now automatially create matches like the following using a sequence and some sort of
     // "all variations of a set" creator. And then randomize the matches. Then create the schedule from that
     // like in make_group_schedule.
     for (group of groups) {
-        const rounds = makeRounds(group.length);
+        makeMatches(group.teams.length).forEach(match => {
+            //
+            // Decide on "home" team
+            //
+            let teamAIndex;
+            let teamBIndex;
+            if (Math.floor(Math.random() * 2) === 0) {
+                teamAIndex = 0;
+                teamBIndex = 1;
+            } else {
+                teamAIndex = 1;
+                teamBIndex = 0;
+            }
+            let matchup = [];
+            matchup[0] = {
+                team: group.teams[match[teamAIndex]],
+                isAI: false,
+                score: null
+            };
+            matchup[1] = {
+                team: group.teams[match[teamBIndex]],
+                isAI: false,
+                score: null
+            };
+            //
+            // Determine who I am playing vs the AI.
+            //
+            matchup[Math.floor(Math.random() * 2)].isAI = true;
+            group.matches.push(matchup);
+        });
     }
+
+    console.log(groups);
 });
