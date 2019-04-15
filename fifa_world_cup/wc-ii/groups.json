@@ -1,598 +1,611 @@
 [
-    {
-        "teams": [
-            "Argentina",
-            "Uruguay",
-            "Switzerland",
-            "Paraguay",
-            "Hungary",
-            "Egypt"
-        ],
-        "matches": [
-            [
-                {
-                    "team": "Egypt",
-                    "isAI": false,
-                    "score": 2,
-                    "player": "El-Shewany"
-                },
-                {
-                    "team": "Argentina",
-                    "isAI": true,
-                    "score": 8,
-                    "player": "Pavón (HT)"
-                }
-            ],
-            [
-                { "team": "Hungary", "isAI": true, "score": null },
-                { "team": "Uruguay", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Paraguay", "isAI": false, "score": null },
-                { "team": "Switzerland", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Argentina", "isAI": true, "score": null },
-                { "team": "Hungary", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Uruguay", "isAI": false, "score": null },
-                { "team": "Egypt", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Argentina", "isAI": false, "score": null },
-                { "team": "Switzerland", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Paraguay", "isAI": false, "score": null },
-                { "team": "Egypt", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Paraguay", "isAI": false, "score": null },
-                { "team": "Uruguay", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Switzerland", "isAI": false, "score": null },
-                { "team": "Hungary", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Argentina", "isAI": false, "score": null },
-                { "team": "Paraguay", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Uruguay", "isAI": false, "score": null },
-                { "team": "Switzerland", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Hungary", "isAI": false, "score": null },
-                { "team": "Egypt", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Argentina", "isAI": true, "score": null },
-                { "team": "Uruguay", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Egypt", "isAI": true, "score": null },
-                { "team": "Switzerland", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Hungary", "isAI": false, "score": null },
-                { "team": "Paraguay", "isAI": true, "score": null }
-            ]
-        ]
-    },
-    {
-        "teams": [
-            "Spain",
-            "Colombia",
-            "Turkey",
-            "Slovenia",
-            "Romania",
-            "New Zealand"
-        ],
-        "matches": [
-            [
-                {
-                    "team": "Spain",
-                    "isAI": false,
-                    "score": 2,
-                    "player": "Isco"
-                },
-                {
-                    "team": "New Zealand",
-                    "isAI": true,
-                    "score": 1,
-                    "player": "Thomas"
-                }
-            ],
-            [
-                { "team": "Romania", "isAI": true, "score": null },
-                { "team": "Colombia", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Slovenia", "isAI": false, "score": null },
-                { "team": "Turkey", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Romania", "isAI": true, "score": null },
-                { "team": "Spain", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Colombia", "isAI": true, "score": null },
-                { "team": "New Zealand", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Spain", "isAI": false, "score": null },
-                { "team": "Turkey", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "New Zealand", "isAI": false, "score": null },
-                { "team": "Slovenia", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Colombia", "isAI": false, "score": null },
-                { "team": "Slovenia", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Turkey", "isAI": true, "score": null },
-                { "team": "Romania", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Spain", "isAI": false, "score": null },
-                { "team": "Slovenia", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Colombia", "isAI": false, "score": null },
-                { "team": "Turkey", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Romania", "isAI": true, "score": null },
-                { "team": "New Zealand", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Colombia", "isAI": false, "score": null },
-                { "team": "Spain", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "New Zealand", "isAI": true, "score": null },
-                { "team": "Turkey", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Romania", "isAI": true, "score": null },
-                { "team": "Slovenia", "isAI": false, "score": null }
-            ]
-        ]
-    },
-    {
-        "teams": [
-            "Portugal",
-            "Netherlands",
-            "Sweden",
-            "Czech Republic",
-            "Peru",
-            "Finland"
-        ],
-        "matches": [
-            [
-                { "team": "Portugal", "isAI": false, "score": null },
-                { "team": "Finland", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Peru", "isAI": true, "score": null },
-                { "team": "Netherlands", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Sweden", "isAI": false, "score": null },
-                { "team": "Czech Republic", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Peru", "isAI": false, "score": null },
-                { "team": "Portugal", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Finland", "isAI": true, "score": null },
-                { "team": "Netherlands", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Sweden", "isAI": false, "score": null },
-                { "team": "Portugal", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Czech Republic", "isAI": false, "score": null },
-                { "team": "Finland", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Czech Republic", "isAI": true, "score": null },
-                { "team": "Netherlands", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Sweden", "isAI": false, "score": null },
-                { "team": "Peru", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Czech Republic", "isAI": false, "score": null },
-                { "team": "Portugal", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Sweden", "isAI": false, "score": null },
-                { "team": "Netherlands", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Finland", "isAI": false, "score": null },
-                { "team": "Peru", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Portugal", "isAI": false, "score": null },
-                { "team": "Netherlands", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Finland", "isAI": false, "score": null },
-                { "team": "Sweden", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Czech Republic", "isAI": false, "score": null },
-                { "team": "Peru", "isAI": true, "score": null }
-            ]
-        ]
-    },
-    {
-        "teams": [
-            "Germany",
-            "Russia",
-            "Côte d'Ivoire",
-            "Cameroon",
-            "Australia",
-            "Canada"
-        ],
-        "matches": [
-            [
-                { "team": "Canada", "isAI": true, "score": null },
-                { "team": "Germany", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Australia", "isAI": false, "score": null },
-                { "team": "Russia", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Cameroon", "isAI": true, "score": null },
-                { "team": "Côte d'Ivoire", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Australia", "isAI": false, "score": null },
-                { "team": "Germany", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Russia", "isAI": false, "score": null },
-                { "team": "Canada", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Germany", "isAI": true, "score": null },
-                { "team": "Côte d'Ivoire", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Canada", "isAI": false, "score": null },
-                { "team": "Cameroon", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Russia", "isAI": true, "score": null },
-                { "team": "Cameroon", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Australia", "isAI": false, "score": null },
-                { "team": "Côte d'Ivoire", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Germany", "isAI": true, "score": null },
-                { "team": "Cameroon", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Côte d'Ivoire", "isAI": false, "score": null },
-                { "team": "Russia", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Canada", "isAI": false, "score": null },
-                { "team": "Australia", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Russia", "isAI": true, "score": null },
-                { "team": "Germany", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Côte d'Ivoire", "isAI": false, "score": null },
-                { "team": "Canada", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Australia", "isAI": false, "score": null },
-                { "team": "Cameroon", "isAI": true, "score": null }
-            ]
-        ]
-    },
-    {
-        "teams": [
-            "Belgium",
-            "Mexico",
-            "Poland",
-            "Scotland",
-            "South Africa",
-            "India"
-        ],
-        "matches": [
-            [
-                { "team": "Belgium", "isAI": false, "score": null },
-                { "team": "India", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "South Africa", "isAI": true, "score": null },
-                { "team": "Mexico", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Scotland", "isAI": false, "score": null },
-                { "team": "Poland", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Belgium", "isAI": false, "score": null },
-                { "team": "South Africa", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Mexico", "isAI": true, "score": null },
-                { "team": "India", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Poland", "isAI": true, "score": null },
-                { "team": "Belgium", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "India", "isAI": true, "score": null },
-                { "team": "Scotland", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Mexico", "isAI": true, "score": null },
-                { "team": "Scotland", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Poland", "isAI": true, "score": null },
-                { "team": "South Africa", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Belgium", "isAI": true, "score": null },
-                { "team": "Scotland", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Poland", "isAI": true, "score": null },
-                { "team": "Mexico", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "India", "isAI": true, "score": null },
-                { "team": "South Africa", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Mexico", "isAI": true, "score": null },
-                { "team": "Belgium", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "India", "isAI": true, "score": null },
-                { "team": "Poland", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "South Africa", "isAI": true, "score": null },
-                { "team": "Scotland", "isAI": false, "score": null }
-            ]
-        ]
-    },
-    {
-        "teams": [
-            "England",
-            "Austria",
-            "Greece",
-            "Norway",
-            "Iceland",
-            "Ecuador"
-        ],
-        "matches": [
-            [
-                { "team": "Ecuador", "isAI": true, "score": null },
-                { "team": "England", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Austria", "isAI": true, "score": null },
-                { "team": "Iceland", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Norway", "isAI": false, "score": null },
-                { "team": "Greece", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Iceland", "isAI": false, "score": null },
-                { "team": "England", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Austria", "isAI": false, "score": null },
-                { "team": "Ecuador", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Greece", "isAI": false, "score": null },
-                { "team": "England", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Ecuador", "isAI": true, "score": null },
-                { "team": "Norway", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Norway", "isAI": true, "score": null },
-                { "team": "Austria", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Iceland", "isAI": false, "score": null },
-                { "team": "Greece", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "England", "isAI": false, "score": null },
-                { "team": "Norway", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Austria", "isAI": false, "score": null },
-                { "team": "Greece", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Iceland", "isAI": true, "score": null },
-                { "team": "Ecuador", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Austria", "isAI": true, "score": null },
-                { "team": "England", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Greece", "isAI": true, "score": null },
-                { "team": "Ecuador", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Norway", "isAI": true, "score": null },
-                { "team": "Iceland", "isAI": false, "score": null }
-            ]
-        ]
-    },
-    {
-        "teams": [
-            "Italy",
-            "Denmark",
-            "Wales",
-            "Ireland",
-            "Northern Ireland",
-            "Bulgaria"
-        ],
-        "matches": [
-            [
-                { "team": "Bulgaria", "isAI": false, "score": null },
-                { "team": "Italy", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Northern Ireland", "isAI": true, "score": null },
-                { "team": "Denmark", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Wales", "isAI": false, "score": null },
-                { "team": "Ireland", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Northern Ireland", "isAI": true, "score": null },
-                { "team": "Italy", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Denmark", "isAI": false, "score": null },
-                { "team": "Bulgaria", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Wales", "isAI": true, "score": null },
-                { "team": "Italy", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Ireland", "isAI": true, "score": null },
-                { "team": "Bulgaria", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Ireland", "isAI": true, "score": null },
-                { "team": "Denmark", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Wales", "isAI": false, "score": null },
-                { "team": "Northern Ireland", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Italy", "isAI": false, "score": null },
-                { "team": "Ireland", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Denmark", "isAI": true, "score": null },
-                { "team": "Wales", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Northern Ireland", "isAI": true, "score": null },
-                { "team": "Bulgaria", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Denmark", "isAI": true, "score": null },
-                { "team": "Italy", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Bulgaria", "isAI": false, "score": null },
-                { "team": "Wales", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Northern Ireland", "isAI": true, "score": null },
-                { "team": "Ireland", "isAI": false, "score": null }
-            ]
-        ]
-    },
-    {
-        "teams": [
-            "France",
-            "Brazil",
-            "Chile",
-            "United States",
-            "Venezuala",
-            "Bolivia"
-        ],
-        "matches": [
-            [
-                { "team": "France", "isAI": false, "score": null },
-                { "team": "Bolivia", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Brazil", "isAI": false, "score": null },
-                { "team": "Venezuala", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Chile", "isAI": false, "score": null },
-                { "team": "United States", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Venezuala", "isAI": false, "score": null },
-                { "team": "France", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Bolivia", "isAI": false, "score": null },
-                { "team": "Brazil", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Chile", "isAI": false, "score": null },
-                { "team": "France", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Bolivia", "isAI": false, "score": null },
-                { "team": "United States", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "Brazil", "isAI": true, "score": null },
-                { "team": "United States", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Venezuala", "isAI": true, "score": null },
-                { "team": "Chile", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "France", "isAI": true, "score": null },
-                { "team": "United States", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Brazil", "isAI": true, "score": null },
-                { "team": "Chile", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Venezuala", "isAI": false, "score": null },
-                { "team": "Bolivia", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "France", "isAI": true, "score": null },
-                { "team": "Brazil", "isAI": false, "score": null }
-            ],
-            [
-                { "team": "Chile", "isAI": false, "score": null },
-                { "team": "Bolivia", "isAI": true, "score": null }
-            ],
-            [
-                { "team": "United States", "isAI": true, "score": null },
-                { "team": "Venezuala", "isAI": false, "score": null }
-            ]
-        ]
-    }
+  {
+    "teams": [
+      "Argentina",
+      "Uruguay",
+      "Switzerland",
+      "Paraguay",
+      "Hungary",
+      "Egypt"
+    ],
+    "matches": [
+      [
+        {
+          "team": "Egypt",
+          "isAI": false,
+          "score": 2,
+          "player": "El-Shewany"
+        },
+        {
+          "team": "Argentina",
+          "isAI": true,
+          "score": 8,
+          "player": "Pavón (HT)"
+        }
+      ],
+      [
+        { "team": "Hungary", "isAI": true, "score": 2, "player": "Kádár" },
+        { "team": "Uruguay", "isAI": false, "score": 2, "player": "Cavani" }
+      ],
+      [
+        { "team": "Paraguay", "isAI": false, "score": null },
+        { "team": "Switzerland", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Argentina", "isAI": true, "score": null },
+        { "team": "Hungary", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Uruguay", "isAI": false, "score": null },
+        { "team": "Egypt", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Argentina", "isAI": false, "score": null },
+        { "team": "Switzerland", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Paraguay", "isAI": false, "score": null },
+        { "team": "Egypt", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Paraguay", "isAI": false, "score": null },
+        { "team": "Uruguay", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Switzerland", "isAI": false, "score": null },
+        { "team": "Hungary", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Argentina", "isAI": false, "score": null },
+        { "team": "Paraguay", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Uruguay", "isAI": false, "score": null },
+        { "team": "Switzerland", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Hungary", "isAI": false, "score": null },
+        { "team": "Egypt", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Argentina", "isAI": true, "score": null },
+        { "team": "Uruguay", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Egypt", "isAI": true, "score": null },
+        { "team": "Switzerland", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Hungary", "isAI": false, "score": null },
+        { "team": "Paraguay", "isAI": true, "score": null }
+      ]
+    ]
+  },
+  {
+    "teams": [
+      "Spain",
+      "Colombia",
+      "Turkey",
+      "Slovenia",
+      "Romania",
+      "New Zealand"
+    ],
+    "matches": [
+      [
+        {
+          "team": "Spain",
+          "isAI": false,
+          "score": 2,
+          "player": "Isco"
+        },
+        {
+          "team": "New Zealand",
+          "isAI": true,
+          "score": 1,
+          "player": "Thomas"
+        }
+      ],
+      [
+        { "team": "Romania", "isAI": true, "score": 3, "player": "Marin" },
+        { "team": "Colombia", "isAI": false, "score": 2, "player": "Rodríguez" }
+      ],
+      [
+        { "team": "Slovenia", "isAI": false, "score": null },
+        { "team": "Turkey", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Romania", "isAI": true, "score": null },
+        { "team": "Spain", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Colombia", "isAI": true, "score": null },
+        { "team": "New Zealand", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Spain", "isAI": false, "score": null },
+        { "team": "Turkey", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "New Zealand", "isAI": false, "score": null },
+        { "team": "Slovenia", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Colombia", "isAI": false, "score": null },
+        { "team": "Slovenia", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Turkey", "isAI": true, "score": null },
+        { "team": "Romania", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Spain", "isAI": false, "score": null },
+        { "team": "Slovenia", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Colombia", "isAI": false, "score": null },
+        { "team": "Turkey", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Romania", "isAI": true, "score": null },
+        { "team": "New Zealand", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Colombia", "isAI": false, "score": null },
+        { "team": "Spain", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "New Zealand", "isAI": true, "score": null },
+        { "team": "Turkey", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Romania", "isAI": true, "score": null },
+        { "team": "Slovenia", "isAI": false, "score": null }
+      ]
+    ]
+  },
+  {
+    "teams": [
+      "Portugal",
+      "Netherlands",
+      "Sweden",
+      "Czech Republic",
+      "Peru",
+      "Finland"
+    ],
+    "matches": [
+      [
+        { "team": "Portugal", "isAI": false, "score": 0, "player": "Silva" },
+        {
+          "team": "Finland",
+          "isAI": true,
+          "score": 0,
+          "player": "Pukki/Vaisanen"
+        }
+      ],
+      [
+        { "team": "Peru", "isAI": true, "score": 1, "player": "Tapia" },
+        {
+          "team": "Netherlands",
+          "isAI": false,
+          "score": 0,
+          "player": "van Dijk"
+        }
+      ],
+      [
+        { "team": "Sweden", "isAI": false, "score": null },
+        { "team": "Czech Republic", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Peru", "isAI": false, "score": null },
+        { "team": "Portugal", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Finland", "isAI": true, "score": null },
+        { "team": "Netherlands", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Sweden", "isAI": false, "score": null },
+        { "team": "Portugal", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Czech Republic", "isAI": false, "score": null },
+        { "team": "Finland", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Czech Republic", "isAI": true, "score": null },
+        { "team": "Netherlands", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Sweden", "isAI": false, "score": null },
+        { "team": "Peru", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Czech Republic", "isAI": false, "score": null },
+        { "team": "Portugal", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Sweden", "isAI": false, "score": null },
+        { "team": "Netherlands", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Finland", "isAI": false, "score": null },
+        { "team": "Peru", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Portugal", "isAI": false, "score": null },
+        { "team": "Netherlands", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Finland", "isAI": false, "score": null },
+        { "team": "Sweden", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Czech Republic", "isAI": false, "score": null },
+        { "team": "Peru", "isAI": true, "score": null }
+      ]
+    ]
+  },
+  {
+    "teams": [
+      "Germany",
+      "Russia",
+      "Côte d'Ivoire",
+      "Cameroon",
+      "Australia",
+      "Canada"
+    ],
+    "matches": [
+      [
+        { "team": "Canada", "isAI": true, "score": 1, "player": "Hutchinson" },
+        { "team": "Germany", "isAI": false, "score": 1, "player": "Reus" }
+      ],
+      [
+        {
+          "team": "Australia",
+          "isAI": false,
+          "score": 0,
+          "player": "Sainsbury"
+        },
+        { "team": "Russia", "isAI": true, "score": 6, "player": "Erokhin" }
+      ],
+      [
+        { "team": "Cameroon", "isAI": true, "score": null },
+        { "team": "Côte d'Ivoire", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Australia", "isAI": false, "score": null },
+        { "team": "Germany", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Russia", "isAI": false, "score": null },
+        { "team": "Canada", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Germany", "isAI": true, "score": null },
+        { "team": "Côte d'Ivoire", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Canada", "isAI": false, "score": null },
+        { "team": "Cameroon", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Russia", "isAI": true, "score": null },
+        { "team": "Cameroon", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Australia", "isAI": false, "score": null },
+        { "team": "Côte d'Ivoire", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Germany", "isAI": true, "score": null },
+        { "team": "Cameroon", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Côte d'Ivoire", "isAI": false, "score": null },
+        { "team": "Russia", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Canada", "isAI": false, "score": null },
+        { "team": "Australia", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Russia", "isAI": true, "score": null },
+        { "team": "Germany", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Côte d'Ivoire", "isAI": false, "score": null },
+        { "team": "Canada", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Australia", "isAI": false, "score": null },
+        { "team": "Cameroon", "isAI": true, "score": null }
+      ]
+    ]
+  },
+  {
+    "teams": [
+      "Belgium",
+      "Mexico",
+      "Poland",
+      "Scotland",
+      "South Africa",
+      "India"
+    ],
+    "matches": [
+      [
+        {
+          "team": "Belgium",
+          "isAI": false,
+          "score": 4,
+          "player": "Hazard (HT)"
+        },
+        { "team": "India", "isAI": true, "score": 2, "player": "Lalpekhlua" }
+      ],
+      [
+        { "team": "South Africa", "isAI": true, "score": null },
+        { "team": "Mexico", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Scotland", "isAI": false, "score": null },
+        { "team": "Poland", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Belgium", "isAI": false, "score": null },
+        { "team": "South Africa", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Mexico", "isAI": true, "score": null },
+        { "team": "India", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Poland", "isAI": true, "score": null },
+        { "team": "Belgium", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "India", "isAI": true, "score": null },
+        { "team": "Scotland", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Mexico", "isAI": true, "score": null },
+        { "team": "Scotland", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Poland", "isAI": true, "score": null },
+        { "team": "South Africa", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Belgium", "isAI": true, "score": null },
+        { "team": "Scotland", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Poland", "isAI": true, "score": null },
+        { "team": "Mexico", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "India", "isAI": true, "score": null },
+        { "team": "South Africa", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Mexico", "isAI": true, "score": null },
+        { "team": "Belgium", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "India", "isAI": true, "score": null },
+        { "team": "Poland", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "South Africa", "isAI": true, "score": null },
+        { "team": "Scotland", "isAI": false, "score": null }
+      ]
+    ]
+  },
+  {
+    "teams": ["England", "Austria", "Greece", "Norway", "Iceland", "Ecuador"],
+    "matches": [
+      [
+        { "team": "Ecuador", "isAI": true, "score": 1, "player": "Valencia" },
+        { "team": "England", "isAI": false, "score": 3, "player": "Alli" }
+      ],
+      [
+        { "team": "Austria", "isAI": true, "score": null },
+        { "team": "Iceland", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Norway", "isAI": false, "score": null },
+        { "team": "Greece", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Iceland", "isAI": false, "score": null },
+        { "team": "England", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Austria", "isAI": false, "score": null },
+        { "team": "Ecuador", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Greece", "isAI": false, "score": null },
+        { "team": "England", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Ecuador", "isAI": true, "score": null },
+        { "team": "Norway", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Norway", "isAI": true, "score": null },
+        { "team": "Austria", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Iceland", "isAI": false, "score": null },
+        { "team": "Greece", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "England", "isAI": false, "score": null },
+        { "team": "Norway", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Austria", "isAI": false, "score": null },
+        { "team": "Greece", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Iceland", "isAI": true, "score": null },
+        { "team": "Ecuador", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Austria", "isAI": true, "score": null },
+        { "team": "England", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Greece", "isAI": true, "score": null },
+        { "team": "Ecuador", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Norway", "isAI": true, "score": null },
+        { "team": "Iceland", "isAI": false, "score": null }
+      ]
+    ]
+  },
+  {
+    "teams": [
+      "Italy",
+      "Denmark",
+      "Wales",
+      "Ireland",
+      "Northern Ireland",
+      "Bulgaria"
+    ],
+    "matches": [
+      [
+        { "team": "Bulgaria", "isAI": false, "score": 0, "player": "Bodurov" },
+        { "team": "Italy", "isAI": true, "score": 3, "player": "Balotelli" }
+      ],
+      [
+        { "team": "Northern Ireland", "isAI": true, "score": null },
+        { "team": "Denmark", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Wales", "isAI": false, "score": null },
+        { "team": "Ireland", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Northern Ireland", "isAI": true, "score": null },
+        { "team": "Italy", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Denmark", "isAI": false, "score": null },
+        { "team": "Bulgaria", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Wales", "isAI": true, "score": null },
+        { "team": "Italy", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Ireland", "isAI": true, "score": null },
+        { "team": "Bulgaria", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Ireland", "isAI": true, "score": null },
+        { "team": "Denmark", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Wales", "isAI": false, "score": null },
+        { "team": "Northern Ireland", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Italy", "isAI": false, "score": null },
+        { "team": "Ireland", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Denmark", "isAI": true, "score": null },
+        { "team": "Wales", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Northern Ireland", "isAI": true, "score": null },
+        { "team": "Bulgaria", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Denmark", "isAI": true, "score": null },
+        { "team": "Italy", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Bulgaria", "isAI": false, "score": null },
+        { "team": "Wales", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Northern Ireland", "isAI": true, "score": null },
+        { "team": "Ireland", "isAI": false, "score": null }
+      ]
+    ]
+  },
+  {
+    "teams": [
+      "France",
+      "Brazil",
+      "Chile",
+      "United States",
+      "Venezuala",
+      "Bolivia"
+    ],
+    "matches": [
+      [
+        { "team": "France", "isAI": false, "score": 2, "player": "Matuidi" },
+        { "team": "Bolivia", "isAI": true, "score": 0, "player": "Chumacero" }
+      ],
+      [
+        { "team": "Brazil", "isAI": false, "score": null },
+        { "team": "Venezuala", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Chile", "isAI": false, "score": null },
+        { "team": "United States", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Venezuala", "isAI": false, "score": null },
+        { "team": "France", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Bolivia", "isAI": false, "score": null },
+        { "team": "Brazil", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Chile", "isAI": false, "score": null },
+        { "team": "France", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Bolivia", "isAI": false, "score": null },
+        { "team": "United States", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "Brazil", "isAI": true, "score": null },
+        { "team": "United States", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Venezuala", "isAI": true, "score": null },
+        { "team": "Chile", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "France", "isAI": true, "score": null },
+        { "team": "United States", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Brazil", "isAI": true, "score": null },
+        { "team": "Chile", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Venezuala", "isAI": false, "score": null },
+        { "team": "Bolivia", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "France", "isAI": true, "score": null },
+        { "team": "Brazil", "isAI": false, "score": null }
+      ],
+      [
+        { "team": "Chile", "isAI": false, "score": null },
+        { "team": "Bolivia", "isAI": true, "score": null }
+      ],
+      [
+        { "team": "United States", "isAI": true, "score": null },
+        { "team": "Venezuala", "isAI": false, "score": null }
+      ]
+    ]
+  }
 ]
