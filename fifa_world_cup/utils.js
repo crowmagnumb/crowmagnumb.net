@@ -21,7 +21,7 @@ exports.markdown2Html = function(markdown) {
 exports.writeHtml = function(bodyInnerHTML, outputFile) {
   fs.writeFile(
     outputFile,
-    `<html><head><link type="text/css" rel="stylesheet" href="../github.css"></link><link type="text/css" rel="stylesheet" href="../fifa.css"></link></head><body>\n${bodyInnerHTML}</body></html>`,
+    `<html><head><link type="text/css" rel="stylesheet" href="../../github.css"></link><link type="text/css" rel="stylesheet" href="../../fifa.css"></link></head><body>\n${bodyInnerHTML}</body></html>`,
     err => {
       if (err) {
         throw err;
