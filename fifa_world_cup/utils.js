@@ -2,24 +2,30 @@ const fs = require("fs");
 const path = require("path");
 const showdown = require("showdown");
 
-function getWCversion() {
-    return process.argv[2];
+const converter = new showdown.Converter({ tables: true });
+
+function getVersion() {
+  return process.argv[2];
 }
 
+exports.getWCVersion = getVersion;
+
 exports.getFilePath = function(filename) {
-    return path.join(getWCversion(), filename);
+  return path.join(`wc-${getVersion()}`, filename);
 };
 
-exports.markdown2Html = function(contents, ouputFile) {
-    const converter = new showdown.Converter({ tables: true });
-    const body = converter.makeHtml(contents);
-    fs.writeFile(
-        ouputFile,
-        `<html><head><link type="text/css" rel="stylesheet" href="../github.css"></head><body>\n${body}</body></html>`,
-        err => {
-            if (err) {
-                throw err;
-            }
-        }
-    );
+exports.markdown2Html = function(markdown) {
+  return converter.makeHtml(markdown);
+};
+
+exports.writeHtml = function(bodyInnerHTML, outputFile) {
+  fs.writeFile(
+    outputFile,
+    `<html><head><link type="text/css" rel="stylesheet" href="../github.css"></link><link type="text/css" rel="stylesheet" href="../fifa.css"></link></head><body>\n${bodyInnerHTML}</body></html>`,
+    err => {
+      if (err) {
+        throw err;
+      }
+    }
+  );
 };
