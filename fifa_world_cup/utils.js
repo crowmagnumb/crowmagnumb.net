@@ -11,7 +11,7 @@ function getVersion() {
 exports.getWCVersion = getVersion;
 
 exports.getFilePath = function(filename) {
-  return path.join(`wc-${getVersion()}`, filename);
+  return path.join(`fifa19/${getVersion()}`, filename);
 };
 
 exports.markdown2Html = function(markdown) {
