@@ -1,4 +1,4 @@
-// node make_groups.js > wc-xxxxx/groups.json
+// node make_groups.js > fifa19/xxx/groups.json
 
 const fs = require("fs");
 
@@ -92,7 +92,7 @@ function makeMatches(num) {
     });
 }
 
-fs.readFile("2019/teams.csv", "utf8", function(err, contents) {
+fs.readFile("fifa19/teams.csv", "utf8", function(err, contents) {
     const lines = contents.split("\n").filter(line => line !== "");
     lines.splice(0, 1);
 
