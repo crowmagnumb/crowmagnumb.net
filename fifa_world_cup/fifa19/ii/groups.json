@@ -649,7 +649,7 @@
             "Brazil",
             "Chile",
             "United States",
-            "Venezuala",
+            "Venezuela",
             "Bolivia"
         ],
         "matches": [
@@ -675,7 +675,7 @@
                     "player": "Chiamulera"
                 },
                 {
-                    "team": "Venezuala",
+                    "team": "Venezuela",
                     "isAI": true,
                     "score": 1,
                     "player": "Feltcher"
@@ -686,7 +686,7 @@
                 { "team": "United States", "isAI": true, "score": null }
             ],
             [
-                { "team": "Venezuala", "isAI": false, "score": null },
+                { "team": "Venezuela", "isAI": false, "score": null },
                 { "team": "France", "isAI": true, "score": null }
             ],
             [
@@ -706,7 +706,7 @@
                 { "team": "United States", "isAI": false, "score": null }
             ],
             [
-                { "team": "Venezuala", "isAI": true, "score": null },
+                { "team": "Venezuela", "isAI": true, "score": null },
                 { "team": "Chile", "isAI": false, "score": null }
             ],
             [
@@ -718,7 +718,7 @@
                 { "team": "Chile", "isAI": false, "score": null }
             ],
             [
-                { "team": "Venezuala", "isAI": false, "score": null },
+                { "team": "Venezuela", "isAI": false, "score": null },
                 { "team": "Bolivia", "isAI": true, "score": null }
             ],
             [
@@ -731,7 +731,7 @@
             ],
             [
                 { "team": "United States", "isAI": true, "score": null },
-                { "team": "Venezuala", "isAI": false, "score": null }
+                { "team": "Venezuela", "isAI": false, "score": null }
             ]
         ]
     }
