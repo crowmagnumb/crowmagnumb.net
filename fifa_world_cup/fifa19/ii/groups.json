@@ -140,8 +140,18 @@
                 }
             ],
             [
-                { "team": "Slovenia", "isAI": false, "score": null },
-                { "team": "Turkey", "isAI": true, "score": null }
+                {
+                    "team": "Slovenia",
+                    "isAI": false,
+                    "score": 0,
+                    "player": "Belec"
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": 2,
+                    "player": "Ünder"
+                }
             ],
             [
                 { "team": "Romania", "isAI": true, "score": null },
@@ -227,8 +237,18 @@
                 }
             ],
             [
-                { "team": "Sweden", "isAI": false, "score": null },
-                { "team": "Czech Republic", "isAI": true, "score": null }
+                {
+                    "team": "Sweden",
+                    "isAI": false,
+                    "score": 1,
+                    "player": "Forsberg"
+                },
+                {
+                    "team": "Czech Republic",
+                    "isAI": true,
+                    "score": 1,
+                    "player": "Falta/Schick"
+                }
             ],
             [
                 { "team": "Peru", "isAI": false, "score": null },
@@ -319,8 +339,18 @@
                 }
             ],
             [
-                { "team": "Cameroon", "isAI": true, "score": null },
-                { "team": "Côte d'Ivoire", "isAI": false, "score": null }
+                {
+                    "team": "Cameroon",
+                    "isAI": true,
+                    "score": 7,
+                    "player": "Njie (4 goals)"
+                },
+                {
+                    "team": "Côte d'Ivoire",
+                    "isAI": false,
+                    "score": 2,
+                    "player": "Sio"
+                }
             ],
             [
                 { "team": "Australia", "isAI": false, "score": null },
