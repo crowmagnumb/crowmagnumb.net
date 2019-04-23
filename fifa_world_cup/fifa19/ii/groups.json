@@ -52,8 +52,18 @@
                 }
             ],
             [
-                { "team": "Argentina", "isAI": true, "score": null },
-                { "team": "Hungary", "isAI": false, "score": null }
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": 1,
+                    "player": "Pérez"
+                },
+                {
+                    "team": "Hungary",
+                    "isAI": false,
+                    "score": 0,
+                    "player": "Kádár"
+                }
             ],
             [
                 { "team": "Uruguay", "isAI": false, "score": null },
@@ -154,8 +164,18 @@
                 }
             ],
             [
-                { "team": "Romania", "isAI": true, "score": null },
-                { "team": "Spain", "isAI": false, "score": null }
+                {
+                    "team": "Romania",
+                    "isAI": true,
+                    "score": 1,
+                    "player": "Budescu"
+                },
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": 0,
+                    "player": "Ramos"
+                }
             ],
             [
                 { "team": "Colombia", "isAI": true, "score": null },
@@ -251,8 +271,18 @@
                 }
             ],
             [
-                { "team": "Peru", "isAI": false, "score": null },
-                { "team": "Portugal", "isAI": true, "score": null }
+                {
+                    "team": "Peru",
+                    "isAI": false,
+                    "score": 0,
+                    "player": "Rodríguez"
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": 1,
+                    "player": "B.Silva"
+                }
             ],
             [
                 { "team": "Finland", "isAI": true, "score": null },
@@ -353,8 +383,18 @@
                 }
             ],
             [
-                { "team": "Australia", "isAI": false, "score": null },
-                { "team": "Germany", "isAI": true, "score": null }
+                {
+                    "team": "Australia",
+                    "isAI": false,
+                    "score": 1,
+                    "player": "Sainsbury"
+                },
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": 2,
+                    "player": "Werner"
+                }
             ],
             [
                 { "team": "Russia", "isAI": false, "score": null },
@@ -441,12 +481,32 @@
                 }
             ],
             [
-                { "team": "Scotland", "isAI": false, "score": null },
-                { "team": "Poland", "isAI": true, "score": null }
+                {
+                    "team": "Scotland",
+                    "isAI": false,
+                    "score": 0,
+                    "player": "Berra"
+                },
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": 2,
+                    "player": "Zieliński"
+                }
             ],
             [
-                { "team": "Belgium", "isAI": false, "score": null },
-                { "team": "South Africa", "isAI": true, "score": null }
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": 2,
+                    "player": "Meunier"
+                },
+                {
+                    "team": "South Africa",
+                    "isAI": true,
+                    "score": 1,
+                    "player": "Furman"
+                }
             ],
             [
                 { "team": "Mexico", "isAI": true, "score": null },
@@ -533,12 +593,32 @@
                 }
             ],
             [
-                { "team": "Norway", "isAI": false, "score": null },
-                { "team": "Greece", "isAI": true, "score": null }
+                {
+                    "team": "Norway",
+                    "isAI": false,
+                    "score": 0,
+                    "player": "Johansen"
+                },
+                {
+                    "team": "Greece",
+                    "isAI": true,
+                    "score": 0,
+                    "player": "Retsos"
+                }
             ],
             [
-                { "team": "Iceland", "isAI": false, "score": null },
-                { "team": "England", "isAI": true, "score": null }
+                {
+                    "team": "Iceland",
+                    "isAI": false,
+                    "score": 0,
+                    "player": "Halfreðsson"
+                },
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": 2,
+                    "player": "Kane"
+                }
             ],
             [
                 { "team": "Austria", "isAI": false, "score": null },
@@ -620,12 +700,32 @@
                 { "team": "Denmark", "isAI": false, "score": 1, "player": "?" }
             ],
             [
-                { "team": "Wales", "isAI": false, "score": null },
-                { "team": "Ireland", "isAI": true, "score": null }
+                {
+                    "team": "Wales",
+                    "isAI": false,
+                    "score": 0,
+                    "player": "Gunter"
+                },
+                {
+                    "team": "Ireland",
+                    "isAI": true,
+                    "score": 1,
+                    "player": "McClean/Brady"
+                }
             ],
             [
-                { "team": "Northern Ireland", "isAI": true, "score": null },
-                { "team": "Italy", "isAI": false, "score": null }
+                {
+                    "team": "Northern Ireland",
+                    "isAI": true,
+                    "score": 0,
+                    "player": "Norwood"
+                },
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": 0,
+                    "player": "Romagnoli"
+                }
             ],
             [
                 { "team": "Denmark", "isAI": false, "score": null },
@@ -712,8 +812,18 @@
                 }
             ],
             [
-                { "team": "Chile", "isAI": false, "score": null },
-                { "team": "United States", "isAI": true, "score": null }
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": 0,
+                    "player": "Bravo"
+                },
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": 6,
+                    "player": "Pulisic"
+                }
             ],
             [
                 { "team": "Venezuela", "isAI": false, "score": null },
