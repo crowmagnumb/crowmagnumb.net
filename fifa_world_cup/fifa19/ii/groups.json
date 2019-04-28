@@ -66,12 +66,32 @@
                 }
             ],
             [
-                { "team": "Uruguay", "isAI": false, "score": null },
-                { "team": "Egypt", "isAI": true, "score": null }
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": 1,
+                    "player": "Giménez"
+                },
+                {
+                    "team": "Egypt",
+                    "isAI": true,
+                    "score": 1,
+                    "player": "El Said"
+                }
             ],
             [
-                { "team": "Argentina", "isAI": false, "score": null },
-                { "team": "Switzerland", "isAI": true, "score": null }
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": 1,
+                    "player": "Messi"
+                },
+                {
+                    "team": "Switzerland",
+                    "isAI": true,
+                    "score": 2,
+                    "player": "Shaqiri"
+                }
             ],
             [
                 { "team": "Paraguay", "isAI": false, "score": null },
@@ -178,12 +198,32 @@
                 }
             ],
             [
-                { "team": "Colombia", "isAI": true, "score": null },
-                { "team": "New Zealand", "isAI": false, "score": null }
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": 3,
+                    "player": "Sánchez"
+                },
+                {
+                    "team": "New Zealand",
+                    "isAI": false,
+                    "score": 1,
+                    "player": "Boscall"
+                }
             ],
             [
-                { "team": "Spain", "isAI": false, "score": null },
-                { "team": "Turkey", "isAI": true, "score": null }
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": 4,
+                    "player": "Koke"
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": 2,
+                    "player": "Malli"
+                }
             ],
             [
                 { "team": "New Zealand", "isAI": false, "score": null },
@@ -285,8 +325,18 @@
                 }
             ],
             [
-                { "team": "Finland", "isAI": true, "score": null },
-                { "team": "Netherlands", "isAI": false, "score": null }
+                {
+                    "team": "Finland",
+                    "isAI": true,
+                    "score": 1,
+                    "player": "Jensen"
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": 1,
+                    "player": "Vilhena"
+                }
             ],
             [
                 { "team": "Sweden", "isAI": false, "score": null },
@@ -397,8 +447,18 @@
                 }
             ],
             [
-                { "team": "Russia", "isAI": false, "score": null },
-                { "team": "Canada", "isAI": true, "score": null }
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": 1,
+                    "player": "Kutepov"
+                },
+                {
+                    "team": "Canada",
+                    "isAI": true,
+                    "score": 1,
+                    "player": "Petrasso/Hutchinson"
+                }
             ],
             [
                 { "team": "Germany", "isAI": true, "score": null },
@@ -509,8 +569,18 @@
                 }
             ],
             [
-                { "team": "Mexico", "isAI": true, "score": null },
-                { "team": "India", "isAI": false, "score": null }
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": 5,
+                    "player": "Corona"
+                },
+                {
+                    "team": "India",
+                    "isAI": false,
+                    "score": 0,
+                    "player": "Jhingan"
+                }
             ],
             [
                 { "team": "Poland", "isAI": true, "score": null },
@@ -621,8 +691,18 @@
                 }
             ],
             [
-                { "team": "Austria", "isAI": false, "score": null },
-                { "team": "Ecuador", "isAI": true, "score": null }
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": 2,
+                    "player": "Arnautović"
+                },
+                {
+                    "team": "Ecuador",
+                    "isAI": true,
+                    "score": 2,
+                    "player": "Caicedo"
+                }
             ],
             [
                 { "team": "Greece", "isAI": false, "score": null },
@@ -728,8 +808,18 @@
                 }
             ],
             [
-                { "team": "Denmark", "isAI": false, "score": null },
-                { "team": "Bulgaria", "isAI": true, "score": null }
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": 2,
+                    "player": "Eriksen"
+                },
+                {
+                    "team": "Bulgaria",
+                    "isAI": true,
+                    "score": 0,
+                    "player": "Popov"
+                }
             ],
             [
                 { "team": "Wales", "isAI": true, "score": null },
@@ -826,12 +916,32 @@
                 }
             ],
             [
-                { "team": "Venezuela", "isAI": false, "score": null },
-                { "team": "France", "isAI": true, "score": null }
+                {
+                    "team": "Venezuela",
+                    "isAI": false,
+                    "score": 0,
+                    "player": "Feltcher"
+                },
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": 4,
+                    "player": "Kanté"
+                }
             ],
             [
-                { "team": "Bolivia", "isAI": false, "score": null },
-                { "team": "Brazil", "isAI": true, "score": null }
+                {
+                    "team": "Bolivia",
+                    "isAI": false,
+                    "score": 2,
+                    "player": "Martins/Castro"
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": 3,
+                    "player": "Beretta"
+                }
             ],
             [
                 { "team": "Chile", "isAI": false, "score": null },

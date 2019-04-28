@@ -115,7 +115,14 @@ fs.readFile("fifa19/teams.csv", "utf8", function(err, contents) {
         return b.rating - a.rating;
     });
 
-    // console.log(teams);
+    //
+    // UNCOMMENT to see the rankings before making the groups.
+    //
+    // teams.forEach((team, index) => {
+    //     console.log(index + 1, team.team, team.rating);
+    // });
+    // process.exit();
+
     teams = teams.map(team => team.team);
 
     const numTeams = teams.length;
