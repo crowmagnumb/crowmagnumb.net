@@ -1,0 +1,16 @@
+{
+  "name": "fifa_world_cup",
+  "version": "1.0.0",
+  "description": "## Create a new world cup match",
+  "main": "index.js",
+  "dependencies": {
+    "showdown": "^1.9.0",
+    "yargs": "^13.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
