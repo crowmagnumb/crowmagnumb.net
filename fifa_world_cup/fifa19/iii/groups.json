@@ -1,0 +1,4588 @@
+[
+    {
+        "teams": [
+            "Spain",
+            "Belgium",
+            "Germany",
+            "Portugal",
+            "France",
+            "Argentina",
+            "Italy",
+            "England",
+            "Brazil",
+            "Uruguay",
+            "Colombia",
+            "Netherlands",
+            "Denmark",
+            "Austria",
+            "Russia",
+            "Mexico",
+            "Poland",
+            "Turkey",
+            "Chile",
+            "United States"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Spain",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Brazil",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Italy",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Mexico",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Turkey",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Austria",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Belgium",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Spain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Germany",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "United States",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Portugal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Chile",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Turkey",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "France",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Poland",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Argentina",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Italy",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Mexico",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "England",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Russia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Brazil",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Austria",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Denmark",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Uruguay",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Netherlands",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Colombia",
+                    "isAI": true,
+                    "score": null
+                }
+            ]
+        ]
+    }
+]

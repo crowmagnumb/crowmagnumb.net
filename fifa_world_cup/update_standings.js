@@ -1,6 +1,10 @@
 const fs = require("fs");
 const utils = require("./utils");
 
+const argv = require("yargs")
+    .alias("k", "key")
+    .demandOption("key").argv;
+
 function displayTeamName(match, index) {
     team = match[index];
     let display;
@@ -162,10 +166,13 @@ function getStandings(groups) {
     return utils.markdown2Html(lines.join("\n"));
 }
 
-fs.readFile(utils.getFilePath("groups.json"), "utf8", function(err, contents) {
+fs.readFile(utils.getFilePath(argv.key, "groups.json"), "utf8", function(
+    err,
+    contents
+) {
     const groups = JSON.parse(contents);
 
-    const roman = utils.getWCVersion().toUpperCase();
+    const roman = argv.key.toUpperCase();
     const bodyInnerHTML = `<div style="border: 15px">
   <a href="bracket.html">Bracket</a>
   <h1 style="text-align: center">FIFA 19 World Cup ${roman}</h1>
@@ -179,5 +186,5 @@ fs.readFile(utils.getFilePath("groups.json"), "utf8", function(err, contents) {
   </div>
 </div>`;
 
-    utils.writeHtml(bodyInnerHTML, utils.getFilePath("index.html"));
+    utils.writeHtml(bodyInnerHTML, utils.getFilePath(argv.key, "index.html"));
 });
