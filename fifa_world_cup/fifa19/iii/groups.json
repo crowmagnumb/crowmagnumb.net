@@ -27,12 +27,12 @@
                 {
                     "team": "Spain",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "United States",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [

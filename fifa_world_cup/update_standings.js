@@ -58,24 +58,59 @@ const groupSort = (a, b) => {
     return 1;
 };
 
+class TeamInfo {
+    constructor(team) {
+        this.team = team;
+        this.mp = 0;
+        this.wins = 0;
+        this.draws = 0;
+        this.loses = 0;
+        this.gf = 0;
+        this.ga = 0;
+        this.gd = 0;
+        this.pts = 0;
+    }
+
+    calc() {
+        this.gd = this.gf - this.ga;
+        this.pts = this.wins * 3 + this.draws;
+    }
+}
+
+function incrementInfos(info1, score1, info2, score2) {
+    info1.mp++;
+    info1.gf += score1;
+    info1.ga += score2;
+    info2.mp++;
+    info2.gf += score2;
+    info2.ga += score1;
+    if (score1 > score2) {
+        info1.wins++;
+        info2.loses++;
+    } else if (score2 > score1) {
+        info2.wins++;
+        info1.loses++;
+    } else {
+        info1.draws++;
+        info2.draws++;
+    }
+}
+
+function calcStandings(infos) {
+    for (const info of infos) {
+        info.calc();
+    }
+    infos.sort(groupSort);
+    return infos;
+}
+
 function groupStandings(group) {
     //
     // Seed the info map
     //
     const infoMap = new Map();
     for (const team of group.teams) {
-        let info = {
-            team,
-            mp: 0,
-            wins: 0,
-            draws: 0,
-            loses: 0,
-            gf: 0,
-            ga: 0,
-            gd: 0,
-            pts: 0
-        };
-        infoMap.set(team, info);
+        infoMap.set(team, new TeamInfo(team));
     }
 
     //
@@ -89,32 +124,34 @@ function groupStandings(group) {
         const score1 = match[0].score;
         const score2 = match[1].score;
 
-        info1.mp++;
-        info1.gf += score1;
-        info1.ga += score2;
-        info2.mp++;
-        info2.gf += score2;
-        info2.ga += score1;
-        if (score1 > score2) {
-            info1.wins++;
-            info2.loses++;
-        } else if (score2 > score1) {
-            info2.wins++;
-            info1.loses++;
-        } else {
-            info1.draws++;
-            info2.draws++;
+        incrementInfos(info1, score1, info2, score2);
+    }
+
+    return calcStandings(Array.from(infoMap.values()));
+}
+
+function yourStandings(groups) {
+    let you = new TeamInfo("You");
+    let ai = new TeamInfo("AI");
+
+    for (const group of groups) {
+        for (const match of group.matches.filter(
+            match => match[0].score !== null
+        )) {
+            let yourscore;
+            let aiscore;
+            if (match[0].isAI) {
+                yourscore = match[1].score;
+                aiscore = match[0].score;
+            } else {
+                yourscore = match[0].score;
+                aiscore = match[1].score;
+            }
+
+            incrementInfos(you, yourscore, ai, aiscore);
         }
     }
-
-    for (const info of Array.from(infoMap.values())) {
-        info.gd = info.gf - info.ga;
-        info.pts = info.wins * 3 + info.draws;
-    }
-
-    const infos = Array.from(infoMap.values());
-    infos.sort(groupSort);
-    return infos;
+    return calcStandings([you, ai]);
 }
 
 function getMatches(groups) {
@@ -147,22 +184,36 @@ function getMatches(groups) {
     return utils.markdown2Html(lines.join("\n"));
 }
 
+function appendStandingsHeader(lines, title) {
+    lines.push(`## ${title}`);
+    lines.push("| Team | MP | W | D | L | GF | GA | GD | Pts |");
+    lines.push("|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|");
+}
+
+function appendResults(lines, infos) {
+    for (const info of infos) {
+        lines.push(
+            `|${info.team}|${info.mp}|${info.wins}|${info.draws}|${
+                info.loses
+            }|${info.gf}|${info.ga}|${info.gd}|${info.pts}|`
+        );
+    }
+}
+
 function getStandings(groups) {
     let lines = [];
     lines.push("# Standings");
     groups.forEach((group, groupIndex) => {
-        lines.push(`## Group ${String.fromCharCode(65 + groupIndex)}`);
-        lines.push("| Team | MP | W | D | L | GF | GA | GD | Pts |");
-        lines.push("|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|");
-
-        for (const info of groupStandings(group)) {
-            lines.push(
-                `|${info.team}|${info.mp}|${info.wins}|${info.draws}|${
-                    info.loses
-                }|${info.gf}|${info.ga}|${info.gd}|${info.pts}|`
-            );
-        }
+        appendStandingsHeader(
+            lines,
+            `Group ${String.fromCharCode(65 + groupIndex)}`
+        );
+        appendResults(lines, groupStandings(group));
     });
+
+    appendStandingsHeader(lines, "You vs. AI");
+    appendResults(lines, yourStandings(groups));
+
     return utils.markdown2Html(lines.join("\n"));
 }
 
