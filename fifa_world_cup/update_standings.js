@@ -11,7 +11,7 @@ function displayTeamName(match, index) {
     if (team.isAI) {
         display = team.team;
     } else {
-        display = `_${team.team}_`;
+        display = `<span class="you">${team.team}</span>`;
     }
 
     if (team.score != null) {
@@ -27,7 +27,7 @@ function displayTeam(match, index) {
     team = match[index];
     return `${displayTeamName(match, index)}|${
         team.score === null ? "" : team.score
-    }|${team.player ? team.player : ""}`;
+    }`;
 }
 
 const groupSort = (a, b) => {
@@ -164,18 +164,21 @@ function getMatches(groups) {
 
     let lines = [];
     lines.push("# Group Matches");
-    lines.push("|| Team1 | Score | Player | Team2 | Score | Player |");
-    lines.push("|:---:|---|---|---|---|---|---|");
+    lines.push(
+        `${groups.length > 1 ? "|" : ""}| Home | Score | Away | Score |`
+    );
+    lines.push(`${groups.length > 1 ? "|:---:" : ""}|---|---|---|---|`);
     let index = 0;
     while (index < maxMatches) {
         groups.forEach((group, groupIndex) => {
             if (index < group.matches.length) {
                 const match = group.matches[index];
                 lines.push(
-                    `|${String.fromCharCode(65 + groupIndex)}|${displayTeam(
-                        match,
-                        0
-                    )}|${displayTeam(match, 1)}|`
+                    `${
+                        groups.length > 1
+                            ? `|${String.fromCharCode(65 + groupIndex)}`
+                            : ""
+                    }|${displayTeam(match, 0)}|${displayTeam(match, 1)}|`
                 );
             }
         });
@@ -185,7 +188,9 @@ function getMatches(groups) {
 }
 
 function appendStandingsHeader(lines, title) {
-    lines.push(`## ${title}`);
+    if (title) {
+        lines.push(`## ${title}`);
+    }
     lines.push("| Team | MP | W | D | L | GF | GA | GD | Pts |");
     lines.push("|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|");
 }
@@ -206,7 +211,9 @@ function getStandings(groups) {
     groups.forEach((group, groupIndex) => {
         appendStandingsHeader(
             lines,
-            `Group ${String.fromCharCode(65 + groupIndex)}`
+            groups.length > 1
+                ? `Group ${String.fromCharCode(65 + groupIndex)}`
+                : null
         );
         appendResults(lines, groupStandings(group));
     });
@@ -225,7 +232,7 @@ fs.readFile(utils.getFilePath(argv.key, "groups.json"), "utf8", function(
 
     const roman = argv.key.toUpperCase();
     const bodyInnerHTML = `<div style="border: 15px">
-  <a href="bracket.html">Bracket</a>
+    ${groups.length > 1 ? '<a href="bracket.html">Bracket</a>' : ""}
   <h1 style="text-align: center">FIFA 19 World Cup ${roman}</h1>
   <div class="row">
     <div class="column" style="padding-right: 15px">

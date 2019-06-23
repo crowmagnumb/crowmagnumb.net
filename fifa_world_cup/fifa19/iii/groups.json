@@ -39,60 +39,60 @@
                 {
                     "team": "Belgium",
                     "isAI": true,
-                    "score": null
+                    "score": 4
                 },
                 {
                     "team": "Chile",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Turkey",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Germany",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Portugal",
                     "isAI": true,
-                    "score": null
+                    "score": 3
                 },
                 {
                     "team": "Poland",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Mexico",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "France",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Russia",
                     "isAI": true,
-                    "score": null
+                    "score": 3
                 },
                 {
                     "team": "Argentina",
                     "isAI": false,
-                    "score": null
+                    "score": 4
                 }
             ],
             [
