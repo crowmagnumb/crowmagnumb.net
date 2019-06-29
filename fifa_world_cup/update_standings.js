@@ -187,25 +187,39 @@ function getMatches(groups) {
     return utils.markdown2Html(lines.join("\n"));
 }
 
-function appendStandingsHeader(lines, title) {
+function appendStandingsHeader(lines, title, teamMap) {
     if (title) {
         lines.push(`## ${title}`);
     }
-    lines.push("| Team | MP | W | D | L | GF | GA | GD | Pts |");
-    lines.push("|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|");
+    lines.push(
+        `||${
+            teamMap ? " R |" : ""
+        } Team | MP | W | D | L | GF | GA | GD | Pts |`
+    );
+    lines.push(
+        `|:---:|${
+            teamMap ? ":---:|" : ""
+        }---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|`
+    );
 }
 
-function appendResults(lines, infos) {
-    for (const info of infos) {
+function appendResults(lines, infos, teamMap) {
+    infos.forEach((info, index) => {
+        let rating = null;
+        if (teamMap) {
+            rating = teamMap.get(info.team).rating;
+        }
         lines.push(
-            `|${info.team}|${info.mp}|${info.wins}|${info.draws}|${
-                info.loses
-            }|${info.gf}|${info.ga}|${info.gd}|${info.pts}|`
+            `${index + 1}|${rating ? rating + "|" : ""}${info.team}|${
+                info.mp
+            }|${info.wins}|${info.draws}|${info.loses}|${info.gf}|${info.ga}|${
+                info.gd
+            }|${info.pts}|`
         );
-    }
+    });
 }
 
-function getStandings(groups) {
+function getStandings(groups, teamMap) {
     let lines = [];
     lines.push("# Standings");
     groups.forEach((group, groupIndex) => {
@@ -213,9 +227,10 @@ function getStandings(groups) {
             lines,
             groups.length > 1
                 ? `Group ${String.fromCharCode(65 + groupIndex)}`
-                : null
+                : null,
+            teamMap
         );
-        appendResults(lines, groupStandings(group));
+        appendResults(lines, groupStandings(group), teamMap);
     });
 
     appendStandingsHeader(lines, "You vs. AI");
@@ -224,25 +239,30 @@ function getStandings(groups) {
     return utils.markdown2Html(lines.join("\n"));
 }
 
-fs.readFile(utils.getFilePath(argv.key, "groups.json"), "utf8", function(
-    err,
-    contents
-) {
-    const groups = JSON.parse(contents);
+utils.getTeamMap().then(teamMap => {
+    fs.readFile(utils.getFilePath(argv.key, "groups.json"), "utf8", function(
+        err,
+        contents
+    ) {
+        const groups = JSON.parse(contents);
 
-    const roman = argv.key.toUpperCase();
-    const bodyInnerHTML = `<div style="border: 15px">
-    ${groups.length > 1 ? '<a href="bracket.html">Bracket</a>' : ""}
-  <h1 style="text-align: center">FIFA 19 World Cup ${roman}</h1>
-  <div class="row">
-    <div class="column" style="padding-right: 15px">
-      ${getStandings(groups)}
-    </div>
-    <div class="column">
-      ${getMatches(groups)}
-    </div>
-  </div>
-</div>`;
+        const roman = argv.key.toUpperCase();
+        const bodyInnerHTML = `<div style="border: 15px">
+        ${groups.length > 1 ? '<a href="bracket.html">Bracket</a>' : ""}
+      <h1 style="text-align: center">FIFA 19 World Cup ${roman}</h1>
+      <div class="row">
+        <div class="column" style="padding-right: 15px">
+          ${getStandings(groups, teamMap)}
+        </div>
+        <div class="column">
+          ${getMatches(groups)}
+        </div>
+      </div>
+    </div>`;
 
-    utils.writeHtml(bodyInnerHTML, utils.getFilePath(argv.key, "index.html"));
+        utils.writeHtml(
+            bodyInnerHTML,
+            utils.getFilePath(argv.key, "index.html")
+        );
+    });
 });

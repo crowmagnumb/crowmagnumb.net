@@ -32,7 +32,7 @@ exports.writeHtml = function(bodyInnerHTML, outputFile) {
     );
 };
 
-exports.getSortedTeams = function() {
+function getTeams() {
     return new Promise((resolve, reject) => {
         fs.readFile("fifa19/teams.csv", "utf8", function(err, contents) {
             if (err) {
@@ -57,12 +57,27 @@ exports.getSortedTeams = function() {
                 };
             });
 
-            teams.sort((a, b) => {
-                return b.rating - a.rating;
-            });
-
             resolve(teams);
         });
+    });
+}
+
+exports.getSortedTeams = function() {
+    return getTeams().then(teams => {
+        teams.sort((a, b) => {
+            return b.rating - a.rating;
+        });
+        return teams;
+    });
+};
+
+exports.getTeamMap = function() {
+    return getTeams().then(teams => {
+        let teamMap = new Map();
+        for (const team of teams) {
+            teamMap.set(team.team, team);
+        }
+        return teamMap;
     });
 };
 
