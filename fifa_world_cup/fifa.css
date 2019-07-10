@@ -12,6 +12,11 @@
     flex: 1;
 }
 
+.scrollable {
+    overflow-y: auto;
+    height: 80vh;
+}
+
 .you {
     color: #107d9f;
     /* font-style: italic; */

@@ -163,7 +163,6 @@ function getMatches(groups) {
     }
 
     let lines = [];
-    lines.push("# Group Matches");
     lines.push(
         `${groups.length > 1 ? "|" : ""}| Home | Score | Away | Score |`
     );
@@ -184,6 +183,7 @@ function getMatches(groups) {
         });
         index++;
     }
+
     return utils.markdown2Html(lines.join("\n"));
 }
 
@@ -221,7 +221,7 @@ function appendResults(lines, infos, teamMap) {
 
 function getStandings(groups, teamMap) {
     let lines = [];
-    lines.push("# Standings");
+    lines.push("## Standings");
     groups.forEach((group, groupIndex) => {
         appendStandingsHeader(
             lines,
@@ -255,7 +255,10 @@ utils.getTeamMap().then(teamMap => {
           ${getStandings(groups, teamMap)}
         </div>
         <div class="column">
-          ${getMatches(groups)}
+         <h2>Group Matches</h2>
+            <div class="scrollable">
+            ${getMatches(groups)}
+          </div>
         </div>
       </div>
     </div>`;
