@@ -387,84 +387,84 @@
                 {
                     "team": "Spain",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Poland",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Turkey",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Mexico",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Chile",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Russia",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Austria",
                     "isAI": true,
-                    "score": null
+                    "score": 6
                 },
                 {
                     "team": "United States",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Denmark",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Belgium",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Germany",
                     "isAI": false,
-                    "score": null
+                    "score": 3
                 },
                 {
                     "team": "Netherlands",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Portugal",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Colombia",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
