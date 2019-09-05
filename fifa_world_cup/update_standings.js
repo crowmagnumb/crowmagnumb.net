@@ -156,7 +156,7 @@ function yourStandings(groups) {
 
 function getMatches(groups) {
     let maxMatches = 0;
-    for (group of groups) {
+    for (const group of groups) {
         if (group.matches.length > maxMatches) {
             maxMatches = group.matches.length;
         }
@@ -168,19 +168,22 @@ function getMatches(groups) {
     );
     lines.push(`${groups.length > 1 ? "|:---:" : ""}|---|---|---|---|`);
     let index = 0;
+
+    let linebuilder = (group, groupIndex) => {
+        if (index < group.matches.length) {
+            const match = group.matches[index];
+            lines.push(
+                `${
+                    groups.length > 1
+                        ? `|${String.fromCharCode(65 + groupIndex)}`
+                        : ""
+                }|${displayTeam(match, 0)}|${displayTeam(match, 1)}|`
+            );
+        }
+    };
+
     while (index < maxMatches) {
-        groups.forEach((group, groupIndex) => {
-            if (index < group.matches.length) {
-                const match = group.matches[index];
-                lines.push(
-                    `${
-                        groups.length > 1
-                            ? `|${String.fromCharCode(65 + groupIndex)}`
-                            : ""
-                    }|${displayTeam(match, 0)}|${displayTeam(match, 1)}|`
-                );
-            }
-        });
+        groups.forEach(linebuilder);
         index++;
     }
 
