@@ -1,6 +1,7 @@
 //
 // node make_groups.js > fifa19/xxx/groups.json
 // node make_groups.js --maxteams 20 --groups 1 --include "United States"
+// "fifa19/teams.csv"
 //
 const fs = require("fs");
 const utils = require("./utils");
@@ -13,6 +14,7 @@ const argv = require("yargs")
     .alias("m", "matchesper")
     .alias("i", "include")
     .alias("t", "maxteams")
+    .alias("f", "teamsfile")
     .demandOption("key").argv;
 
 let dir = utils.getFileDir(argv.key);
@@ -29,7 +31,7 @@ function addMatches(groups, matches) {
     }
 }
 
-utils.getSortedTeams().then(sortedTeams => {
+utils.getSortedTeams(argv.teamsfile).then(sortedTeams => {
     let useTeams;
     if (argv.maxteams) {
         useTeams = sortedTeams.slice(0, argv.groups * argv.maxteams);

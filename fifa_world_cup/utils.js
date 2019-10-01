@@ -32,9 +32,9 @@ exports.writeHtml = function(bodyInnerHTML, outputFile) {
     );
 };
 
-function getTeams() {
+function getTeams(filename) {
     return new Promise((resolve, reject) => {
-        fs.readFile("fifa19/teams.csv", "utf8", function(err, contents) {
+        fs.readFile(filename, "utf8", function(err, contents) {
             if (err) {
                 reject(err);
             }
@@ -44,16 +44,22 @@ function getTeams() {
 
             let teams = lines.map(line => {
                 const vals = line.split(",");
-                return {
-                    team: vals[0],
-                    rating:
+                let rating;
+                if (vals.length >= 4) {
+                    rating =
                         Math.round(
                             (10 *
                                 (parseInt(vals[1]) +
                                     parseInt(vals[2]) +
                                     parseInt(vals[3]))) /
                                 3
-                        ) / 10
+                        ) / 10;
+                } else {
+                    rating = 0;
+                }
+                return {
+                    team: vals[0],
+                    rating
                 };
             });
 
@@ -62,8 +68,8 @@ function getTeams() {
     });
 }
 
-exports.getSortedTeams = function() {
-    return getTeams().then(teams => {
+exports.getSortedTeams = function(filename) {
+    return getTeams(filename).then(teams => {
         teams.sort((a, b) => {
             return b.rating - a.rating;
         });
@@ -71,8 +77,8 @@ exports.getSortedTeams = function() {
     });
 };
 
-exports.getTeamMap = function() {
-    return getTeams().then(teams => {
+exports.getTeamMap = function(filename) {
+    return getTeams(filename).then(teams => {
         let teamMap = new Map();
         for (const team of teams) {
             teamMap.set(team.team, team);

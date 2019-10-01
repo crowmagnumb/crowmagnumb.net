@@ -3,6 +3,7 @@ const utils = require("./utils");
 
 const argv = require("yargs")
     .alias("k", "key")
+    .alias("f", "teamsfile")
     .demandOption("key").argv;
 
 function displayTeamName(match, index) {
@@ -242,7 +243,7 @@ function getStandings(groups, teamMap) {
     return utils.markdown2Html(lines.join("\n"));
 }
 
-utils.getTeamMap().then(teamMap => {
+utils.getTeamMap(argv.teamsfile).then(teamMap => {
     fs.readFile(utils.getFilePath(argv.key, "groups.json"), "utf8", function(
         err,
         contents

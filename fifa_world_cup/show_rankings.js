@@ -1,6 +1,6 @@
 const utils = require("./utils");
 
-utils.getSortedTeams().then(teams => {
+utils.getSortedTeams("fifa19/teams.csv").then(teams => {
     //
     // UNCOMMENT to see the rankings before making the groups.
     //
