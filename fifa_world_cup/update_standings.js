@@ -165,9 +165,9 @@ function getMatches(groups) {
 
     let lines = [];
     lines.push(
-        `${groups.length > 1 ? "|" : ""}| Home | Score | Away | Score |`
+        `${groups.length > 1 ? "|" : ""}| Home | Score | Away | Score | Note |`
     );
-    lines.push(`${groups.length > 1 ? "|:---:" : ""}|---|---|---|---|`);
+    lines.push(`${groups.length > 1 ? "|:---:" : ""}|---|---|---|---|---|`);
     let index = 0;
 
     let linebuilder = (group, groupIndex) => {
@@ -178,7 +178,8 @@ function getMatches(groups) {
                     groups.length > 1
                         ? `|${String.fromCharCode(65 + groupIndex)}`
                         : ""
-                }|${displayTeam(match, 0)}|${displayTeam(match, 1)}|`
+                }|${displayTeam(match, 0)}|${displayTeam(match, 1)}|${match[0]
+                    .note || ""}|`
             );
         }
     };

@@ -1,13 +1,63 @@
-<!DOCTYPE html><html lang="en"><head><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"><style>.station-block {
-    display: flex;
-    flex-direction: column;
-    background: light-gray;
-    padding: 5px;
-    border: solid 1px;
-    width: 300px;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <style>
+      .station-block {
+        display: flex;
+        flex-direction: column;
+        background: light-gray;
+        padding: 5px;
+        border: solid 1px;
+        width: 300px;
+      }
 
-.station-block video {
-    height: 50px;
-}
-</style></head><body><div class="station-block"><a href="https://www.freeformportland.org/" target="_blank">Freeform Portland</a><video controls><source src="https://www.freeformportland.org/listen" type="audio/mpeg"></video></div><div class="station-block"><a href="https://wcbn.org/" target="_blank">WCBN</a><a href="https://app.wcbn.org/?autoplay#now" target="_blank">Player</a></div><div class="station-block"><a href="https://xray.fm/" target="_blank">XRAY</a><video controls><!--https://xray.fm/api/tracks/current ()--><!--https://xray.fm/api/broadcasting (now gives current program, Track gives same result as above so could just call this one)--><source src="http://listen.xray.fm:8000/stream" type="audio/mpeg"></video></div><div class="station-block"><a href="http://kfjc.org" target="_blank">KFJC</a><a href="http://kfjc.org/player" onclick="window.open(this.href, 'kfjcpopupplayer', 'location=no,width=380,height=560,scrollbars=no,resizable=no,toolbar=no,directories=no,menubar=no,status=no'); return false;">Player (Pop-up)</a></div><div class="station-block"><a href="https://wfmu.org" target="_blank">WFMU</a><a href="http://www.radiorethink.com/tuner/?stationCode=wfmu&amp;stream=hi">Player (Pop-up)</a></div></body></html>
+      .station-block video {
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="station-block">
+      <a href="https://www.freeformportland.org/" target="_blank"
+        >Freeform Portland</a
+      ><video controls>
+        <source
+          src="https://www.freeformportland.org/listen"
+          type="audio/mpeg"
+        />
+      </video>
+    </div>
+    <div class="station-block">
+      <a href="https://wcbn.org/" target="_blank">WCBN</a
+      ><a href="https://app.wcbn.org/?autoplay#now" target="_blank">Player</a>
+    </div>
+    <div class="station-block">
+      <a href="https://xray.fm/" target="_blank">XRAY</a
+      ><video controls>
+        <!--https://xray.fm/api/tracks/current ()--><!--https://xray.fm/api/broadcasting (now gives current program, Track gives same result as above so could just call this one)-->
+        <source src="http://listen.xray.fm:8000/stream" type="audio/mpeg" />
+      </video>
+    </div>
+    <div class="station-block">
+      <a href="http://kfjc.org" target="_blank">KFJC</a
+      ><a
+        href="http://kfjc.org/player"
+        onclick="window.open(this.href, 'kfjcpopupplayer', 'location=no,width=380,height=560,scrollbars=no,resizable=no,toolbar=no,directories=no,menubar=no,status=no'); return false;"
+        >Player (Pop-up)</a
+      >
+    </div>
+    <div class="station-block">
+      <a href="https://wfmu.org" target="_blank">WFMU</a
+      ><a
+        href="http://www.radiorethink.com/tuner/?stationCode=wfmu&amp;stream=hi"
+        >Player (Pop-up)</a
+      >
+    </div>
+    <a
+      href="https://play.google.com/apps/internaltest/4699755703988686575"
+      target="_blank"
+      >Polar Collective Internal Tester App</a
+    >
+  </body>
+</html>

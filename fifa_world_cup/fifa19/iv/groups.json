@@ -150,7 +150,8 @@
                 {
                     "team": "Real Madrid",
                     "isAI": true,
-                    "score": null
+                    "score": null,
+                    "note": "Marcelo to miss due to Red Card"
                 },
                 {
                     "team": "Paris",
@@ -162,7 +163,8 @@
                 {
                     "team": "Atlético Madrid",
                     "isAI": true,
-                    "score": null
+                    "score": null,
+                    "note": "Rodri to miss due to Red Card"
                 },
                 {
                     "team": "Juventus",
