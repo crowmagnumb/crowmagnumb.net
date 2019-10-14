@@ -21,3 +21,17 @@
     color: #107d9f;
     /* font-style: italic; */
 }
+
+.win {
+    color: green;
+    font-weight: bold;
+}
+
+.loss {
+    color: red;
+    font-weight: bold;
+}
+
+.draw {
+    font-weight: bold;
+}

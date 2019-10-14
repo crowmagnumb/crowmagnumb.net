@@ -70,6 +70,25 @@ class TeamInfo {
         this.ga = 0;
         this.gd = 0;
         this.pts = 0;
+        this.lastFive = [null, null, null, null, null];
+    }
+
+    recordGame(us, them) {
+        this.mp++;
+        this.gf += us;
+        this.ga += them;
+
+        this.lastFive.shift();
+        if (us > them) {
+            this.wins++;
+            this.lastFive.push("W");
+        } else if (them > us) {
+            this.loses++;
+            this.lastFive.push("L");
+        } else {
+            this.draws++;
+            this.lastFive.push("-");
+        }
     }
 
     calc() {
@@ -79,22 +98,8 @@ class TeamInfo {
 }
 
 function incrementInfos(info1, score1, info2, score2) {
-    info1.mp++;
-    info1.gf += score1;
-    info1.ga += score2;
-    info2.mp++;
-    info2.gf += score2;
-    info2.ga += score1;
-    if (score1 > score2) {
-        info1.wins++;
-        info2.loses++;
-    } else if (score2 > score1) {
-        info2.wins++;
-        info1.loses++;
-    } else {
-        info1.draws++;
-        info2.draws++;
-    }
+    info1.recordGame(score1, score2);
+    info2.recordGame(score2, score1);
 }
 
 function calcStandings(infos) {
@@ -199,12 +204,12 @@ function appendStandingsHeader(lines, title, teamMap) {
     lines.push(
         `||${
             teamMap ? " R |" : ""
-        } Team | MP | W | D | L | GF | GA | GD | Pts |`
+        } Team | MP | W | D | L | GF | GA | GD | Pts | Last 5 |`
     );
     lines.push(
         `|:---:|${
             teamMap ? ":---:|" : ""
-        }---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|`
+        }---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|`
     );
 }
 
@@ -214,12 +219,31 @@ function appendResults(lines, infos, teamMap) {
         if (teamMap) {
             rating = teamMap.get(info.team).rating;
         }
+        let lastFive = info.lastFive
+            .map(result => {
+                let cssclass = "";
+                switch (result) {
+                    case "W":
+                        cssclass = "win";
+                        break;
+                    case "L":
+                        cssclass = "loss";
+                        break;
+                    case "-":
+                        cssclass = "draw";
+                        break;
+                    default:
+                        return "";
+                }
+                return `<span class="${cssclass}">${result}</span>`;
+            })
+            .join(" ");
         lines.push(
             `${index + 1}|${rating ? rating + "|" : ""}${info.team}|${
                 info.mp
             }|${info.wins}|${info.draws}|${info.loses}|${info.gf}|${info.ga}|${
                 info.gd
-            }|${info.pts}|`
+            }|${info.pts}|${lastFive}|`
         );
     });
 }
