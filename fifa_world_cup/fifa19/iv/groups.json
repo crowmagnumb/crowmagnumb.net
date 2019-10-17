@@ -390,288 +390,288 @@
                 {
                     "team": "Real Madrid",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Manchester United",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Chelsea",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "FC Barcelona",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Atlético Madrid",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "FC Bayern",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Paris",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Manchester City",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Manchester United",
                     "isAI": true,
-                    "score": null
+                    "score": 3
                 },
                 {
                     "team": "Portland",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Juventus",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Chelsea",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Atlético Madrid",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Real Madrid",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "FC Barcelona",
                     "isAI": false,
-                    "score": null
+                    "score": 3
                 },
                 {
                     "team": "Paris",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "FC Bayern",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Manchester City",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Liverpool",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Chelsea",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Atlético Madrid",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Portland",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Paris",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Juventus",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Real Madrid",
                     "isAI": false,
-                    "score": null
+                    "score": 4
                 },
                 {
                     "team": "Manchester City",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "FC Bayern",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "FC Barcelona",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Manchester United",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Atlético Madrid",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Paris",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Liverpool",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Manchester City",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Portland",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Juventus",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "FC Bayern",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Real Madrid",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "FC Barcelona",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Paris",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Chelsea",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Manchester United",
                     "isAI": false,
-                    "score": null
+                    "score": 3
                 },
                 {
                     "team": "Manchester City",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "FC Bayern",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Liverpool",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Portland",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "FC Barcelona",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Juventus",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Real Madrid",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
