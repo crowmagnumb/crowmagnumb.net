@@ -1014,60 +1014,60 @@
                 {
                     "team": "Chelsea",
                     "isAI": false,
-                    "score": null
+                    "score": 3
                 },
                 {
                     "team": "Manchester City",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Atlético Madrid",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Paris",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Liverpool",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Juventus",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Manchester United",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Real Madrid",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "FC Barcelona",
                     "isAI": false,
-                    "score": null
+                    "score": 3
                 },
                 {
                     "team": "Chelsea",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
