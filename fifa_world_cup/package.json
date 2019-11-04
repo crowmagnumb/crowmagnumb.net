@@ -4,6 +4,7 @@
   "description": "## Create a new world cup match",
   "main": "index.js",
   "dependencies": {
+    "js-yaml": "^3.13.1",
     "showdown": "^1.9.0",
     "yargs": "^13.2.2"
   },
