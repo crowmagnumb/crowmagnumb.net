@@ -1182,72 +1182,72 @@
                 {
                     "team": "Juventus",
                     "isAI": true,
-                    "score": null
+                    "score": 3
                 },
                 {
                     "team": "Paris",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Manchester City",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Real Madrid",
                     "isAI": true,
-                    "score": null
+                    "score": 3
                 }
             ],
             [
                 {
                     "team": "FC Barcelona",
                     "isAI": true,
-                    "score": null
+                    "score": 3
                 },
                 {
                     "team": "FC Bayern",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Atlético Madrid",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Manchester United",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Liverpool",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Paris",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Portland",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Manchester City",
                     "isAI": true,
-                    "score": null
+                    "score": 4
                 }
             ],
             [
