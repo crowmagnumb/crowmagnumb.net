@@ -1,0 +1,633 @@
+[
+    {
+        "teams": [
+            "Rayo Vallecano",
+            "Pohang Steelers",
+            "Luton Town",
+            "Chongqing SWM"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "Rayo Vallecano",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Chongqing SWM",
+                    "isAI": false,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Luton Town",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Pohang Steelers",
+                    "isAI": true,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Luton Town",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Rayo Vallecano",
+                    "isAI": false,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Chongqing SWM",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Pohang Steelers",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Pohang Steelers",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Rayo Vallecano",
+                    "isAI": false,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Luton Town",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chongqing SWM",
+                    "isAI": true,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": ["Everton", "Dynamo Kyiv", "FC Nordsjælland", "Hallescher FC"],
+        "matches": [
+            [
+                {
+                    "team": "Everton",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Hallescher FC",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "FC Nordsjælland",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Dynamo Kyiv",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Everton",
+                    "isAI": true,
+                    "score": 4
+                },
+                {
+                    "team": "FC Nordsjælland",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Hallescher FC",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Dynamo Kyiv",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Dynamo Kyiv",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Everton",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "FC Nordsjælland",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Hallescher FC",
+                    "isAI": true,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": ["CD Leganés", "Palermo", "Ceará SC", "Brisbane Roar"],
+        "matches": [
+            [
+                {
+                    "team": "CD Leganés",
+                    "isAI": true,
+                    "score": 2
+                },
+                {
+                    "team": "Brisbane Roar",
+                    "isAI": false,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Ceará SC",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Palermo",
+                    "isAI": true,
+                    "score": 4
+                }
+            ],
+            [
+                {
+                    "team": "Ceará SC",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "CD Leganés",
+                    "isAI": true,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Palermo",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Brisbane Roar",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "CD Leganés",
+                    "isAI": false,
+                    "score": 4
+                },
+                {
+                    "team": "Palermo",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Brisbane Roar",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Ceará SC",
+                    "isAI": true,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": [
+            "Shakhtar Donetsk",
+            "Genoa",
+            "Orlando Pirates",
+            "Cheltenham Town"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "Cheltenham Town",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Shakhtar Donetsk",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Orlando Pirates",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Genoa",
+                    "isAI": false,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Shakhtar Donetsk",
+                    "isAI": true,
+                    "score": 3
+                },
+                {
+                    "team": "Orlando Pirates",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Genoa",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Cheltenham Town",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Shakhtar Donetsk",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Genoa",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Cheltenham Town",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Orlando Pirates",
+                    "isAI": false,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": ["Atalanta", "AD Alcorcón", "Jeonnam Dragons", "Swindon Town"],
+        "matches": [
+            [
+                {
+                    "team": "Swindon Town",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Atalanta",
+                    "isAI": false,
+                    "score": 3
+                }
+            ],
+            [
+                {
+                    "team": "Jeonnam Dragons",
+                    "isAI": false,
+                    "score": 2
+                },
+                {
+                    "team": "AD Alcorcón",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Atalanta",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Jeonnam Dragons",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Swindon Town",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "AD Alcorcón",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Atalanta",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "AD Alcorcón",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Swindon Town",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Jeonnam Dragons",
+                    "isAI": true,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": [
+            "Monterrey",
+            "Derby County",
+            "Southend United",
+            "Lillestrøm SK"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "Lillestrøm SK",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Monterrey",
+                    "isAI": false,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Derby County",
+                    "isAI": true,
+                    "score": 2
+                },
+                {
+                    "team": "Southend United",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Southend United",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Monterrey",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Lillestrøm SK",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Derby County",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Monterrey",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Derby County",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Lillestrøm SK",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Southend United",
+                    "isAI": false,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": ["Girona FC", "Hearts", "Excel Mouscron", "St. Mirren"],
+        "matches": [
+            [
+                {
+                    "team": "St. Mirren",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Girona FC",
+                    "isAI": false,
+                    "score": 3
+                }
+            ],
+            [
+                {
+                    "team": "Hearts",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Excel Mouscron",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Girona FC",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Excel Mouscron",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Hearts",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "St. Mirren",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Hearts",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Girona FC",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Excel Mouscron",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "St. Mirren",
+                    "isAI": false,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": ["Dortmund", "Shandong Luneng", "Nancy", "HJK Helsinki"],
+        "matches": [
+            [
+                {
+                    "team": "HJK Helsinki",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Dortmund",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Nancy",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Shandong Luneng",
+                    "isAI": false,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Dortmund",
+                    "isAI": true,
+                    "score": 2
+                },
+                {
+                    "team": "Nancy",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "HJK Helsinki",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Shandong Luneng",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Dortmund",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Shandong Luneng",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "HJK Helsinki",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Nancy",
+                    "isAI": false,
+                    "score": null
+                }
+            ]
+        ]
+    }
+]

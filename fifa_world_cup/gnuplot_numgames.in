@@ -1,0 +1,11 @@
+set term png
+set output "numgames.png"
+set xlabel "Number of Teams"
+set ylabel "Number of Groups"
+#set ticslevel 0
+set pm3d map
+f(T,g) = T * (T - g) / (2 * g)
+p(T,g) = f(T,g)>=1 ? f(T,g) : 0
+#plot [1:48] f(2,x)
+splot [1:48] [1:8] log(p(x,y))
+
