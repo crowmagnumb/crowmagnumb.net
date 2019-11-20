@@ -71,12 +71,12 @@
                 {
                     "team": "Luton Town",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Chongqing SWM",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ]
         ]
@@ -148,12 +148,12 @@
                 {
                     "team": "FC Nordsjælland",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Hallescher FC",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ]
         ]
@@ -225,12 +225,12 @@
                 {
                     "team": "Brisbane Roar",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Ceará SC",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ]
         ]
@@ -295,24 +295,24 @@
                 {
                     "team": "Shakhtar Donetsk",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Genoa",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Cheltenham Town",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Orlando Pirates",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ]
         ]
@@ -372,24 +372,24 @@
                 {
                     "team": "Atalanta",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "AD Alcorcón",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Swindon Town",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Jeonnam Dragons",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ]
         ]
@@ -454,24 +454,24 @@
                 {
                     "team": "Monterrey",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Derby County",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Lillestrøm SK",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Southend United",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ]
         ]
@@ -531,24 +531,24 @@
                 {
                     "team": "Hearts",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Girona FC",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Excel Mouscron",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "St. Mirren",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ]
         ]
@@ -608,24 +608,24 @@
                 {
                     "team": "Dortmund",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Shandong Luneng",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "HJK Helsinki",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Nancy",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ]
         ]
