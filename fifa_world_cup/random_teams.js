@@ -4,7 +4,7 @@ const yaml = require("js-yaml");
 const util = require("util");
 
 const leagues = yaml.safeLoad(
-    fs.readFileSync(path.join("fifa19", "FIFA19Teams.yml"))
+    fs.readFileSync(path.join("fifa19", "FIFA19Teams_reduced.yml"))
 );
 
 // console.log(util.inspect(leagues, false, null, true));

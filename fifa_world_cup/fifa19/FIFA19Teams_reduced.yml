@@ -1,0 +1,538 @@
+- league: ARGENTINA/SAF
+  teams:
+      - Aldosivi
+      - Argentinos Jrs.
+      - Atlético Tucumán
+      - Banfield
+      - Belgrano
+      - Buenos Aires
+      - Colón
+      - Defensa
+      - Estudiantes
+      - Gimnasia
+      - Godoy Cruz
+      - Huracán
+      - Independiente
+      - Lanús
+      - Newell's
+      - Patronato
+      - Racing Club
+      - River Plate
+      - Rosario Central
+      - San Lorenzo
+      - San Martín
+      - SM Tucumán
+      - Talleres
+      - Tigre
+      - Unión
+      - Vélez Sarsfield
+- league: AUSTRALIA/HYUNDAI A-LEAGUE
+  teams:
+      - Adelaide United
+      - Brisbane Roar
+      - Central Coast
+      - Melb. Victory
+      - Melbourne City
+      - Newcastle Jets
+      - Perth Glory
+      - Sydney FC
+      - Well. Phoenix
+      - WS Wanderers
+- league: AUSTRIA/Ö. BUNDESLIGA
+  teams:
+      - Admira Wacker
+      - FK Austria Wien
+      - Innsbruck
+      - LASK Linz
+      - RB Salzburg
+      - SCR Altach
+      - SK Rapid Wien
+      - SK Sturm Graz
+      - SKN St. Pölten
+      - SV Mattersburg
+      - TSV Hartberg
+      - Wolfsberger AC
+- league: BELGIUM/PRO LEAGUE
+  teams:
+      - Cercle Brugge
+      - Club Brugge
+      - Excel Mouscron
+      - KAA Gent
+      - KAS Eupen
+      - KRC Genk
+      - KV Kortrijk
+      - KV Oostende
+      - Royal Antwerp FC
+      - RSC Anderlecht
+      - Sint-Truiden
+      - Sp. Charleroi
+      - Sport. Lokeren
+      - Standard Liège
+      - Waasl. Beveren
+      - Zulte-Waregem
+- league: BRAZIL/LIGA DO BRASIL
+  teams:
+      - América
+      - Atl. Paranaense
+      - Atlético Mineiro
+      - Bahia
+      - Botafogo
+      - Ceará SC
+      - Chapecoense
+      - Cruzeiro
+      - Fluminense
+      - Grêmio
+      - Internacional
+      - Paraná
+      - Santos
+      - Sport
+      - Vitória
+- league: CHILE/CAMP. SCOTIABANK
+  teams:
+      - Audax Italiano
+      - CD Antofagasta
+      - CD Huachipato
+      - CD O'Higgins
+      - CD Palestino
+      - CD Viñazur
+      - Curicó Unido
+      - Depor. Iquique
+      - Deportes Temuco
+      - Everton de Viña
+      - San Luis
+      - Uni. Católica
+      - Uni. Concepción
+      - Uni. de Chile
+      - Unión Española
+      - Unión La Calera
+- league: CHINA/CSL
+  teams:
+      - Beijing Guoan
+      - Beijing Renhe
+      - Changchun Yatai
+      - Chongqing SWM
+      - Dalian Yifang
+      - Guangzhou
+      - Guangzhou R&amp;F
+      - Guizhou Hengfeng
+      - Hebei CFFC
+      - Henan Jianye
+      - Jiangsu Suning
+      - Shandong Luneng
+      - Shanghai Shenhua
+      - Shanghai SIPG
+      - Tianjin Quanjian
+      - Tianjin TEDA
+- league: COLOMBIA/LIGA DIMAYOR
+  teams:
+      - Al. Petrolera
+      - América de Cali
+      - Atl. Bucaramanga
+      - Atl. Nacional
+      - Atlético Huila
+      - Boyacá Chicó
+      - Deportes Tolima
+      - Deportivo Cali
+      - Deportivo Pasto
+      - Envigado
+      - Ind. Santa Fe
+      - Indep. Medellín
+      - Jaguares
+      - Junior
+      - La Equidad
+      - Leones
+      - Millonarios
+      - Once Caldas
+      - Patriotas
+      - Rionegro Águilas
+- league: DENMARK/SUPERLIGA
+  teams:
+      - Aalborg BK
+      - Aarhus GF
+      - AC Horsens
+      - Brøndby IF
+      - Esbjerg fB
+      - FC København
+      - FC Midtjylland
+      - FC Nordsjælland
+      - Hobro IK
+      - Odense BK
+      - Randers FC
+      - SønderjyskE
+      - Vejle Boldklub
+      - Vendsyssel FF
+- league: ENGLAND/PREMIER LEAGUE
+  teams:
+      - Arsenal
+      - Bournemouth
+      - Brighton
+      - Burnley
+      - Cardiff City
+      - Chelsea
+      - Crystal Palace
+      - Everton
+      - Fulham
+      - Huddersfield
+      - Leicester City
+      - Liverpool
+      - Manchester City
+      - Manchester Utd
+      - Newcastle Utd
+      - Southampton
+      - Spurs
+      - Watford
+      - West Ham
+      - Wolves
+- league: FRANCE/LIGUE 1 CONFORAMA
+  teams:
+      - Amiens SC
+      - Angers SCO
+      - AS Monaco
+      - ASSE
+      - Dijon FCO
+      - EA Guingamp
+      - FC Nantes
+      - Girondins de Bx
+      - LOSC Lille
+      - Montpellier HSC
+      - Nîmes Olympique
+      - OGC Nice
+      - OL
+      - OM
+      - Paris
+      - RC Strasbourg
+      - SM Caen
+      - Stade de Reims
+      - Stade Rennais
+      - Toulouse FC
+- league: GERMANY/BUNDESLIGA
+  teams:
+      - 1. FC Nürnberg
+      - 1. FSV Mainz 05
+      - Dortmund
+      - Düsseldorf
+      - FC Augsburg
+      - FC Bayern
+      - Frankfurt
+      - Hannover 96
+      - Hertha BSC
+      - Leverkusen
+      - M'gladbach
+      - RB Leipzig
+      - SC Freiburg
+      - Schalke
+      - TSG Hoffenheim
+      - VfB Stuttgart
+      - VfL Wolfsburg
+      - Werder Bremen
+- league: IRELAND/SSE AIRTRICITY LEAGUE
+  teams:
+      - Bohemian FC
+      - Bray Wanderers
+      - Cork City
+      - Derry City
+      - Dundalk
+      - Limerick FC
+      - Shamrock Rovers
+      - Sligo Rovers
+      - St. Pats
+      - Waterford FC
+- league: ITALY/SERIE A TIM
+  teams:
+      - Atalanta
+      - Bologna
+      - Cagliari
+      - Chievo Verona
+      - Empoli
+      - Fiorentina
+      - Frosinone
+      - Genoa
+      - Inter
+      - Juventus
+      - Lazio
+      - Milan
+      - Napoli
+      - Parma
+      - Roma
+      - Sampdoria
+      - Sassuolo
+      - SPAL
+      - Torino
+      - Udinese
+- league: JAPAN/MEIJI YASUDA J1
+  teams:
+      - Cerezo Osaka
+      - F.C. Tokyo
+      - Gamba Osaka
+      - H.Consa.Sapporo
+      - Júbilo Iwata
+      - Kashima Antlers
+      - Kashiwa Reysol
+      - Kawasaki-F
+      - Nagoya Grampus
+      - Sagan Tosu
+      - Shimizu S-Pulse
+      - S-Hiroshima
+      - Shonan Bellmare
+      - Urawa Reds
+      - Vegalta Sendai
+      - Vissel Kobe
+      - V-Varen Nagasaki
+      - Yokohama F･M
+- league: KOREA REPUBLIC/K-LEAGUE 1
+  teams:
+      - Daegu FC
+      - FC Seoul
+      - Gangwon FC
+      - Gyeongnam FC
+      - Incheon United
+      - Jeju United
+      - Jeonbuk Hyundai
+      - Jeonnam Dragons
+      - Pohang Steelers
+      - Sangju Sangmu
+      - Suwon Samsung
+      - Ulsan Hyundai
+- league: MEXICO/LIGA BANCOMER MX
+  teams:
+      - América
+      - Atlas
+      - Cruz Azul
+      - Guadalajara
+      - León
+      - Lobos
+      - Monarcas Morelia
+      - Monterrey
+      - Necaxa
+      - Pachuca
+      - Puebla
+      - Querétaro
+      - Santos Laguna
+      - Tigres
+      - Tijuana
+      - Toluca
+      - U.N.A.M.
+      - Veracruz
+- league: NETHERLANDS/EREDIVISIE
+  teams:
+      - ADO Den Haag
+      - Ajax
+      - AZ
+      - De Graafschap
+      - Excelsior
+      - FC Emmen
+      - FC Groningen
+      - FC Utrecht
+      - Feyenoord
+      - Fortuna Sittard
+      - Heracles Almelo
+      - NAC Breda
+      - PEC Zwolle
+      - PSV
+      - SC Heerenveen
+      - Vitesse
+      - VVV-Venlo
+      - Willem II
+- league: NORWAY/ELITESERIEN
+  teams:
+      - FK Bodø/Glimt
+      - FK Haugesund
+      - IK Start
+      - Kristiansund
+      - Lillestrøm SK
+      - Molde FK
+      - Odds BK
+      - Ranheim Fotball
+      - Rosenborg BK
+      - Sandefjord
+      - Sarpsborg 08 FF
+      - SK Brann
+      - Stabæk Fotball
+      - Strømsgodset IF
+      - Tromsø IL
+      - Vålerenga Fotball
+- league: POLAND/EKSTRAKLASA
+  teams:
+      - Arka Gdynia
+      - Cracovia
+      - Górnik Zabrze
+      - Jagiellonia
+      - Korona Kielce
+      - Lech Poznań
+      - Lechia Gdańsk
+      - Legia Warszawa
+      - Miedź Legnica
+      - Piast Gliwice
+      - Pogoń Szczecin
+      - Śląsk Wrocław
+      - Wisła Kraków
+      - Wisła Płock
+      - Z. Sosnowiec
+      - Zagłębie Lubin
+- league: PORTUGAL/LIGA NOS
+  teams:
+      - Belenenses
+      - Boavista FC
+      - CD Feirense
+      - CD Tondela
+      - Desportivo Aves
+      - FC Porto
+      - Funchal
+      - GD Chaves
+      - Marítimo
+      - Moreirense FC
+      - Portimonense SC
+      - Rio Ave FC
+      - Santa Clara
+      - SC Braga
+      - SL Benfica
+      - Sporting CP
+      - V. Guimarães
+      - V. Setúbal
+- league: OTHER/NO LEAGUE
+  teams:
+      - AEK Athens
+      - CSKA Moscow
+      - Dinamo Zagreb
+      - Dynamo Kyiv
+      - HJK Helsinki
+      - Kaizer Chiefs
+      - Lokomotiv Moscow
+      - Olympiacos CFP
+      - Orlando Pirates
+      - Panathinaikos
+      - PAOK
+      - Shakhtar Donetsk
+      - Slavia Praha
+      - Sparta Praha
+      - Spartak Moscow
+      - Viktoria Plzeň
+- league: SAUDI ARABIA/SAUDI PROFESSIONAL LEAGUE
+  teams:
+      - Al Ahli
+      - Al Batin
+      - Al Faisaly
+      - Al Fateh
+      - Al Fayha
+      - Al Hazem
+      - Al Hilal
+      - Al Ittihad
+      - Al Nassr
+      - Al Qadisiyah
+      - Al Raed
+      - Al Shabab
+      - Al Wehda
+      - Al Taawoun
+      - Ettifaq FC
+      - Ohod Club
+- league: SCOTLAND/SCOTTISH PREMIERSHIP
+  teams:
+      - Aberdeen
+      - Celtic
+      - Dundee FC
+      - Hamilton
+      - Hearts
+      - Hibernian
+      - Kilmarnock
+      - Livingston
+      - Motherwell
+      - Rangers
+      - St. Johnstone
+      - St. Mirren
+- league: SPAIN/LALIGA SANTANDER
+  teams:
+      - Athletic Club
+      - Atlético Madrid
+      - CD Leganés
+      - D. Alavés
+      - FC Barcelona
+      - Getafe CF
+      - Girona FC
+      - Levante UD
+      - R. Valladolid CF
+      - Rayo Vallecano
+      - RC Celta
+      - RCD Espanyol
+      - Real Betis
+      - Real Madrid
+      - Real Sociedad
+      - SD Eibar
+      - SD Huesca
+      - Sevilla FC
+      - Valencia CF
+      - Villarreal CF
+- league: SWEDEN/ALLSVENSKAN
+  teams:
+      - AIK
+      - BK Häcken
+      - Brommapojkarna
+      - Dalkurd FF
+      - Djurgårdens IF
+      - GIF Sundsvall
+      - Hammarby IF
+      - IF Elfsborg
+      - IFK Göteborg
+      - IFK Norrköping
+      - IK Sirius
+      - Kalmar FF
+      - Malmö FF
+      - Örebro SK
+      - Östersunds FK
+      - Trelleborgs FF
+- league: SWITZERLAND/RAIFFEISEN SUPER LEAGUE
+  teams:
+      - BSC Young Boys
+      - FC Basel
+      - FC Lugano
+      - FC Luzern
+      - FC Sion
+      - FC St. Gallen
+      - FC Thun
+      - FC Zürich
+      - Grasshopper Club
+      - Neuchâtel Xamax
+- league: TURKEY/SÜPER LIG
+  teams:
+      - Akhisarspor
+      - Alanyaspor
+      - Antalyaspor
+      - Başakşehir
+      - BB Erzurumspor
+      - Beşiktaş
+      - Bursaspor
+      - Çaykur Rizespor
+      - Fenerbahçe
+      - Galatasaray
+      - Göztepe
+      - Kasimpaşa
+      - Kayserispor
+      - Konyaspor
+      - MKE Ankaragücü
+      - Sivasspor
+      - Trabzonspor
+      - Yeni Malatyaspor
+- league: USA/CANADA/MLS
+  teams:
+      - Atlanta United
+      - Chicago Fire
+      - Colorado Rapids
+      - Columbus Crew SC
+      - D.C. United
+      - FC Dallas
+      - Houston Dynamo
+      - Impact Montréal
+      - LAFC
+      - LA Galaxy
+      - Minnesota United
+      - New England
+      - New York City FC
+      - NY Red Bulls
+      - Orlando City
+      - Philadelphia
+      - Portland Timbers
+      - Real Salt Lake
+      - Seattle Sounders
+      - SJ Earthquakes
+      - Sporting KC
+      - Toronto FC
+      - Whitecaps FC

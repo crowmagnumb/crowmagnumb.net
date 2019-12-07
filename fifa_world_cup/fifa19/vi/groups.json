@@ -1,0 +1,648 @@
+[
+    {
+        "teams": [
+            "Chievo Verona",
+            "FC Dallas",
+            "Stabæk Fotball",
+            "Shonan Bellmare"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "Chievo Verona",
+                    "isAI": false,
+                    "score": 2
+                },
+                {
+                    "team": "Shonan Bellmare",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "FC Dallas",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Stabæk Fotball",
+                    "isAI": false,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Chievo Verona",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Stabæk Fotball",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Shonan Bellmare",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "FC Dallas",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "FC Dallas",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Chievo Verona",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Shonan Bellmare",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Stabæk Fotball",
+                    "isAI": false,
+                    "score": 1
+                }
+            ]
+        ]
+    },
+    {
+        "teams": [
+            "1. FSV Mainz 05",
+            "Kawasaki-F",
+            "Unión La Calera",
+            "IFK Göteborg"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "1. FSV Mainz 05",
+                    "isAI": true,
+                    "score": 2
+                },
+                {
+                    "team": "IFK Göteborg",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Unión La Calera",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Kawasaki-F",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Unión La Calera",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "1. FSV Mainz 05",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "IFK Göteborg",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Kawasaki-F",
+                    "isAI": false,
+                    "score": 3
+                }
+            ],
+            [
+                {
+                    "team": "1. FSV Mainz 05",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Kawasaki-F",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "IFK Göteborg",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Unión La Calera",
+                    "isAI": true,
+                    "score": 2
+                }
+            ]
+        ]
+    },
+    {
+        "teams": [
+            "Hannover 96",
+            "Brøndby IF",
+            "Deportivo Pasto",
+            "Admira Wacker"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "Hannover 96",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Admira Wacker",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Deportivo Pasto",
+                    "isAI": false,
+                    "score": 3
+                },
+                {
+                    "team": "Brøndby IF",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Deportivo Pasto",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Hannover 96",
+                    "isAI": false,
+                    "score": 3
+                }
+            ],
+            [
+                {
+                    "team": "Admira Wacker",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Brøndby IF",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Brøndby IF",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Hannover 96",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Deportivo Pasto",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Admira Wacker",
+                    "isAI": true,
+                    "score": 0
+                }
+            ]
+        ]
+    },
+    {
+        "teams": ["Burnley", "Atlético Tucumán", "ADO Den Haag", "Once Caldas"],
+        "matches": [
+            [
+                {
+                    "team": "Burnley",
+                    "isAI": false,
+                    "score": 2
+                },
+                {
+                    "team": "Once Caldas",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Atlético Tucumán",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "ADO Den Haag",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "ADO Den Haag",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Burnley",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Atlético Tucumán",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Once Caldas",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Burnley",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Atlético Tucumán",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Once Caldas",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "ADO Den Haag",
+                    "isAI": false,
+                    "score": 0
+                }
+            ]
+        ]
+    },
+    {
+        "teams": [
+            "Trabzonspor",
+            "América de Cali",
+            "FC Zürich",
+            "Djurgardens IF"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "Trabzonspor",
+                    "isAI": true,
+                    "score": 2
+                },
+                {
+                    "team": "Djurgardens IF",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "América de Cali",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "FC Zürich",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "FC Zürich",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Trabzonspor",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Djurgardens IF",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "América de Cali",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "América de Cali",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Trabzonspor",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Djurgardens IF",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "FC Zürich",
+                    "isAI": true,
+                    "score": 0
+                }
+            ]
+        ]
+    },
+    {
+        "teams": [
+            "San Lorenzo",
+            "Orlando City",
+            "Rionegro Águilas",
+            "Incheon United"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "San Lorenzo",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Incheon United",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Orlando City",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Rionegro Águilas",
+                    "isAI": false,
+                    "score": 5
+                }
+            ],
+            [
+                {
+                    "team": "San Lorenzo",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Rionegro Águilas",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Orlando City",
+                    "isAI": true,
+                    "score": 2
+                },
+                {
+                    "team": "Incheon United",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "San Lorenzo",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Orlando City",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Rionegro Águilas",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Incheon United",
+                    "isAI": false,
+                    "score": 0
+                }
+            ]
+        ]
+    },
+    {
+        "teams": ["Botafogo", "Portland Timbers", "IF Elfsborg", "Randers FC"],
+        "matches": [
+            [
+                {
+                    "team": "Randers FC",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Botafogo",
+                    "isAI": false,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Portland Timbers",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "IF Elfsborg",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "IF Elfsborg",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Botafogo",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Portland Timbers",
+                    "isAI": false,
+                    "score": 2
+                },
+                {
+                    "team": "Randers FC",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Botafogo",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Portland Timbers",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "IF Elfsborg",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Randers FC",
+                    "isAI": false,
+                    "score": 2
+                }
+            ]
+        ]
+    },
+    {
+        "teams": [
+            "EA Guingamp",
+            "Minnesota United",
+            "Odds BK",
+            "AFC Eskilstuna"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "AFC Eskilstuna",
+                    "isAI": true,
+                    "score": 3
+                },
+                {
+                    "team": "EA Guingamp",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Minnesota United",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Odds BK",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "EA Guingamp",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Odds BK",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "AFC Eskilstuna",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Minnesota United",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Minnesota United",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "EA Guingamp",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Odds BK",
+                    "isAI": true,
+                    "score": 4
+                },
+                {
+                    "team": "AFC Eskilstuna",
+                    "isAI": false,
+                    "score": 0
+                }
+            ]
+        ]
+    }
+]
