@@ -1,5 +1,6 @@
 let fs = require("fs");
 const blessed = require("blessed");
+const { createCanvas } = require("canvas");
 
 const readFile = filename => {
   return new Promise(function(resolve, reject) {
@@ -74,5 +75,31 @@ module.exports = {
         screen.render();
       }
     };
+  },
+  arrayToPng: function(filename, width, height, toColorFn) {
+    let buffer = new Uint8ClampedArray(width * height * 4);
+    for (var y = 0; y < height; y++) {
+      for (var x = 0; x < width; x++) {
+        var pos = (y * width + x) * 4;
+        const color = toColorFn(x, y);
+        buffer[pos] = color.r;
+        buffer[pos + 1] = color.g;
+        buffer[pos + 2] = color.b;
+        buffer[pos + 3] = color.a;
+      }
+    }
+
+    const canvas = createCanvas(width, height);
+    const ctx = canvas.getContext("2d");
+
+    let idata = ctx.createImageData(width, height);
+    idata.data.set(buffer);
+
+    ctx.putImageData(idata, 0, 0);
+
+    const out = fs.createWriteStream(filename);
+    const stream = canvas.createPNGStream();
+    stream.pipe(out);
+    out.on("finish", () => console.log(`${filename} created.`));
   }
 };

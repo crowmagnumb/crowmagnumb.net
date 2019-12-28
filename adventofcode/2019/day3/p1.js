@@ -1,7 +1,5 @@
-const fs = require("fs");
 const path = require("path");
 const BitArray = require("bit-array");
-const { createCanvas } = require("canvas");
 const utils = require("../../utils");
 
 let dirEnum = {
@@ -85,25 +83,6 @@ function runit(wire1Str, wire2Str, visualize = false) {
 
   console.log(xmin, xmax, ymin, ymax, xoffset, yoffset);
 
-  // function makeArray(arg, def = 0) {
-  //   if (arg.length > 2) {
-  //     return Array(arg[0])
-  //       .fill()
-  //       .map(() => arr(arg.slice(1)));
-  //   } else {
-  //     return Array(arg[0])
-  //       .fill()
-  //       .map(() => Array(arg[1]).fill(def));
-  //   }
-  // }
-  function makeArray(xsize, ysize) {
-    let arr = [];
-    for (y = 0; y < ysize; y++) {
-      arr.push(new BitArray(xsize));
-    }
-    return arr;
-  }
-
   function fillGrid(grid, wire) {
     let x = xoffset;
     let y = yoffset;
@@ -137,51 +116,44 @@ function runit(wire1Str, wire2Str, visualize = false) {
     }
   }
 
-  let xsize = xmax + xoffset + 1;
-  let ysize = ymax + yoffset + 1;
-  let grid1 = makeArray(xsize, ysize);
-  let grid2 = makeArray(xsize, ysize);
+  function makeArray(width, height, wire) {
+    let arr = [];
+    for (let y = 0; y < height; y++) {
+      arr.push(new BitArray(width));
+    }
+    fillGrid(arr, wire);
+    return arr;
+  }
 
-  fillGrid(grid1, wire1);
-  fillGrid(grid2, wire2);
+  let width = xmax + xoffset + 1;
+  let height = ymax + yoffset + 1;
+
+  let grid1 = makeArray(width, height, wire1);
+  let grid2 = makeArray(width, height, wire2);
 
   if (visualize) {
-    let buffer = new Uint8ClampedArray(xsize * ysize * 4); // have enough bytes
-    for (var y = 0; y < ysize; y++) {
-      for (var x = 0; x < xsize; x++) {
-        var pos = (y * xsize + x) * 4; // position in buffer based on x and y
-        let r = 0;
-        let g = 0;
-        let b = 0;
-        if (grid1[y].get(x)) {
-          if (grid2[y].get(x)) {
-            r = 255;
-          } else {
-            b = 255;
-          }
-        } else if (grid2[y].get(x)) {
-          g = 255;
+    let toColor = (x, y) => {
+      let r = 0;
+      let g = 0;
+      let b = 0;
+      if (grid1[y].get(x)) {
+        if (grid2[y].get(x)) {
+          r = 255;
+        } else {
+          b = 255;
         }
-        buffer[pos] = r;
-        buffer[pos + 1] = g;
-        buffer[pos + 2] = b;
-        buffer[pos + 3] = 255; // set alpha channel
+      } else if (grid2[y].get(x)) {
+        g = 255;
       }
-    }
+      return {
+        r,
+        g,
+        b,
+        a: 255
+      };
+    };
 
-    const canvas = createCanvas(xsize, ysize);
-    const ctx = canvas.getContext("2d");
-
-    let idata = ctx.createImageData(xsize, ysize);
-    idata.data.set(buffer);
-
-    ctx.putImageData(idata, 0, 0);
-
-    const filename = path.join(__dirname, "wires.png");
-    const out = fs.createWriteStream(filename);
-    const stream = canvas.createPNGStream();
-    stream.pipe(out);
-    out.on("finish", () => console.log(`${filename} created.`));
+    utils.arrayToPng(path.join(__dirname, "wires.png"), width, height, toColor);
   }
 
   let ans = Infinity;
