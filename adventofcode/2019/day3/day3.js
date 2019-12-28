@@ -33,7 +33,10 @@ const makeWireInst = wireStr => {
   });
 };
 
-exports.data = async function(type) {
+exports.dirEnum = dirEnum;
+exports.makeWireInst = makeWireInst;
+
+exports.getData = async function(type) {
   switch (type) {
     case "test1":
       return {
@@ -102,7 +105,7 @@ exports.intersections = function(wire1Str, wire2Str, visualize = false) {
   let xoffset = xmin < 0 ? -xmin : 0;
   let yoffset = ymin < 0 ? -ymin : 0;
 
-  console.log(xmin, xmax, ymin, ymax, xoffset, yoffset);
+  // console.log(xmin, xmax, ymin, ymax, xoffset, yoffset);
 
   function fillGrid(grid, wire) {
     let x = xoffset;

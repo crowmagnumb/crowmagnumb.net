@@ -1,5 +1,3 @@
-const path = require("path");
-const utils = require("../../utils");
 const day3 = require("./day3");
 
 const args = process.argv.slice(2);
@@ -24,6 +22,6 @@ function runit(wire1Str, wire2Str, visualize = false) {
   console.log(`Answer: ${ans}`);
 }
 
-day3.data(args.length ? args[0] : null).then(data => {
+day3.getData(args.length ? args[0] : null).then(data => {
   runit(data.wire1, data.wire2, args.length);
 });
