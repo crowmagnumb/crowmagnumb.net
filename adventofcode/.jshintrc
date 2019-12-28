@@ -1,11 +1,11 @@
 {
-  "globals"   : {
-    "describe"   : false,
-    "it"         : false,
-    "before"     : false,
-    "beforeEach" : false,
-    "after"      : false,
-    "afterEach"  : false
+  "globals": {
+    "describe": false,
+    "it": false,
+    "before": false,
+    "beforeEach": false,
+    "after": false,
+    "afterEach": false
   },
   "camelcase": false,
   "curly": true,
@@ -20,6 +20,6 @@
   "unused": "vars",
   "undef": true,
   "laxbreak": true,
-  "esversion": 6,
+  "esversion": 8,
   "module": true
 }
