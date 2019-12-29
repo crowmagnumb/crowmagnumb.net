@@ -4,7 +4,7 @@ const args = process.argv.slice(2);
 
 getData(args.length ? args[0] : null).then(data => {
   let code = data.split(",").map(val => parseInt(val));
-  let ans = 0;
+  let ans = { value: 0 };
   // console.log(compute([...code], [3, 2], true));
   // process.exit();
   for (let a = 0; a < 5; a++) {
@@ -30,13 +30,18 @@ getData(args.length ? args[0] : null).then(data => {
             }
             let ce = compute([...code], [e, cd]).pop();
             // console.log(a, b, c, d, e, ca, cb, cc, cd, ce);
-            if (ce > ans) {
-              ans = ce;
+            if (ce > ans.value) {
+              ans.value = ce;
+              ans.a = a;
+              ans.b = b;
+              ans.c = c;
+              ans.d = d;
+              ans.e = e;
             }
           }
         }
       }
     }
   }
-  console.log(`Answer: ${ans}`);
+  console.log(ans);
 });
