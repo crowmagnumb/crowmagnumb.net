@@ -34,10 +34,6 @@ class TreeNode {
     }
     return result.lineage;
   }
-  //
-  // deepestCommonParent(child1, child2) {
-  //   let saved = { parent: null, depth: 0 };
-  // }
 }
 
 exports.buildMap = function(data) {
