@@ -9,7 +9,7 @@ exports.sequence = function(N) {
 };
 
 exports.getFileDir = function(key) {
-    return path.join("fifa19", key);
+    return path.join("fifa20", key);
 };
 
 exports.getFilePath = function(key, filename) {

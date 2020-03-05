@@ -13,7 +13,7 @@ which will generate the groups.json.
 Now run ...
 
 ```
-node update_standings.js -k <key> -f fifa19/<teams.csv>
+node update_standings.js -k <key> -f fifa20/<teams.csv>
 ```
 
 This will give you an index.html file that you can use to look at the standing and see the next matches to play. As you play the matches, enter the results in the groups.json file and then re-run the above command to refresh index.html.
