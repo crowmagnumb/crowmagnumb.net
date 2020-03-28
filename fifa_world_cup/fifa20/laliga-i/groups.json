@@ -171,12 +171,12 @@
                 {
                     "team": "Valencia",
                     "isAI": true,
-                    "score": null
+                    "score": 4
                 },
                 {
                     "team": "Sevilla",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [

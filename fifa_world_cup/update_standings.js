@@ -197,28 +197,24 @@ function getMatches(groups) {
     return utils.markdown2Html(lines.join("\n"));
 }
 
-function appendStandingsHeader(lines, title, teamMap) {
+function appendStandingsHeader(lines, title, showRating) {
     if (title) {
         lines.push(`## ${title}`);
     }
     lines.push(
         `||${
-            teamMap ? " R |" : ""
+            showRating ? " R |" : ""
         } Team | MP | W | D | L | GF | GA | GD | Pts | Last 5 |`
     );
     lines.push(
         `|:---:|${
-            teamMap ? ":---:|" : ""
+            showRating ? ":---:|" : ""
         }---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|`
     );
 }
 
-function appendResults(lines, infos, teamMap) {
+function appendResults(lines, infos, teamMap, showRating) {
     infos.forEach((info, index) => {
-        let rating = null;
-        if (teamMap) {
-            rating = teamMap.get(info.team).rating;
-        }
         let lastFive = info.lastFive
             .map(result => {
                 let cssclass = "";
@@ -239,11 +235,11 @@ function appendResults(lines, infos, teamMap) {
             })
             .join(" ");
         lines.push(
-            `${index + 1}|${rating ? rating + "|" : ""}${info.team}|${
-                info.mp
-            }|${info.wins}|${info.draws}|${info.loses}|${info.gf}|${info.ga}|${
-                info.gd
-            }|${info.pts}|${lastFive}|`
+            `${index + 1}|${
+                showRating && teamMap ? teamMap.get(info.team).rating + "|" : ""
+            }${info.team}|${info.mp}|${info.wins}|${info.draws}|${info.loses}|${
+                info.gf
+            }|${info.ga}|${info.gd}|${info.pts}|${lastFive}|`
         );
     });
 }
@@ -252,14 +248,16 @@ function getStandings(groups, teamMap) {
     let lines = [];
     lines.push("## Standings");
     groups.forEach((group, groupIndex) => {
+        let infos = groupStandings(group);
+        let showRating = teamMap && teamMap.get(infos[0].team).rating;
         appendStandingsHeader(
             lines,
             groups.length > 1
                 ? `Group ${String.fromCharCode(65 + groupIndex)}`
                 : null,
-            teamMap
+            showRating
         );
-        appendResults(lines, groupStandings(group), teamMap);
+        appendResults(lines, groupStandings(group), teamMap, showRating);
     });
 
     appendStandingsHeader(lines, "You vs. AI");
