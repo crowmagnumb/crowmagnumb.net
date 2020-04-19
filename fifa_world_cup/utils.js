@@ -54,6 +54,8 @@ function getTeams(filename) {
                                     parseInt(vals[3]))) /
                                 3
                         ) / 10;
+                } else if (vals.length === 2) {
+                    rating = parseInt(vals[1]);
                 } else {
                     rating = 0;
                 }

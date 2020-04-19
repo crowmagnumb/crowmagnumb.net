@@ -276,7 +276,7 @@ utils.getTeamMap(argv.teamsfile).then(teamMap => {
         const roman = argv.key.toUpperCase();
         const bodyInnerHTML = `<div style="border: 15px">
         ${groups.length > 1 ? '<a href="bracket.html">Bracket</a>' : ""}
-      <h1 style="text-align: center">FIFA 19 World Cup ${roman}</h1>
+      <h1 style="text-align: center">FIFA 20 ${roman}</h1>
       <div class="row">
         <div class="column" style="padding-right: 15px">
           ${getStandings(groups, teamMap)}
