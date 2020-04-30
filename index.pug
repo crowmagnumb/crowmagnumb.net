@@ -1,0 +1,77 @@
+doctype html
+html(lang="en")
+    head
+        base(target="_blank")
+        link(rel="shortcut icon" type="image/x-icon" href="favicon.ico")
+        style.
+            :root {
+                --primary-color: #E2990C;
+                --surface: #514331;
+                --white: white;
+            }
+            body {
+                background: #1D1A16;
+                color: var(--white);
+            }
+            .station {
+                display: flex;
+                flex-direction: column;
+                background: var(--surface);
+                padding: 15px;
+                line-height: 28px;
+                border: solid 1px;
+                width: 300px;
+            }
+            .station video {
+                height: 50px;
+            }
+            a {
+                color: var(--white);
+                text-decoration: none;
+            }
+            a:visited {
+                color: var(--white);
+            }
+            a:hover {
+                color: var(--primary-color);
+            }
+            .links{
+                display: flex;
+                flex-direction: column;
+                line-height: 32px;
+            }
+            fieldset {
+                background: var(--surface);
+            }
+            fieldset legend {
+                color: var(--primary-color);
+            }
+    body
+        div(style="display: flex; flex-direction: row; flex-wrap: wrap")
+            div(style="margin-right: 10px")
+                .station
+                    a(href="https://www.freeformportland.org/") Freeform Portland
+                    video(controls)
+                        source(src="https://www.freeformportland.org/listen" type="audio/mpeg")
+                .station
+                    a(href="https://wcbn.org/") WCBN
+                    a(href="https://app.wcbn.org/?autoplay#now") Player
+                .station
+                    a(href="https://xray.fm/") XRAY
+                    video(controls)
+                        // https://xray.fm/api/tracks/current ()
+                        // https://xray.fm/api/broadcasting (now gives current program, Track gives same result as above so could just call this one)
+                        source(src="http://listen.xray.fm:8000/stream" type="audio/mpeg")
+                .station
+                    a(href="http://kfjc.org") KFJC
+                    a(href="http://kfjc.org/player" onclick="window.open(this.href, 'kfjcpopupplayer', 'location=no,width=380,height=560,scrollbars=no,resizable=no,toolbar=no,directories=no,menubar=no,status=no'); return false;") Player (Pop-up)
+                .station
+                    a(href="https://wfmu.org") WFMU
+                    a(href="http://www.radiorethink.com/tuner/?stationCode=wfmu&stream=hi") Player (Pop-up)
+            fieldset
+                legend Quick Links
+                .links
+                    a(href="https://www.evernote.com/Home.action?login=true") Notes
+                    a(href="https://todoist.com/app") TODO
+                    a(href="https://teamup.com/ks5281pnh3riyn4tms") Calendar
+          

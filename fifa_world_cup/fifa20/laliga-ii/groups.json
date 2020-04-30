@@ -1,0 +1,688 @@
+[
+    {
+        "teams": [
+            "Barcelona",
+            "Real Madrid",
+            "Atletico Madrid",
+            "Valencia",
+            "Betis",
+            "Sevilla",
+            "Eibar",
+            "Leganes"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "Barcelona",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Leganes",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Eibar",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Real Madrid",
+                    "isAI": true,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Sevilla",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Betis",
+                    "isAI": true,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Barcelona",
+                    "isAI": true,
+                    "score": 7
+                },
+                {
+                    "team": "Eibar",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Sevilla",
+                    "isAI": false,
+                    "score": 2
+                },
+                {
+                    "team": "Leganes",
+                    "isAI": true,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Real Madrid",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Betis",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": 5
+                }
+            ],
+            [
+                {
+                    "team": "Barcelona",
+                    "isAI": false,
+                    "score": 4
+                },
+                {
+                    "team": "Sevilla",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Betis",
+                    "isAI": false,
+                    "score": 2
+                },
+                {
+                    "team": "Eibar",
+                    "isAI": true,
+                    "score": 3
+                }
+            ],
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Leganes",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Real Madrid",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Barcelona",
+                    "isAI": true,
+                    "score": 3
+                },
+                {
+                    "team": "Betis",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Sevilla",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Eibar",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": false,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Leganes",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Real Madrid",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Barcelona",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Valencia",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": 4
+                },
+                {
+                    "team": "Betis",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Sevilla",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Real Madrid",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Leganes",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Eibar",
+                    "isAI": false,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Barcelona",
+                    "isAI": true,
+                    "score": 5
+                }
+            ],
+            [
+                {
+                    "team": "Real Madrid",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Valencia",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Leganes",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Betis",
+                    "isAI": true,
+                    "score": 3
+                }
+            ],
+            [
+                {
+                    "team": "Sevilla",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Eibar",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Barcelona",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Real Madrid",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Leganes",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": 3
+                }
+            ],
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": true,
+                    "score": 2
+                },
+                {
+                    "team": "Eibar",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Betis",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Sevilla",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Leganes",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Barcelona",
+                    "isAI": false,
+                    "score": 3
+                }
+            ],
+            [
+                {
+                    "team": "Real Madrid",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Eibar",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Sevilla",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Betis",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Valencia",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Eibar",
+                    "isAI": true,
+                    "score": 2
+                },
+                {
+                    "team": "Barcelona",
+                    "isAI": false,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Leganes",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Sevilla",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Betis",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Real Madrid",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Valencia",
+                    "isAI": true,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Sevilla",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Barcelona",
+                    "isAI": true,
+                    "score": 3
+                }
+            ],
+            [
+                {
+                    "team": "Eibar",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Betis",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Leganes",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Valencia",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Real Madrid",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Betis",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Barcelona",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Sevilla",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Eibar",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Real Madrid",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Leganes",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Barcelona",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Betis",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Real Madrid",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Sevilla",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Eibar",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Leganes",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Barcelona",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Real Madrid",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Betis",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Leganes",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Eibar",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Sevilla",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Real Madrid",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Barcelona",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Leganes",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Eibar",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Sevilla",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Betis",
+                    "isAI": false,
+                    "score": null
+                }
+            ]
+        ]
+    }
+]

@@ -1,79 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <style>
-      .station {
-        display: flex;
-        flex-direction: column;
-        background: light-gray;
-        padding: 5px;
-        border: solid 1px;
-        width: 300px;
-      }
-
-      .station video {
-        height: 50px;
-      }
-    </style>
-  </head>
-  <body>
-    <div style="display: flex; flex-direction: row">
-      <div style="margin-right: 10px">
-        <div class="station">
-          <a href="https://www.freeformportland.org/" target="_blank"
-            >Freeform Portland</a
-          ><video controls>
-            <source
-              src="https://www.freeformportland.org/listen"
-              type="audio/mpeg"
-            />
-          </video>
-        </div>
-        <div class="station">
-          <a href="https://wcbn.org/" target="_blank">WCBN</a
-          ><a href="https://app.wcbn.org/?autoplay#now" target="_blank"
-            >Player</a
-          >
-        </div>
-        <div class="station">
-          <a href="https://xray.fm/" target="_blank">XRAY</a
-          ><video controls>
-            <!--https://xray.fm/api/tracks/current ()--><!--https://xray.fm/api/broadcasting (now gives current program, Track gives same result as above so could just call this one)-->
-            <source src="http://listen.xray.fm:8000/stream" type="audio/mpeg" />
-          </video>
-        </div>
-        <div class="station">
-          <a href="http://kfjc.org" target="_blank">KFJC</a
-          ><a
-            href="http://kfjc.org/player"
-            onclick="window.open(this.href, 'kfjcpopupplayer', 'location=no,width=380,height=560,scrollbars=no,resizable=no,toolbar=no,directories=no,menubar=no,status=no'); return false;"
-            >Player (Pop-up)</a
-          >
-        </div>
-        <div class="station">
-          <a href="https://wfmu.org" target="_blank">WFMU</a
-          ><a
-            href="http://www.radiorethink.com/tuner/?stationCode=wfmu&amp;stream=hi"
-            >Player (Pop-up)</a
-          >
-        </div>
-      </div>
-      <div>
-        <button
-          onclick="window.open('https://www.evernote.com/Home.action?login=true', '_blank')"
-        >
-          Notes
-        </button>
-        <button onclick="window.open('https://todoist.com/app', '_blank')">
-          TODO
-        </button>
-        <button
-          onclick="window.open('https://teamup.com/ks5281pnh3riyn4tms', '_blank')"
-        >
-          Calendar
-        </button>
-      </div>
-    </div>
-  </body>
-</html>
+<!DOCTYPE html><html lang="en"><head><base target="_blank"><link rel="shortcut icon" type="image/x-icon" href="favicon.ico"><style>:root {
+    --primary-color: #E2990C;
+    --surface: #514331;
+    --white: white;
+}
+body {
+    background: #1D1A16;
+    color: var(--white);
+}
+.station {
+    display: flex;
+    flex-direction: column;
+    background: var(--surface);
+    padding: 15px;
+    line-height: 28px;
+    border: solid 1px;
+    width: 300px;
+}
+.station video {
+    height: 50px;
+}
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--white);
+}
+a:hover {
+    color: var(--primary-color);
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    line-height: 32px;
+}
+fieldset {
+    background: var(--surface);
+}
+fieldset legend {
+    color: var(--primary-color);
+}</style></head><body><div style="display: flex; flex-direction: row; flex-wrap: wrap"><div style="margin-right: 10px"><div class="station"><a href="https://www.freeformportland.org/">Freeform Portland</a><video controls><source src="https://www.freeformportland.org/listen" type="audio/mpeg"></video></div><div class="station"><a href="https://wcbn.org/">WCBN</a><a href="https://app.wcbn.org/?autoplay#now">Player</a></div><div class="station"><a href="https://xray.fm/">XRAY</a><video controls><!-- https://xray.fm/api/tracks/current ()--><!-- https://xray.fm/api/broadcasting (now gives current program, Track gives same result as above so could just call this one)--><source src="http://listen.xray.fm:8000/stream" type="audio/mpeg"></video></div><div class="station"><a href="http://kfjc.org">KFJC</a><a href="http://kfjc.org/player" onclick="window.open(this.href, 'kfjcpopupplayer', 'location=no,width=380,height=560,scrollbars=no,resizable=no,toolbar=no,directories=no,menubar=no,status=no'); return false;">Player (Pop-up)</a></div><div class="station"><a href="https://wfmu.org">WFMU</a><a href="http://www.radiorethink.com/tuner/?stationCode=wfmu&amp;stream=hi">Player (Pop-up)</a></div></div><fieldset><legend>Quick Links</legend><div class="links"><a href="https://www.evernote.com/Home.action?login=true">Notes</a><a href="https://todoist.com/app">TODO</a><a href="https://teamup.com/ks5281pnh3riyn4tms">Calendar</a></div></fieldset></div></body></html>
