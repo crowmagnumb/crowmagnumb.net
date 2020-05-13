@@ -8,6 +8,12 @@ Then run
 node make_groups.js -k <key> -f <teams.csv>
 ```
 
+e.g.
+
+```
+node make_groups.js -k cascadia-ii -f fifa20/teams-cascadia.csv -g 1 -m 2
+```
+
 which will generate the groups.json.
 
 Now run ...
