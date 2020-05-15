@@ -1,0 +1,61 @@
+html
+    head
+        meta(charset="UTF-8")
+        style.
+            :root {
+                --primary-color: #53c9ed;
+                --surface: rgb(50, 50, 50);
+                --white: rgb(225, 225, 225);
+                --app-background: rgb(30, 30, 30);
+                --accent: #b5810f;
+            }
+            body {
+                background: var(--app-background);
+                color: var(--white);
+            }
+            a {
+                color: var(--white);
+                text-decoration: none;
+            }
+            a:visited {
+                color: var(--white);
+            }
+            a:hover {
+                color: var(--primary-color);
+            }
+            .groups {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .links{
+                display: flex;
+                flex-direction: column;
+                line-height: 32px;
+            }
+            fieldset {
+                border-color: var(--accent);
+                background: var(--surface);
+            }
+            fieldset legend {
+                color: var(--primary-color);
+            }
+    body
+        .groups
+            fieldset
+                legend Fifa 19
+                .links
+                    a(href="./fifa19/i/index.html") World Cup I
+                    a(href="./fifa19/ii/index.html") World Cup II
+                    a(href="./fifa19/iii/index.html") World Cup III
+                    a(href="./fifa19/iv/index.html") World Cup IV
+                    a(href="./fifa19/v/index.html") World Cup V
+                    a(href="./fifa19/vi/index.html") World Cup VI
+            fieldset
+                legend Fifa 20
+                .links
+                    a(href="./fifa20/cascadia-i/index.html") Cascadia Cup I
+                    a(href="./fifa20/cascadia-ii/index.html") Cascadia Cup II
+                    a(href="./fifa20/laliga-i/index.html") La Liga I
+                    a(href="./fifa20/laliga-ii/index.html") La Liga II
+                    a(href="./fifa20/laliga-iii/index.html") La Liga III

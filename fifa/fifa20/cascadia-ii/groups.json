@@ -156,96 +156,96 @@
                 {
                     "team": "Real Salt Lake",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Seattle Sounders FC",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "San Jose Earthquakes",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Vancouver Whitecaps FC",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Portland Timbers",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Vancouver Whitecaps FC",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "San Jose Earthquakes",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Real Salt Lake",
                     "isAI": true,
-                    "score": null
+                    "score": 4
                 }
             ],
             [
                 {
                     "team": "San Jose Earthquakes",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Seattle Sounders FC",
                     "isAI": true,
-                    "score": null
+                    "score": 5
                 }
             ],
             [
                 {
                     "team": "Real Salt Lake",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Portland Timbers",
                     "isAI": true,
-                    "score": null
+                    "score": 3
                 }
             ],
             [
                 {
                     "team": "Real Salt Lake",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Vancouver Whitecaps FC",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Seattle Sounders FC",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Portland Timbers",
                     "isAI": true,
-                    "score": null
+                    "score": 3
                 }
             ]
         ]
