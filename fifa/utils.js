@@ -8,12 +8,12 @@ exports.sequence = function(N) {
     return Array.from(new Array(N), (val, index) => index);
 };
 
-exports.getFileDir = function(key) {
-    return path.join("fifa20", key);
+exports.getFileDir = function(category, key) {
+    return path.join(category, key);
 };
 
-exports.getFilePath = function(key, filename) {
-    return path.join(this.getFileDir(key), filename);
+exports.getFilePath = function(category, key, filename) {
+    return path.join(this.getFileDir(category, key), filename);
 };
 
 exports.markdown2Html = function(markdown) {
@@ -32,9 +32,17 @@ exports.writeHtml = function(bodyInnerHTML, outputFile) {
     );
 };
 
-function getTeams(filename) {
+exports.getMatchFile = function(category, key) {
+    return this.getFilePath(category, key, "groups.json");
+}
+
+exports.getTeamsFile = function(category, key) {
+    return this.getFilePath(category, key, "teams.csv")
+}
+
+exports.getTeams = function(category, key) {
     return new Promise((resolve, reject) => {
-        fs.readFile(filename, "utf8", function(err, contents) {
+        fs.readFile(this.getTeamsFile(category, key), "utf8", function(err, contents) {
             if (err) {
                 reject(err);
             }
@@ -70,8 +78,8 @@ function getTeams(filename) {
     });
 }
 
-exports.getSortedTeams = function(filename) {
-    return getTeams(filename).then(teams => {
+exports.getSortedTeams = function(category, key) {
+    return this.getTeams(category, key).then(teams => {
         teams.sort((a, b) => {
             return b.rating - a.rating;
         });
@@ -79,8 +87,8 @@ exports.getSortedTeams = function(filename) {
     });
 };
 
-exports.getTeamMap = function(filename) {
-    return getTeams(filename).then(teams => {
+exports.getTeamMap = function(category, key) {
+    return this.getTeams(category, key).then(teams => {
         let teamMap = new Map();
         for (const team of teams) {
             teamMap.set(team.team, team);

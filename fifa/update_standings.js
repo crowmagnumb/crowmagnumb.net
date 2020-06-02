@@ -3,8 +3,8 @@ const utils = require("./utils");
 
 const argv = require("yargs")
     .alias("k", "key")
-    .alias("f", "teamsfile")
-    .demandOption("key").argv;
+    .alias("c", "category")
+    .demandOption("key").demandOption("category").argv;
 
 function displayTeamName(match, index) {
     team = match[index];
@@ -266,8 +266,8 @@ function getStandings(groups, teamMap) {
     return utils.markdown2Html(lines.join("\n"));
 }
 
-utils.getTeamMap(argv.teamsfile).then(teamMap => {
-    fs.readFile(utils.getFilePath(argv.key, "groups.json"), "utf8", function(
+utils.getTeamMap(argv.category, argv.key).then(teamMap => {
+    fs.readFile(utils.getMatchFile(argv.category, argv.key), "utf8", function(
         err,
         contents
     ) {
@@ -292,7 +292,7 @@ utils.getTeamMap(argv.teamsfile).then(teamMap => {
 
         utils.writeHtml(
             bodyInnerHTML,
-            utils.getFilePath(argv.key, "index.html")
+            utils.getFilePath(argv.category, argv.key, "index.html")
         );
     });
 });

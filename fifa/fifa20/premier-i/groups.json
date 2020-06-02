@@ -1,0 +1,688 @@
+[
+    {
+        "teams": [
+            "Manchester City",
+            "Liverpool",
+            "Tottenham",
+            "Manchester United",
+            "Chelsea",
+            "Arsenal",
+            "Everton",
+            "Wolverhampton"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "Wolverhampton",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester City",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Liverpool",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Everton",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Arsenal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Tottenham",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester United",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chelsea",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester City",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Everton",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Wolverhampton",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Arsenal",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chelsea",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Liverpool",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester United",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Tottenham",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Arsenal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester City",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Everton",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chelsea",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Wolverhampton",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester United",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Liverpool",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Tottenham",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester City",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Chelsea",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester United",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Arsenal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Tottenham",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Everton",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Liverpool",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Wolverhampton",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester United",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester City",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Tottenham",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chelsea",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Liverpool",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Arsenal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Everton",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Wolverhampton",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester City",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Tottenham",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester United",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Liverpool",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chelsea",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Wolverhampton",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Everton",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Arsenal",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester City",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Liverpool",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Wolverhampton",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Tottenham",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester United",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Everton",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Arsenal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Chelsea",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester City",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Wolverhampton",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Everton",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Liverpool",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Tottenham",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Arsenal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chelsea",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Manchester United",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Everton",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester City",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Arsenal",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Wolverhampton",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Liverpool",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Chelsea",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Tottenham",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester United",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester City",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Arsenal",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chelsea",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Everton",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester United",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Wolverhampton",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Tottenham",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Liverpool",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chelsea",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester City",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Arsenal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester United",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Everton",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Tottenham",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Wolverhampton",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Liverpool",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester City",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester United",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chelsea",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Tottenham",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Arsenal",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Liverpool",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Wolverhampton",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Everton",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Tottenham",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Manchester City",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Liverpool",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester United",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Wolverhampton",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chelsea",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Arsenal",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Everton",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Liverpool",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester City",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Tottenham",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Wolverhampton",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Everton",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester United",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chelsea",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Arsenal",
+                    "isAI": false,
+                    "score": null
+                }
+            ]
+        ]
+    }
+]

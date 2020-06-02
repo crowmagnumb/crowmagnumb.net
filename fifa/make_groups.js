@@ -4,25 +4,29 @@
 // "fifa19/teams.csv"
 //
 const fs = require("fs");
+const path = require("path");
 const utils = require("./utils");
 
 const argv = require("yargs")
     .default("groups", 8)
     .default("matchesper", 1)
+    .alias("c", "category")
     .alias("k", "key")
     .alias("g", "groups")
     .alias("m", "matchesper")
     .alias("i", "include")
     .alias("t", "maxteams")
     .alias("f", "teamsfile")
-    .demandOption("key").argv;
+    .demandOption("key")
+    .demandOption("category").argv;
 
-let dir = utils.getFileDir(argv.key);
+let dir = utils.getFileDir(argv.category, argv.key);
 if (fs.existsSync(dir)) {
     throw new Error("This key already exists.");
 }
 
 fs.mkdirSync(dir);
+fs.copyFileSync(argv.teamsfile, utils.getTeamsFile(argv.category, argv.key));
 
 function addMatches(groups, matches) {
     for (let ii = 0; ii < groups.length; ii++) {
@@ -31,7 +35,7 @@ function addMatches(groups, matches) {
     }
 }
 
-utils.getSortedTeams(argv.teamsfile).then(sortedTeams => {
+utils.getSortedTeams(argv.category, argv.key).then(sortedTeams => {
     let useTeams;
     if (argv.maxteams) {
         useTeams = sortedTeams.slice(0, argv.groups * argv.maxteams);
@@ -147,7 +151,7 @@ utils.getSortedTeams(argv.teamsfile).then(sortedTeams => {
     }
 
     fs.writeFileSync(
-        utils.getFilePath(argv.key, "groups.json"),
+        utils.getMatchFile(argv.category, argv.key),
         JSON.stringify(groups, null, 4)
     );
 });
