@@ -119,25 +119,20 @@ exports.makeMatches = function(num) {
         half = num / 2;
     }
 
-    // console.log(size, half, seq);
     const matches = [];
     for (let ii = 0; ii < size; ii++) {
-        // console.log("ii", ii);
         if (!isOdd) {
             matches.push([0, seq[0]]);
         }
         for (let jj = 1; jj < half; jj++) {
             a = seq[jj];
             b = seq[size - jj];
-            // console.log("jj", jj, a, b);
             if (a !== b && a !== -1 && b !== -1) {
-                // console.log("adding:", [a, b]);
                 matches.push([a, b]);
             }
         }
         // seq.push(seq.shift());
         seq.unshift(seq.pop());
-        // console.log(seq);
     }
     return matches;
 };

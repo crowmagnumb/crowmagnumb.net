@@ -136,58 +136,30 @@ function groupStandings(group) {
     return calcStandings(Array.from(infoMap.values()));
 }
 
-function yourStandings(groups) {
+function yourStandings(oms) {
     let you = new TeamInfo("You");
     let ai = new TeamInfo("AI");
 
-    for (const group of groups) {
-        for (const match of group.matches.filter(
-            match => match[0].score !== null
-        )) {
-            let yourscore;
-            let aiscore;
-            if (match[0].isAI) {
-                yourscore = match[1].score;
-                aiscore = match[0].score;
-            } else {
-                yourscore = match[0].score;
-                aiscore = match[1].score;
-            }
-
-            incrementInfos(you, yourscore, ai, aiscore);
+    let index = 0;
+    for (const match of oms.map(om => om.match).filter(
+        match => match[0].score !== null
+    )) {
+        let yourscore;
+        let aiscore;
+        if (match[0].isAI) {
+            yourscore = match[1].score;
+            aiscore = match[0].score;
+        } else {
+            yourscore = match[0].score;
+            aiscore = match[1].score;
         }
+        incrementInfos(you, yourscore, ai, aiscore);
     }
     return calcStandings([you, ai]);
 }
 
-function getMatches(groups) {
-    let maxMatches = 0;
-    for (const group of groups) {
-        if (group.matches.length > maxMatches) {
-            maxMatches = group.matches.length;
-        }
-    }
-
-    let lines = [];
-    lines.push(
-        `${groups.length > 1 ? "|" : ""}| Home | Score | Away | Score | Note |`
-    );
-    lines.push(`${groups.length > 1 ? "|:---:" : ""}|---|---|---|---|---|`);
-
-    let writeMatch = (match, groupIndex) => {
-        if (!match) {
-            return;
-        }
-        lines.push(
-            `${
-                groups.length > 1
-                    ? `|${String.fromCharCode(65 + groupIndex)}`
-                    : ""
-            }|${displayTeam(match, 0)}|${displayTeam(match, 1)}|${match[0]
-                .note || ""}|`
-        );
-    }
-
+function orderedMatches(groups) {
+    const oms = [];
     //
     // If each group has more than one team AND the number of teams per group is an even number
     // then play all the games at each stage in each group together so its more exciting.
@@ -201,20 +173,46 @@ function getMatches(groups) {
             groups.forEach((group, groupIndex) => {
                 let stageIndex = 0;
                 while (stageIndex < stageSize) {
-                    writeMatch(group.matches[index + stageIndex], groupIndex);
+                    oms.push({ match: group.matches[index + stageIndex], groupIndex});
                     stageIndex++;
                 }
             });
             index += stageSize;
-            console.log(index);
         }
     } else {
+        let maxMatches = 0;
+        for (const group of groups) {
+            if (group.matches.length > maxMatches) {
+                maxMatches = group.matches.length;
+            }
+        }
+
         while (index < maxMatches) {
             groups.forEach((group, groupIndex) => {
-                writeMatch(group.matches[index], groupIndex);
+                oms.push({ match: group.matches[index], groupIndex});
             });
             index++;
         }
+    }
+    return oms;
+}
+
+function getMatches(groups, oms) {
+    let lines = [];
+    lines.push(
+        `${groups.length > 1 ? "|" : ""}| Home | Score | Away | Score | Note |`
+    );
+    lines.push(`${groups.length > 1 ? "|:---:" : ""}|---|---|---|---|---|`);
+
+    for (let om of oms) {
+        lines.push(
+            `${
+                groups.length > 1
+                    ? `|${String.fromCharCode(65 + om.groupIndex)}`
+                    : ""
+            }|${displayTeam(om.match, 0)}|${displayTeam(om.match, 1)}|${om.match[0]
+                .note || ""}|`
+        );
     }
 
     return utils.markdown2Html(lines.join("\n"));
@@ -283,9 +281,13 @@ function getStandings(groups, teamMap) {
         appendResults(lines, groupStandings(group), teamMap, showRating);
     });
 
-    appendStandingsHeader(lines, "You vs. AI");
-    appendResults(lines, yourStandings(groups));
+    return utils.markdown2Html(lines.join("\n"));
+}
 
+function addYourStandings(oms) {
+    let lines = [];
+    appendStandingsHeader(lines, "You vs. AI");
+    appendResults(lines, yourStandings(oms));
     return utils.markdown2Html(lines.join("\n"));
 }
 
@@ -295,6 +297,7 @@ utils.getTeamMap(argv.category, argv.key).then(teamMap => {
         contents
     ) {
         const groups = JSON.parse(contents);
+        let oms = orderedMatches(groups);
 
         const roman = argv.key.toUpperCase();
         const bodyInnerHTML = `<div style="border: 15px">
@@ -303,11 +306,12 @@ utils.getTeamMap(argv.category, argv.key).then(teamMap => {
       <div class="row">
         <div class="column" style="padding-right: 15px">
           ${getStandings(groups, teamMap)}
+          ${addYourStandings(oms)}
         </div>
         <div class="column">
          <h2>Group Matches</h2>
             <div class="scrollable">
-            ${getMatches(groups)}
+            ${getMatches(groups, oms)}
           </div>
         </div>
       </div>
