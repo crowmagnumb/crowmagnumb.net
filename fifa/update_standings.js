@@ -173,25 +173,48 @@ function getMatches(groups) {
         `${groups.length > 1 ? "|" : ""}| Home | Score | Away | Score | Note |`
     );
     lines.push(`${groups.length > 1 ? "|:---:" : ""}|---|---|---|---|---|`);
-    let index = 0;
 
-    let linebuilder = (group, groupIndex) => {
-        if (index < group.matches.length) {
-            const match = group.matches[index];
-            lines.push(
-                `${
-                    groups.length > 1
-                        ? `|${String.fromCharCode(65 + groupIndex)}`
-                        : ""
-                }|${displayTeam(match, 0)}|${displayTeam(match, 1)}|${match[0]
-                    .note || ""}|`
-            );
+    let writeMatch = (match, groupIndex) => {
+        if (!match) {
+            return;
         }
-    };
+        lines.push(
+            `${
+                groups.length > 1
+                    ? `|${String.fromCharCode(65 + groupIndex)}`
+                    : ""
+            }|${displayTeam(match, 0)}|${displayTeam(match, 1)}|${match[0]
+                .note || ""}|`
+        );
+    }
 
-    while (index < maxMatches) {
-        groups.forEach(linebuilder);
-        index++;
+    //
+    // If each group has more than one team AND the number of teams per group is an even number
+    // then play all the games at each stage in each group together so its more exciting.
+    //
+    let groupSize = groups[0].teams.length;
+    let index = 0;
+    if (groups.length > 1 && groupSize % 2 == 0) {
+        let stageSize = groupSize / 2;
+        let numMatchesPer = groups[0].matches.length;
+        while (index < numMatchesPer) {
+            groups.forEach((group, groupIndex) => {
+                let stageIndex = 0;
+                while (stageIndex < stageSize) {
+                    writeMatch(group.matches[index + stageIndex], groupIndex);
+                    stageIndex++;
+                }
+            });
+            index += stageSize;
+            console.log(index);
+        }
+    } else {
+        while (index < maxMatches) {
+            groups.forEach((group, groupIndex) => {
+                writeMatch(group.matches[index], groupIndex);
+            });
+            index++;
+        }
     }
 
     return utils.markdown2Html(lines.join("\n"));
