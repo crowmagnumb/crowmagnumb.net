@@ -65,7 +65,7 @@ class TeamInfo {
         this.mp = 0;
         this.wins = 0;
         this.draws = 0;
-        this.loses = 0;
+        this.losses = 0;
         this.gf = 0;
         this.ga = 0;
         this.gd = 0;
@@ -83,7 +83,7 @@ class TeamInfo {
             this.wins++;
             this.lastFive.push("W");
         } else if (them > us) {
-            this.loses++;
+            this.losses++;
             this.lastFive.push("L");
         } else {
             this.draws++;
@@ -136,26 +136,44 @@ function groupStandings(group) {
     return calcStandings(Array.from(infoMap.values()));
 }
 
-function yourStandings(oms) {
+function yourStandings(oms, teamMap) {
     let you = new TeamInfo("You");
     let ai = new TeamInfo("AI");
-
+    
     let index = 0;
-    for (const match of oms.map(om => om.match).filter(
+    let sumAIRating = 0;
+    let sumYouRating = 0;
+    let shoulda = { wins: 0, draws: 0, losses: 0 };
+    const played = oms.map(om => om.match).filter(
         match => match[0].score !== null
-    )) {
-        let yourscore;
-        let aiscore;
+    );
+    for (const match of played) {
+        let yourmatch;
+        let aimatch;
         if (match[0].isAI) {
-            yourscore = match[1].score;
-            aiscore = match[0].score;
+            yourmatch = match[1];
+            aimatch = match[0];
         } else {
-            yourscore = match[0].score;
-            aiscore = match[1].score;
+            yourmatch = match[0];
+            aimatch = match[1];
         }
-        incrementInfos(you, yourscore, ai, aiscore);
+        if (teamMap) {
+            const airating = teamMap.get(aimatch.team).rating;
+            const yourating = teamMap.get(yourmatch.team).rating;
+            if (airating > yourating) {
+                shoulda.losses += 1;
+            } else if (airating < yourating) {
+                shoulda.wins += 1;
+            } else {
+                shoulda.draws += 1;
+            }
+            sumAIRating += airating;
+            sumYouRating += yourating;
+        }
+        incrementInfos(you, yourmatch.score, ai, aimatch.score);
     }
-    return calcStandings([you, ai]);
+    shoulda.ratingdiff = ((sumYouRating - sumAIRating) / played.length).toFixed(2);
+    return { standings: calcStandings([you, ai]), shoulda };
 }
 
 function orderedMatches(groups) {
@@ -258,7 +276,7 @@ function appendResults(lines, infos, teamMap, showRating) {
         lines.push(
             `${index + 1}|${
                 showRating && teamMap ? teamMap.get(info.team).rating + "|" : ""
-            }${info.team}|${info.mp}|${info.wins}|${info.draws}|${info.loses}|${
+            }${info.team}|${info.mp}|${info.wins}|${info.draws}|${info.losses}|${
                 info.gf
             }|${info.ga}|${info.gd}|${info.pts}|${lastFive}|`
         );
@@ -284,10 +302,19 @@ function getStandings(groups, teamMap) {
     return utils.markdown2Html(lines.join("\n"));
 }
 
-function addYourStandings(oms) {
+function addYourStandings(oms, teamMap) {
     let lines = [];
     appendStandingsHeader(lines, "You vs. AI");
-    appendResults(lines, yourStandings(oms));
+    const yourStats = yourStandings(oms, teamMap);
+    appendResults(lines, yourStats.standings);
+    lines.push("### Statistically");
+    lines.push(
+        `| Rating Diff | W | D | L |`
+    );
+    lines.push(
+        `|:---:|:---:|:---:|:---:|`
+    );
+    lines.push(`${yourStats.shoulda.ratingdiff}|${yourStats.shoulda.wins}|${yourStats.shoulda.draws}|${yourStats.shoulda.losses}|`);
     return utils.markdown2Html(lines.join("\n"));
 }
 
@@ -306,7 +333,7 @@ utils.getTeamMap(argv.category, argv.key).then(teamMap => {
       <div class="row">
         <div class="column" style="padding-right: 15px">
           ${getStandings(groups, teamMap)}
-          ${addYourStandings(oms)}
+          ${addYourStandings(oms, teamMap)}
         </div>
         <div class="column">
          <h2>Group Matches</h2>
