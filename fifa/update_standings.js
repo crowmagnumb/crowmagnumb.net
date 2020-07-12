@@ -136,7 +136,31 @@ function groupStandings(group) {
     return calcStandings(Array.from(infoMap.values()));
 }
 
+function statistically(deltaR) {
+    const d0 = 0.69;
+    const wf = -0.22;
+    const df = 0.12;
+
+    const w0 = 1 / (1 + Math.exp(wf * deltaR));
+    const d = d0 / (1 + Math.exp(df * Math.abs(deltaR)));
+    const w = w0 * (1 - d);
+    const l = 1 - w - d;
+
+    return { w, d, l };
+}
+
+function debugstatistically(deltaR) {
+    const stats = statistically(deltaR);
+    console.log(deltaR, stats.w.toFixed(2), stats.d.toFixed(2), stats.l.toFixed(2));
+}
+
 function yourStandings(oms, teamMap) {
+    // let x = 0;
+    // while (x < 20) {
+    //     debugstatistically(x);
+    //     x++;
+    // }
+
     let you = new TeamInfo("You");
     let ai = new TeamInfo("AI");
     
@@ -160,18 +184,31 @@ function yourStandings(oms, teamMap) {
         if (teamMap) {
             const airating = teamMap.get(aimatch.team).rating;
             const yourating = teamMap.get(yourmatch.team).rating;
-            if (airating > yourating) {
-                shoulda.losses += 1;
-            } else if (airating < yourating) {
-                shoulda.wins += 1;
-            } else {
-                shoulda.draws += 1;
-            }
+
+            // if (airating > yourating) {
+            //     shoulda.losses += 1;
+            // } else if (airating < yourating) {
+            //     shoulda.wins += 1;
+            // } else {
+            //     shoulda.draws += 1;
+            // }
+            const stats = statistically(yourating - airating);
+
+            shoulda.losses += stats.l;
+            shoulda.wins += stats.w;
+            shoulda.draws += stats.d;
+
             sumAIRating += airating;
             sumYouRating += yourating;
         }
+
         incrementInfos(you, yourmatch.score, ai, aimatch.score);
     }
+
+    shoulda.losses = shoulda.losses.toFixed(1);
+    shoulda.wins = shoulda.wins.toFixed(1);
+    shoulda.draws = shoulda.draws.toFixed(1);
+    
     shoulda.ratingdiff = ((sumYouRating - sumAIRating) / played.length).toFixed(2);
     return { standings: calcStandings([you, ai]), shoulda };
 }
