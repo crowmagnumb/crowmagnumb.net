@@ -209,7 +209,8 @@ function yourStandings(oms, teamMap) {
     shoulda.wins = shoulda.wins.toFixed(1);
     shoulda.draws = shoulda.draws.toFixed(1);
     
-    shoulda.ratingdiff = ((sumYouRating - sumAIRating) / played.length).toFixed(2);
+    shoulda.mp = played.length;
+    // shoulda.ratingdiff = ((sumYouRating - sumAIRating) / shoulda.mp).toFixed(2);
     return { standings: calcStandings([you, ai]), shoulda };
 }
 
@@ -346,12 +347,12 @@ function addYourStandings(oms, teamMap) {
     appendResults(lines, yourStats.standings);
     lines.push("### Statistically");
     lines.push(
-        `| Rating Diff | W | D | L |`
+        `| Team | MP | W | D | L |`
     );
     lines.push(
         `|:---:|:---:|:---:|:---:|`
     );
-    lines.push(`${yourStats.shoulda.ratingdiff}|${yourStats.shoulda.wins}|${yourStats.shoulda.draws}|${yourStats.shoulda.losses}|`);
+    lines.push(`You|${yourStats.shoulda.mp}|${yourStats.shoulda.wins}|${yourStats.shoulda.draws}|${yourStats.shoulda.losses}|`);
     return utils.markdown2Html(lines.join("\n"));
 }
 

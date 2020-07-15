@@ -1,18 +1,19 @@
 # FIFA World Cup Builder
 
-## Create a new world cup match
+## Create a new league/world cup
 
-Then run
+Create a new directory e.g. ```mkdir fifa20/laliga-v```
+Add ```teams.csv``` file to that directory and then run...
 
 ```
-node make_groups.js -c <category> -k <key> -f <teams.csv>
+node make_groups.js -c <category> -k <key>
 ```
 
 e.g.
 
 ```
-node make_groups.js -c fifa20 -k cascadia-ii -f fifa20/teams-cascadia.csv -g 1 -m 2
-node make_groups.js -c fifa20 -k wc-i -f fifa20/teams-world.csv -g 8 -m 1
+node make_groups.js -c fifa20 -k cascadia-ii -g 1 -m 2
+node make_groups.js -c fifa20 -k wc-i -g 8 -m 1
 ```
 
 which will generate the groups.json.

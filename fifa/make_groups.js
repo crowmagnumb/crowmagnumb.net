@@ -16,17 +16,17 @@ const argv = require("yargs")
     .alias("m", "matchesper")
     .alias("i", "include")
     .alias("t", "maxteams")
-    .alias("f", "teamsfile")
+    // .alias("f", "teamsfile")
     .demandOption("key")
     .demandOption("category").argv;
 
 let dir = utils.getFileDir(argv.category, argv.key);
-if (fs.existsSync(dir)) {
-    throw new Error("This key already exists.");
-}
+// if (fs.existsSync(dir)) {
+//     throw new Error("This key already exists.");
+// }
 
-fs.mkdirSync(dir);
-fs.copyFileSync(argv.teamsfile, utils.getTeamsFile(argv.category, argv.key));
+// fs.mkdirSync(dir);
+// fs.copyFileSync(argv.teamsfile, utils.getTeamsFile(argv.category, argv.key));
 
 function addMatches(groups, matches) {
     for (let ii = 0; ii < groups.length; ii++) {
