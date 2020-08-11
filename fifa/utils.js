@@ -4,27 +4,27 @@ const showdown = require("showdown");
 
 const converter = new showdown.Converter({ tables: true });
 
-exports.sequence = function(N) {
+exports.sequence = function (N) {
     return Array.from(new Array(N), (val, index) => index);
 };
 
-exports.getFileDir = function(category, key) {
+exports.getFileDir = function (category, key) {
     return path.join(category, key);
 };
 
-exports.getFilePath = function(category, key, filename) {
+exports.getFilePath = function (category, key, filename) {
     return path.join(this.getFileDir(category, key), filename);
 };
 
-exports.markdown2Html = function(markdown) {
+exports.markdown2Html = function (markdown) {
     return converter.makeHtml(markdown);
 };
 
-exports.writeHtml = function(bodyInnerHTML, outputFile) {
+exports.writeHtml = function (bodyInnerHTML, outputFile) {
     fs.writeFile(
         outputFile,
         `<html><head><link type="text/css" rel="stylesheet" href="../../github.css"></link><link type="text/css" rel="stylesheet" href="../../fifa.css"></link></head><body>\n${bodyInnerHTML}</body></html>`,
-        err => {
+        (err) => {
             if (err) {
                 throw err;
             }
@@ -32,54 +32,55 @@ exports.writeHtml = function(bodyInnerHTML, outputFile) {
     );
 };
 
-exports.getMatchFile = function(category, key) {
+exports.getMatchFile = function (category, key) {
     return this.getFilePath(category, key, "groups.json");
-}
+};
 
-exports.getTeamsFile = function(category, key) {
-    return this.getFilePath(category, key, "teams.csv")
-}
+exports.getTeamsFile = function (category, key) {
+    return this.getFilePath(category, key, "teams.csv");
+};
 
-exports.getTeams = function(category, key) {
+exports.getTeams = function (category, key) {
     return new Promise((resolve, reject) => {
-        fs.readFile(this.getTeamsFile(category, key), "utf8", function(err, contents) {
+        fs.readFile(this.getTeamsFile(category, key), "utf8", function (
+            err,
+            contents
+        ) {
             if (err) {
                 reject(err);
             }
 
-            const lines = contents.split("\n").filter(line => line !== "");
+            const lines = contents.split("\n").filter((line) => line !== "");
             lines.splice(0, 1);
 
-            let teams = lines.map(line => {
+            let teams = lines.map((line) => {
                 const vals = line.split(",");
                 let rating;
-                if (vals.length >= 4) {
-                    rating =
-                        Math.round(
-                            (10 *
-                                (parseInt(vals[1]) +
-                                    parseInt(vals[2]) +
-                                    parseInt(vals[3]))) /
-                                3
-                        ) / 10;
-                } else if (vals.length === 2) {
-                    rating = parseInt(vals[1]);
+                if (vals.length >= 2) {
+                    rating = parseFloat(vals[1]).toFixed(1);
                 } else {
                     rating = 0;
                 }
+                let group;
+                if (vals.length >= 3) {
+                    group = parseInt(vals[2]);
+                } else {
+                    group = null;
+                }
                 return {
-                    team: vals[0],
-                    rating
+                    name: vals[0],
+                    rating,
+                    group,
                 };
             });
 
             resolve(teams);
         });
     });
-}
+};
 
-exports.getSortedTeams = function(category, key) {
-    return this.getTeams(category, key).then(teams => {
+exports.getSortedTeams = function (category, key) {
+    return this.getTeams(category, key).then((teams) => {
         teams.sort((a, b) => {
             return b.rating - a.rating;
         });
@@ -87,17 +88,17 @@ exports.getSortedTeams = function(category, key) {
     });
 };
 
-exports.getTeamMap = function(category, key) {
-    return this.getTeams(category, key).then(teams => {
+exports.getTeamMap = function (category, key) {
+    return this.getTeams(category, key).then((teams) => {
         let teamMap = new Map();
         for (const team of teams) {
-            teamMap.set(team.team, team);
+            teamMap.set(team.name, team);
         }
         return teamMap;
     });
 };
 
-exports.makeMatches = function(num) {
+exports.makeMatches = function (num) {
     let isOdd = num % 2;
 
     let seq = this.sequence(num);

@@ -35,63 +35,76 @@ function addMatches(groups, matches) {
     }
 }
 
-utils.getSortedTeams(argv.category, argv.key).then(sortedTeams => {
-    let useTeams;
+utils.getSortedTeams(argv.category, argv.key).then((sortedTeams) => {
+    let teams;
     if (argv.maxteams) {
-        useTeams = sortedTeams.slice(0, argv.groups * argv.maxteams);
+        teams = sortedTeams.slice(0, argv.groups * argv.maxteams);
         if (argv.include) {
-            let included = useTeams.find(team => {
-                return team.team === argv.include;
+            let included = teams.find((team) => {
+                return team.name === argv.include;
             });
             if (!included) {
-                let include = sortedTeams.find(team => {
-                    return team.team === argv.include;
+                let include = sortedTeams.find((team) => {
+                    return team.name === argv.include;
                 });
                 if (include) {
-                    useTeams[useTeams.length - 1] = include;
+                    teams[teams.length - 1] = include;
                 }
             }
         }
     } else {
-        useTeams = sortedTeams;
+        teams = sortedTeams;
     }
 
-    teams = useTeams.map(team => team.team);
-    // const groupSize = Math.floor(teams.length / argv.groups);
-
-    let pots = [];
-    teams.forEach((team, index) => {
-        pindex = Math.floor(index / argv.groups);
-        if (pots.length < pindex + 1) {
-            pots[pindex] = [];
-        }
-        pots[pindex].push(team);
-    });
-
     //
-    // Make random groups based on pots. Note: pots will not all be the same
-    // size which will lead to not all groups being the same size.
+    // Check to see if our groups are pre-defined or if we are going to make them.
+    // If the first team has its group pre-set then the requirement is that all teams
+    // have their groups pre-set.
     //
     let groups = [];
-    for (let groupIndex of utils.sequence(argv.groups)) {
-        let group = { teams: [], matches: [] };
-        groups.push(group);
-
-        for (let potIndex of utils.sequence(pots.length)) {
-            let pot = pots[potIndex];
-            if (pot.length === 0) {
-                continue;
+    if (teams[0].group === null) {
+        let pots = [];
+        teams.forEach((team, index) => {
+            pindex = Math.floor(index / argv.groups);
+            if (pots.length < pindex + 1) {
+                pots[pindex] = [];
             }
-            let index = Math.floor(Math.random() * pot.length);
-            let team = pot[index];
-            pots[potIndex].splice(index, 1);
-            group.teams.push(team);
+            pots[pindex].push(team.name);
+        });
+
+        //
+        // Make random groups based on pots. Note: pots may not all be the same
+        // size which will lead to not all groups being the same size.
+        //
+        for (let groupIndex of utils.sequence(argv.groups)) {
+            const group = { teams: [], matches: [] };
+            groups.push(group);
+
+            for (let potIndex of utils.sequence(pots.length)) {
+                let pot = pots[potIndex];
+                if (pot.length === 0) {
+                    continue;
+                }
+                let index = Math.floor(Math.random() * pot.length);
+                let teamName = pot[index];
+                pots[potIndex].splice(index, 1);
+                group.teams.push(teamName);
+            }
+        }
+    } else {
+        for (const team of teams) {
+            let group = groups[team.group];
+            if (!group) {
+                group = { teams: [], matches: [] };
+                groups[team.group] = group;
+            }
+            group.teams.push(team.name);
         }
     }
 
-    gmatches = groups.map(group => {
+    gmatches = groups.map((group) => {
         const matches = [];
-        utils.makeMatches(group.teams.length).forEach(match => {
+        utils.makeMatches(group.teams.length).forEach((match) => {
             //
             // Decide on "home" team
             //
@@ -108,12 +121,12 @@ utils.getSortedTeams(argv.category, argv.key).then(sortedTeams => {
             matchup[0] = {
                 team: group.teams[match[teamAIndex]],
                 isAI: false,
-                score: null
+                score: null,
             };
             matchup[1] = {
                 team: group.teams[match[teamBIndex]],
                 isAI: false,
-                score: null
+                score: null,
             };
             //
             // Determine who I am playing vs the AI.
@@ -127,14 +140,14 @@ utils.getSortedTeams(argv.category, argv.key).then(sortedTeams => {
     addMatches(groups, gmatches);
 
     if (argv.matchesper && argv.matchesper > 1) {
-        ogmatches = gmatches.map(matches => {
-            return matches.map(matchup => {
+        ogmatches = gmatches.map((matches) => {
+            return matches.map((matchup) => {
                 //
                 // Reverse the home/away and then change the isAI bits.
                 //
                 let omatchup = [
                     Object.assign({}, matchup[1]),
-                    Object.assign({}, matchup[0])
+                    Object.assign({}, matchup[0]),
                 ];
                 omatchup[0].isAI = !omatchup[0].isAI;
                 omatchup[1].isAI = !omatchup[1].isAI;

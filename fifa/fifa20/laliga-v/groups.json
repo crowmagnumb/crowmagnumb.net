@@ -123,564 +123,564 @@
                 {
                     "team": "Levante",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Sociedad",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Mallorca",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Betis",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Atletico Madrid",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Valencia",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Barcelona",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Sociedad",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Betis",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Getafe",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Levante",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Valencia",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Mallorca",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Atletico Madrid",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Betis",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Barcelona",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Valencia",
                     "isAI": true,
-                    "score": null
+                    "score": 4
                 },
                 {
                     "team": "Sociedad",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Getafe",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Atletico Madrid",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Levante",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Mallorca",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Valencia",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Barcelona",
                     "isAI": true,
-                    "score": null
+                    "score": 3
                 }
             ],
             [
                 {
                     "team": "Atletico Madrid",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Betis",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Mallorca",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Sociedad",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 }
             ],
             [
                 {
                     "team": "Levante",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Getafe",
                     "isAI": true,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Barcelona",
-                    "isAI": false,
-                    "score": null
-                },
-                {
-                    "team": "Atletico Madrid",
-                    "isAI": true,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Mallorca",
-                    "isAI": false,
-                    "score": null
-                },
-                {
-                    "team": "Valencia",
-                    "isAI": true,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Betis",
-                    "isAI": true,
-                    "score": null
-                },
-                {
-                    "team": "Levante",
-                    "isAI": false,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Getafe",
-                    "isAI": true,
-                    "score": null
-                },
-                {
-                    "team": "Sociedad",
-                    "isAI": false,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Mallorca",
-                    "isAI": false,
-                    "score": null
-                },
-                {
-                    "team": "Barcelona",
-                    "isAI": true,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Levante",
-                    "isAI": true,
-                    "score": null
-                },
-                {
-                    "team": "Atletico Madrid",
-                    "isAI": false,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Valencia",
-                    "isAI": false,
-                    "score": null
-                },
-                {
-                    "team": "Getafe",
-                    "isAI": true,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Betis",
-                    "isAI": true,
-                    "score": null
-                },
-                {
-                    "team": "Sociedad",
-                    "isAI": false,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Barcelona",
-                    "isAI": true,
-                    "score": null
-                },
-                {
-                    "team": "Levante",
-                    "isAI": false,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Mallorca",
-                    "isAI": true,
-                    "score": null
-                },
-                {
-                    "team": "Getafe",
-                    "isAI": false,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Sociedad",
-                    "isAI": true,
-                    "score": null
-                },
-                {
-                    "team": "Atletico Madrid",
-                    "isAI": false,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Valencia",
-                    "isAI": false,
-                    "score": null
-                },
-                {
-                    "team": "Betis",
-                    "isAI": true,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Getafe",
-                    "isAI": false,
-                    "score": null
-                },
-                {
-                    "team": "Barcelona",
-                    "isAI": true,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Sociedad",
-                    "isAI": false,
-                    "score": null
-                },
-                {
-                    "team": "Levante",
-                    "isAI": true,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Betis",
-                    "isAI": false,
-                    "score": null
-                },
-                {
-                    "team": "Mallorca",
-                    "isAI": true,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Valencia",
-                    "isAI": false,
-                    "score": null
-                },
-                {
-                    "team": "Atletico Madrid",
-                    "isAI": true,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Sociedad",
-                    "isAI": true,
-                    "score": null
-                },
-                {
-                    "team": "Barcelona",
-                    "isAI": false,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Getafe",
-                    "isAI": true,
-                    "score": null
-                },
-                {
-                    "team": "Betis",
-                    "isAI": false,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Valencia",
-                    "isAI": false,
-                    "score": null
-                },
-                {
-                    "team": "Levante",
-                    "isAI": true,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Atletico Madrid",
-                    "isAI": true,
-                    "score": null
-                },
-                {
-                    "team": "Mallorca",
-                    "isAI": false,
-                    "score": null
+                    "score": 3
                 }
             ],
             [
                 {
                     "team": "Barcelona",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
-                {
-                    "team": "Betis",
-                    "isAI": true,
-                    "score": null
-                }
-            ],
-            [
-                {
-                    "team": "Sociedad",
-                    "isAI": true,
-                    "score": null
-                },
-                {
-                    "team": "Valencia",
-                    "isAI": false,
-                    "score": null
-                }
-            ],
-            [
                 {
                     "team": "Atletico Madrid",
                     "isAI": true,
-                    "score": null
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Mallorca",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Valencia",
+                    "isAI": true,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Betis",
+                    "isAI": true,
+                    "score": 2
+                },
+                {
+                    "team": "Levante",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Getafe",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Sociedad",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Mallorca",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Barcelona",
+                    "isAI": true,
+                    "score": 3
+                }
+            ],
+            [
+                {
+                    "team": "Levante",
+                    "isAI": true,
+                    "score": 2
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": false,
+                    "score": 3
+                }
+            ],
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": 2
                 },
                 {
                     "team": "Getafe",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Betis",
+                    "isAI": true,
+                    "score": 2
+                },
+                {
+                    "team": "Sociedad",
                     "isAI": false,
-                    "score": null
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Barcelona",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Levante",
+                    "isAI": false,
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Mallorca",
                     "isAI": true,
-                    "score": null
+                    "score": 1
+                },
+                {
+                    "team": "Getafe",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Sociedad",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": 4
+                },
+                {
+                    "team": "Betis",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Getafe",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Barcelona",
+                    "isAI": true,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Sociedad",
+                    "isAI": false,
+                    "score": 1
                 },
                 {
                     "team": "Levante",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Betis",
                     "isAI": false,
-                    "score": null
+                    "score": 5
+                },
+                {
+                    "team": "Mallorca",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": 3
+                }
+            ],
+            [
+                {
+                    "team": "Sociedad",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Barcelona",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Getafe",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Betis",
+                    "isAI": false,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Levante",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": 4
+                },
+                {
+                    "team": "Mallorca",
+                    "isAI": false,
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Barcelona",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 },
-                {
-                    "team": "Valencia",
-                    "isAI": true,
-                    "score": null
-                }
-            ],
-            [
                 {
                     "team": "Betis",
-                    "isAI": false,
-                    "score": null
-                },
-                {
-                    "team": "Atletico Madrid",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Sociedad",
                     "isAI": true,
-                    "score": null
+                    "score": 0
+                },
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": 0
+                },
+                {
+                    "team": "Getafe",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Mallorca",
+                    "isAI": true,
+                    "score": 1
+                },
+                {
+                    "team": "Levante",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Barcelona",
+                    "isAI": false,
+                    "score": 1
+                },
+                {
+                    "team": "Valencia",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Betis",
+                    "isAI": false,
+                    "score": 0
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Sociedad",
+                    "isAI": true,
+                    "score": 2
                 },
                 {
                     "team": "Mallorca",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Getafe",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Levante",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Atletico Madrid",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Barcelona",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Valencia",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Mallorca",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Levante",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Betis",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Sociedad",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Getafe",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ]
         ]

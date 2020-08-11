@@ -4,20 +4,21 @@ const utils = require("./utils");
 const argv = require("yargs")
     .alias("k", "key")
     .alias("c", "category")
-    .demandOption("key").demandOption("category").argv;
+    .demandOption("key")
+    .demandOption("category").argv;
 
 function displayTeamName(match, index) {
-    team = match[index];
+    const side = match[index];
     let display;
-    if (team.isAI) {
-        display = team.team;
+    if (side.isAI) {
+        display = side.team;
     } else {
-        display = `<span class="you">${team.team}</span>`;
+        display = `<span class="you">${side.team}</span>`;
     }
 
-    if (team.score != null) {
+    if (side.score != null) {
         let ii = index === 0 ? 1 : 0;
-        if (match[ii].score < team.score) {
+        if (match[ii].score < side.score) {
             display = `**${display}**`;
         }
     }
@@ -25,9 +26,9 @@ function displayTeamName(match, index) {
 }
 
 function displayTeam(match, index) {
-    team = match[index];
+    const side = match[index];
     return `${displayTeamName(match, index)}|${
-        team.score === null ? "" : team.score
+        side.score === null ? "" : side.score
     }`;
 }
 
@@ -123,7 +124,7 @@ function groupStandings(group) {
     // Ignore matches that haven't been recorded yet.
     //
     for (const match of group.matches.filter(
-        match => match[0].score !== null
+        (match) => match[0].score !== null
     )) {
         const info1 = infoMap.get(match[0].team);
         const info2 = infoMap.get(match[1].team);
@@ -151,7 +152,12 @@ function statistically(deltaR) {
 
 function debugstatistically(deltaR) {
     const stats = statistically(deltaR);
-    console.log(deltaR, stats.w.toFixed(2), stats.d.toFixed(2), stats.l.toFixed(2));
+    console.log(
+        deltaR,
+        stats.w.toFixed(2),
+        stats.d.toFixed(2),
+        stats.l.toFixed(2)
+    );
 }
 
 function yourStandings(oms, teamMap) {
@@ -163,14 +169,17 @@ function yourStandings(oms, teamMap) {
 
     let you = new TeamInfo("You");
     let ai = new TeamInfo("AI");
-    
+
     let index = 0;
     let sumAIRating = 0;
     let sumYouRating = 0;
-    let shoulda = { wins: 0, draws: 0, losses: 0 };
-    const played = oms.map(om => om.match).filter(
-        match => match[0].score !== null
-    );
+    let shoulda = {
+        straight: { wins: 0, draws: 0, losses: 0 },
+        statistical: { wins: 0, draws: 0, losses: 0 },
+    };
+    const played = oms
+        .map((om) => om.match)
+        .filter((match) => match[0].score !== null);
     for (const match of played) {
         let yourmatch;
         let aimatch;
@@ -185,18 +194,19 @@ function yourStandings(oms, teamMap) {
             const airating = teamMap.get(aimatch.team).rating;
             const yourating = teamMap.get(yourmatch.team).rating;
 
-            // if (airating > yourating) {
-            //     shoulda.losses += 1;
-            // } else if (airating < yourating) {
-            //     shoulda.wins += 1;
-            // } else {
-            //     shoulda.draws += 1;
-            // }
+            if (airating > yourating) {
+                shoulda.straight.losses += 1;
+            } else if (airating < yourating) {
+                shoulda.straight.wins += 1;
+            } else {
+                shoulda.straight.draws += 1;
+            }
+
             const stats = statistically(yourating - airating);
 
-            shoulda.losses += stats.l;
-            shoulda.wins += stats.w;
-            shoulda.draws += stats.d;
+            shoulda.statistical.losses += stats.l;
+            shoulda.statistical.wins += stats.w;
+            shoulda.statistical.draws += stats.d;
 
             sumAIRating += airating;
             sumYouRating += yourating;
@@ -205,11 +215,12 @@ function yourStandings(oms, teamMap) {
         incrementInfos(you, yourmatch.score, ai, aimatch.score);
     }
 
-    shoulda.losses = shoulda.losses.toFixed(1);
-    shoulda.wins = shoulda.wins.toFixed(1);
-    shoulda.draws = shoulda.draws.toFixed(1);
-    
-    shoulda.mp = played.length;
+    shoulda.statistical.losses = shoulda.statistical.losses.toFixed(1);
+    shoulda.statistical.wins = shoulda.statistical.wins.toFixed(1);
+    shoulda.statistical.draws = shoulda.statistical.draws.toFixed(1);
+
+    shoulda.straight.mp = played.length;
+    shoulda.statistical.mp = played.length;
     // shoulda.ratingdiff = ((sumYouRating - sumAIRating) / shoulda.mp).toFixed(2);
     return { standings: calcStandings([you, ai]), shoulda };
 }
@@ -229,7 +240,10 @@ function orderedMatches(groups) {
             groups.forEach((group, groupIndex) => {
                 let stageIndex = 0;
                 while (stageIndex < stageSize) {
-                    oms.push({ match: group.matches[index + stageIndex], groupIndex});
+                    oms.push({
+                        match: group.matches[index + stageIndex],
+                        groupIndex,
+                    });
                     stageIndex++;
                 }
             });
@@ -245,7 +259,7 @@ function orderedMatches(groups) {
 
         while (index < maxMatches) {
             groups.forEach((group, groupIndex) => {
-                oms.push({ match: group.matches[index], groupIndex});
+                oms.push({ match: group.matches[index], groupIndex });
             });
             index++;
         }
@@ -266,8 +280,9 @@ function getMatches(groups, oms) {
                 groups.length > 1
                     ? `|${String.fromCharCode(65 + om.groupIndex)}`
                     : ""
-            }|${displayTeam(om.match, 0)}|${displayTeam(om.match, 1)}|${om.match[0]
-                .note || ""}|`
+            }|${displayTeam(om.match, 0)}|${displayTeam(om.match, 1)}|${
+                om.match[0].note || ""
+            }|`
         );
     }
 
@@ -293,7 +308,7 @@ function appendStandingsHeader(lines, title, showRating) {
 function appendResults(lines, infos, teamMap, showRating) {
     infos.forEach((info, index) => {
         let lastFive = info.lastFive
-            .map(result => {
+            .map((result) => {
                 let cssclass = "";
                 switch (result) {
                     case "W":
@@ -314,9 +329,9 @@ function appendResults(lines, infos, teamMap, showRating) {
         lines.push(
             `${index + 1}|${
                 showRating && teamMap ? teamMap.get(info.team).rating + "|" : ""
-            }${info.team}|${info.mp}|${info.wins}|${info.draws}|${info.losses}|${
-                info.gf
-            }|${info.ga}|${info.gd}|${info.pts}|${lastFive}|`
+            }${info.team}|${info.mp}|${info.wins}|${info.draws}|${
+                info.losses
+            }|${info.gf}|${info.ga}|${info.gd}|${info.pts}|${lastFive}|`
         );
     });
 }
@@ -345,19 +360,20 @@ function addYourStandings(oms, teamMap) {
     appendStandingsHeader(lines, "You vs. AI");
     const yourStats = yourStandings(oms, teamMap);
     appendResults(lines, yourStats.standings);
-    lines.push("### Statistically");
+    lines.push("### You Statistically");
+    lines.push(`| Team | MP | W | D | L |`);
+    lines.push(`|:---:|:---:|:---:|:---:|`);
     lines.push(
-        `| Team | MP | W | D | L |`
+        `Straight|${yourStats.shoulda.straight.mp}|${yourStats.shoulda.straight.wins}|${yourStats.shoulda.straight.draws}|${yourStats.shoulda.straight.losses}|`
     );
     lines.push(
-        `|:---:|:---:|:---:|:---:|`
+        `Statistical|${yourStats.shoulda.statistical.mp}|${yourStats.shoulda.statistical.wins}|${yourStats.shoulda.statistical.draws}|${yourStats.shoulda.statistical.losses}|`
     );
-    lines.push(`You|${yourStats.shoulda.mp}|${yourStats.shoulda.wins}|${yourStats.shoulda.draws}|${yourStats.shoulda.losses}|`);
     return utils.markdown2Html(lines.join("\n"));
 }
 
-utils.getTeamMap(argv.category, argv.key).then(teamMap => {
-    fs.readFile(utils.getMatchFile(argv.category, argv.key), "utf8", function(
+utils.getTeamMap(argv.category, argv.key).then((teamMap) => {
+    fs.readFile(utils.getMatchFile(argv.category, argv.key), "utf8", function (
         err,
         contents
     ) {

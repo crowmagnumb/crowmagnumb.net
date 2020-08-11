@@ -1,0 +1,1214 @@
+[
+    {
+        "teams": [
+            "Paris Saint-Germain",
+            "Real Madrid",
+            "Club Brugge",
+            "Galatasaray"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "Paris Saint-Germain",
+                    "isAI": false,
+                    "score": 3
+                },
+                {
+                    "team": "Galatasaray",
+                    "isAI": true,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Real Madrid",
+                    "isAI": true,
+                    "score": 2
+                },
+                {
+                    "team": "Club Brugge",
+                    "isAI": false,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Club Brugge",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Paris Saint-Germain",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Real Madrid",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Galatasaray",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Paris Saint-Germain",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Real Madrid",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Galatasaray",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Club Brugge",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Galatasaray",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Paris Saint-Germain",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Club Brugge",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Real Madrid",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Paris Saint-Germain",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Club Brugge",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Galatasaray",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Real Madrid",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Real Madrid",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Paris Saint-Germain",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Club Brugge",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Galatasaray",
+                    "isAI": true,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": [
+            "Bayern Munchen",
+            "Tottenham Hotspur",
+            "Olympiacos",
+            "Cracovia"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "Cracovia",
+                    "isAI": false,
+                    "score": 2
+                },
+                {
+                    "team": "Bayern Munchen",
+                    "isAI": true,
+                    "score": 2
+                }
+            ],
+            [
+                {
+                    "team": "Tottenham Hotspur",
+                    "isAI": false,
+                    "score": 2
+                },
+                {
+                    "team": "Olympiacos",
+                    "isAI": true,
+                    "score": 0
+                }
+            ],
+            [
+                {
+                    "team": "Bayern Munchen",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Olympiacos",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Tottenham Hotspur",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Cracovia",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Bayern Munchen",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Tottenham Hotspur",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Olympiacos",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Cracovia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Bayern Munchen",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Cracovia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Olympiacos",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Tottenham Hotspur",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Olympiacos",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Bayern Munchen",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Cracovia",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Tottenham Hotspur",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Tottenham Hotspur",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Bayern Munchen",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Cracovia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Olympiacos",
+                    "isAI": true,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": [
+            "Manchester City",
+            "Atalanta",
+            "Shakhtar Donetsk",
+            "Dinamo Zagreb"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "Manchester City",
+                    "isAI": true,
+                    "score": 3
+                },
+                {
+                    "team": "Dinamo Zagreb",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Shakhtar Donetsk",
+                    "isAI": true,
+                    "score": 2
+                },
+                {
+                    "team": "Atalanta",
+                    "isAI": false,
+                    "score": 1
+                }
+            ],
+            [
+                {
+                    "team": "Shakhtar Donetsk",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester City",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Dinamo Zagreb",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Atalanta",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester City",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Atalanta",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Shakhtar Donetsk",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Dinamo Zagreb",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Dinamo Zagreb",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester City",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Atalanta",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Shakhtar Donetsk",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Manchester City",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Shakhtar Donetsk",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Atalanta",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Dinamo Zagreb",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Atalanta",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Manchester City",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Dinamo Zagreb",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Shakhtar Donetsk",
+                    "isAI": false,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": [
+            "Juventus",
+            "Atletico Madrid",
+            "Bayer Leverkusen",
+            "Lokomotive Moskva"
+        ],
+        "matches": [
+            [
+                {
+                    "team": "Lokomotive Moskva",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Juventus",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Bayer Leverkusen",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Juventus",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Bayer Leverkusen",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Lokomotive Moskva",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Juventus",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Bayer Leverkusen",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Lokomotive Moskva",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Juventus",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Lokomotive Moskva",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Bayer Leverkusen",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Bayer Leverkusen",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Juventus",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Lokomotive Moskva",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Atletico Madrid",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Juventus",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Lokomotive Moskva",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Bayer Leverkusen",
+                    "isAI": false,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": ["Liverpool", "Napoli", "Salzburg", "Genk"],
+        "matches": [
+            [
+                {
+                    "team": "Liverpool",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Genk",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Salzburg",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Napoli",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Salzburg",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Liverpool",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Napoli",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Genk",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Liverpool",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Napoli",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Salzburg",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Genk",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Genk",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Liverpool",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Napoli",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Salzburg",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Liverpool",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Salzburg",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Genk",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Napoli",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Napoli",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Liverpool",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Genk",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Salzburg",
+                    "isAI": true,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": ["Barcelona", "Dortmund", "Milano", "Slavia Praha"],
+        "matches": [
+            [
+                {
+                    "team": "Slavia Praha",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Barcelona",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Milano",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Dortmund",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Milano",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Barcelona",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Dortmund",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Slavia Praha",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Barcelona",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Dortmund",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Milano",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Slavia Praha",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Barcelona",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Slavia Praha",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Dortmund",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Milano",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Barcelona",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Milano",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Slavia Praha",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Dortmund",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Dortmund",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Barcelona",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Slavia Praha",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Milano",
+                    "isAI": true,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": ["Leipzig", "Olympique Lyonnais", "Benfica", "Zenit"],
+        "matches": [
+            [
+                {
+                    "team": "Leipzig",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Zenit",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Olympique Lyonnais",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Benfica",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Leipzig",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Benfica",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Olympique Lyonnais",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Zenit",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Leipzig",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Olympique Lyonnais",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Zenit",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Benfica",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Zenit",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Leipzig",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Benfica",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Olympique Lyonnais",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Benfica",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Leipzig",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Zenit",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Olympique Lyonnais",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Olympique Lyonnais",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Leipzig",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Benfica",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Zenit",
+                    "isAI": false,
+                    "score": null
+                }
+            ]
+        ]
+    },
+    {
+        "teams": ["Valencia", "Chelsea", "Ajax", "Lille"],
+        "matches": [
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Lille",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chelsea",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Ajax",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Ajax",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Lille",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chelsea",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chelsea",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Valencia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Lille",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Ajax",
+                    "isAI": false,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Lille",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Valencia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Ajax",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chelsea",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Ajax",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Valencia",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Chelsea",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Lille",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Valencia",
+                    "isAI": false,
+                    "score": null
+                },
+                {
+                    "team": "Chelsea",
+                    "isAI": true,
+                    "score": null
+                }
+            ],
+            [
+                {
+                    "team": "Ajax",
+                    "isAI": true,
+                    "score": null
+                },
+                {
+                    "team": "Lille",
+                    "isAI": false,
+                    "score": null
+                }
+            ]
+        ]
+    }
+]
