@@ -60,6 +60,10 @@ const groupSort = (a, b) => {
     return 1;
 };
 
+function calcPoints(wins, draws) {
+    return wins * 3 + draws;
+}
+
 class TeamInfo {
     constructor(team) {
         this.team = team;
@@ -94,7 +98,7 @@ class TeamInfo {
 
     calc() {
         this.gd = this.gf - this.ga;
-        this.pts = this.wins * 3 + this.draws;
+        this.pts = calcPoints(this.wins, this.draws);
     }
 }
 
@@ -215,9 +219,9 @@ function yourStandings(oms, teamMap) {
         incrementInfos(you, yourmatch.score, ai, aimatch.score);
     }
 
-    shoulda.statistical.losses = shoulda.statistical.losses.toFixed(1);
-    shoulda.statistical.wins = shoulda.statistical.wins.toFixed(1);
-    shoulda.statistical.draws = shoulda.statistical.draws.toFixed(1);
+    shoulda.statistical.losses = shoulda.statistical.losses;
+    shoulda.statistical.wins = shoulda.statistical.wins;
+    shoulda.statistical.draws = shoulda.statistical.draws;
 
     shoulda.straight.mp = played.length;
     shoulda.statistical.mp = played.length;
@@ -361,13 +365,23 @@ function addYourStandings(oms, teamMap) {
     const yourStats = yourStandings(oms, teamMap);
     appendResults(lines, yourStats.standings);
     lines.push("### You Statistically");
-    lines.push(`| Team | MP | W | D | L |`);
-    lines.push(`|:---:|:---:|:---:|:---:|`);
+    lines.push(`| Team | MP | W | D | L | Pts |`);
+    lines.push(`|:---:|:---:|:---:|:---:|:--:|`);
+    let stats;
+    stats = yourStats.shoulda.statistical;
     lines.push(
-        `Straight|${yourStats.shoulda.straight.mp}|${yourStats.shoulda.straight.wins}|${yourStats.shoulda.straight.draws}|${yourStats.shoulda.straight.losses}|`
+        `Statistically|${stats.mp}|${stats.wins.toFixed(
+            1
+        )}|${stats.draws.toFixed(1)}|${stats.losses.toFixed(1)}|${calcPoints(
+            stats.wins,
+            stats.draws
+        ).toFixed(1)}|`
     );
+    stats = yourStats.shoulda.straight;
     lines.push(
-        `Statistical|${yourStats.shoulda.statistical.mp}|${yourStats.shoulda.statistical.wins}|${yourStats.shoulda.statistical.draws}|${yourStats.shoulda.statistical.losses}|`
+        `Straight|${stats.mp}|${stats.wins}|${stats.draws}|${
+            stats.losses
+        }|${calcPoints(stats.wins, stats.draws)}|`
     );
     return utils.markdown2Html(lines.join("\n"));
 }
