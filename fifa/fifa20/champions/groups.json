@@ -593,24 +593,24 @@
                 {
                     "team": "Atletico Madrid",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Juventus",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Lokomotive Moskva",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Bayer Leverkusen",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ]
         ]
@@ -742,24 +742,24 @@
                 {
                     "team": "Napoli",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Liverpool",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Genk",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 },
                 {
                     "team": "Salzburg",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 }
             ]
         ]
@@ -891,24 +891,24 @@
                 {
                     "team": "Dortmund",
                     "isAI": true,
-                    "score": null
+                    "score": 3
                 },
                 {
                     "team": "Barcelona",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ],
             [
                 {
                     "team": "Slavia Praha",
                     "isAI": false,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Milano",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ]
         ]
@@ -1040,24 +1040,24 @@
                 {
                     "team": "Olympique Lyonnais",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Leipzig",
                     "isAI": false,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Benfica",
                     "isAI": true,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Kyiv",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ]
         ]
@@ -1189,24 +1189,24 @@
                 {
                     "team": "Valencia",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 },
                 {
                     "team": "Chelsea",
                     "isAI": true,
-                    "score": null
+                    "score": 1
                 }
             ],
             [
                 {
                     "team": "Ajax",
                     "isAI": true,
-                    "score": null
+                    "score": 2
                 },
                 {
                     "team": "Lille",
                     "isAI": false,
-                    "score": null
+                    "score": 0
                 }
             ]
         ]
