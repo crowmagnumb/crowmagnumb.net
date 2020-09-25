@@ -11,25 +11,64 @@ const LOG_INTERVAL = 100 * NUM_PLAYERS;
 //
 const STATS_START_ITER = 1000 * NUM_PLAYERS;
 
+const playersPerLevel = Math.floor(NUM_PLAYERS / NUM_LEVELS);
 const uniformSkillDist = (id: number) => {
-    return Math.floor(id / Math.floor(NUM_PLAYERS / NUM_LEVELS)) + 1;
+    return id / playersPerLevel;
 };
 
-let minSkill = Number.MAX_VALUE;
-let maxSkill = 0;
-const SIGMA = 0.3;
-const A = SIGMA * Math.sqrt(2 * Math.PI);
+function gaussian(mean, stdev) {
+    var y2;
+    var use_last = false;
+    return function () {
+        var y1;
+        if (use_last) {
+            y1 = y2;
+            use_last = false;
+        } else {
+            var x1, x2, w;
+            do {
+                x1 = 2.0 * Math.random() - 1.0;
+                x2 = 2.0 * Math.random() - 1.0;
+                w = x1 * x1 + x2 * x2;
+            } while (w >= 1.0);
+            w = Math.sqrt((-2.0 * Math.log(w)) / w);
+            y1 = x1 * w;
+            y2 = x2 * w;
+            use_last = true;
+        }
+
+        var retval = mean + stdev * y1;
+        if (retval > 0) return retval;
+        return -retval;
+    };
+}
+
+let gaussDist = gaussian(50, 20);
+
+// let minSkill = Number.MAX_VALUE;
+// let maxSkill = 0;
+// let under10 = 0;
+// let over100 = 0;
+// let over90 = 0;
 const gaussianSkillDist = () => {
-    let value = Math.random();
-    // let skill = (1 / A) * Math.exp(-0.5 * (value - 0.5 / SIGMA) ** 2);
-    let skill = 100 * SIGMA * Math.sqrt(-2 * Math.log(A * value));
-    if (skill < minSkill) {
-        minSkill = skill;
-    }
-    if (skill > maxSkill) {
-        maxSkill = skill;
-    }
-    console.log(value, skill, minSkill, maxSkill);
+    let skill = gaussDist();
+    // if (skill < minSkill) {
+    //     minSkill = skill;
+    // }
+    // if (skill > maxSkill) {
+    //     maxSkill = skill;
+    // }
+    // if (skill < 10) {
+    //     under10++;
+    // }
+    // if (skill > 100) {
+    //     over100++;
+    // }
+    // if (skill > 90) {
+    //     over90++;
+    // }
+    // console.log(skill, minSkill, maxSkill, under10, over90, over100);
+    if (skill > 100) skill = 100;
     return skill;
 };
 
@@ -81,7 +120,7 @@ while (!done) {
 
 system.operateOnDivs((division) => {
     console.log(
-        `${division.division},${(
+        `${division.division} ${(
             stats[division.division - 1] / statsCount
         ).toFixed(1)}`
     );
