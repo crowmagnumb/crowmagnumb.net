@@ -1,15 +1,16 @@
 # Season Sim
 
-## Prerequisites
+## Install
 
 ```
-npm i -g ts-node
+npm i
 ```
 
 ## Run it
 
 ```
-ts-node src/main.ts
+npm run flat
+npm run gaussian
 ```
 
 ## Results
