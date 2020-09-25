@@ -1,5 +1,19 @@
 # Season Sim
 
+## Prerequisites
+
+```
+npm i -g ts-node
+```
+
+## Run it
+
+```
+ts-node src/main.ts
+```
+
+## Results
+
 Flat player distribution
 
 div, avg_num_players
@@ -13,3 +27,16 @@ div, avg_num_players
 8,74.8
 9,6.5
 10,1.1
+
+Last avg skill per division is ...
+
+1 91.6
+2 76.4
+3 56.4
+4 38.2
+5 22.7
+6 11.5
+7 4.8
+8 2.3
+9 1.4
+10 1.0

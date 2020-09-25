@@ -1,4 +1,4 @@
-import { randomNum } from "./utils";
+import { randomInt } from "./utils";
 import { Division } from "./Division";
 import { Player } from "./Player";
 
@@ -57,11 +57,12 @@ export class System {
         let divNum = 1;
         while (divNum <= this.numDivs) {
             fn(this.getDivision(divNum));
+            divNum++;
         }
     }
 
     simulateRandomMatch() {
-        let id = randomNum(this.numPlayers);
+        let id = randomInt(this.numPlayers);
         let player = this.getPlayer(id);
 
         let division = this.getDivision(player.division);

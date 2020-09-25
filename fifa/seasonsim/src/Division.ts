@@ -1,4 +1,4 @@
-import { randomNum } from "./utils";
+import { randomInt } from "./utils";
 import { Player } from "./Player";
 
 export class Division {
@@ -82,7 +82,7 @@ export class Division {
 
     private randomKey() {
         let keys = this.getKeyArray();
-        return keys[randomNum(keys.length)];
+        return keys[randomInt(keys.length)];
     }
 
     avgPlayerSkill() {
