@@ -1,17 +1,16 @@
 {
-  "name": "adventofcode",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bit-array": "^0.2.2",
-    "blessed": "^0.1.81",
-    "canvas": "^2.6.1",
-    "plotter": "^0.5.0"
-  }
+    "name": "adventofcode",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bit-array": "^0.2.2",
+        "blessed": "^0.1.81",
+        "canvas": "^2.6.1"
+    }
 }
