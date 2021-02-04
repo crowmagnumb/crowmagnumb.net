@@ -12,5 +12,8 @@
         "bit-array": "^0.2.2",
         "blessed": "^0.1.81",
         "canvas": "^2.6.1"
+    },
+    "devDependencies": {
+        "@types/node": "^14.14.25"
     }
 }
