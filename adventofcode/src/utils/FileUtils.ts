@@ -15,9 +15,14 @@ export class FileUtils {
 
     static readFileToLines(filename: string) {
         return this.readFile(filename).then((data) => {
-            return data.split("\n").filter((line) => {
-                return line !== "";
-            });
+            const result = data.split("\n");
+            //
+            // Check for empty last line.
+            //
+            if (result[result.length - 1] === "") {
+                return result.slice(0, result.length - 1);
+            }
+            return result;
         });
     }
 }
