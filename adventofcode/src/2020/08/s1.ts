@@ -1,4 +1,3 @@
-import { inherits } from "util";
 import { FileUtils } from "../../utils/index";
 
 type Instruction = {
