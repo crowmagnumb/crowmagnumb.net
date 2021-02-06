@@ -53,7 +53,7 @@ FileUtils.readFileToLines("data/2020/08/input").then((data) => {
         } as Instruction;
     });
 
-    let result: Result = { fail: true, value: 0 };
+    let result: Result;
     for (let ii = 0; ii < insts.length; ii++) {
         let inst = insts[ii];
         if (inst.operation === "jmp") {
@@ -71,5 +71,5 @@ FileUtils.readFileToLines("data/2020/08/input").then((data) => {
             break;
         }
     }
-    console.log(result.value);
+    console.log(result!.value);
 });
