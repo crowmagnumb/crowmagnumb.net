@@ -6,7 +6,7 @@
   "dependencies": {
     "js-yaml": "^4.1.0",
     "showdown": "^1.9.1",
-    "yargs": "^16.2.0"
+    "yargs": "^17.2.1"
   },
   "devDependencies": {},
   "scripts": {
