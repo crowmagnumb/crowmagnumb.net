@@ -1,0 +1,87 @@
+{
+  "configVersion": 1,
+  "timestamp": 1643613319861,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/index.html",
+        "/main.82558fac8aa894b2.js",
+        "/manifest.webmanifest",
+        "/polyfills.541a177ab078bb0f.js",
+        "/runtime.87ca81f7df8d74ac.js",
+        "/styles.d4a41284d7fab8ce.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-24x24.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-48x48.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/lang/en-US/popular_5.txt",
+        "/assets/lang/en-US/wordlist_5.txt"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/icon-128x128.png": "7d043677083bcf69a25fec51c1747bae66498e6a",
+    "/assets/icons/icon-144x144.png": "a75e4387ea831a0d27cbadba3acf0f861d24eb29",
+    "/assets/icons/icon-152x152.png": "80c46bec7fc08a8abfc360f4f15c37bbc34374fa",
+    "/assets/icons/icon-192x192.png": "553ef43c4f823fb81b83a09aa5a62c2d8a39b586",
+    "/assets/icons/icon-24x24.png": "82c46ffd59613ffc29a3053d5413b102cd35df85",
+    "/assets/icons/icon-384x384.png": "c774037f87d8f4e3c76ae1d06cf63b6b680fc3df",
+    "/assets/icons/icon-48x48.png": "3e62b41d9a8f5a6ecd76cb0f3107b459eedddb0c",
+    "/assets/icons/icon-512x512.png": "5eca95ace9f5b194c164fb283045405d2a9f7db9",
+    "/assets/icons/icon-72x72.png": "421a4bd8bf24ba9eec90c036a08f39a05ed08f93",
+    "/assets/icons/icon-96x96.png": "91a20417f0d05a549a2e5deeac1632328de10c1a",
+    "/assets/lang/en-US/popular_5.txt": "1319648cdfc6d9b5d568b0cbaaf31fe27bf80715",
+    "/assets/lang/en-US/wordlist_5.txt": "c609a13faa776b2efa64216f0e5df5f6de0c8b21",
+    "/index.html": "eabbc21bea63dc5e5caded2cc49b52efa1ab1984",
+    "/main.82558fac8aa894b2.js": "6cb400dbbb6399ba10ec98298e0c6b9321970678",
+    "/manifest.webmanifest": "edf740ff06b80059746173d3e396709e678deb7e",
+    "/polyfills.541a177ab078bb0f.js": "14c301a06313fb047ead3b8072b8cfb462f96c06",
+    "/runtime.87ca81f7df8d74ac.js": "f3573703f72f7c57d1c62762722c4fd219f229d0",
+    "/styles.d4a41284d7fab8ce.css": "0946ca82146345f9b110637956ca4978ee38d900"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
