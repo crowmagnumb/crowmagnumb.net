@@ -1,1 +1,7 @@
 # crowmagnumb.net
+
+# build index
+
+```
+npx pug index.pug
+```
