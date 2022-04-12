@@ -38,7 +38,7 @@ function rollAttack(num) {
 }
 function score(attackWarbands, defenseDice, defenseWarbands, iters) {
     var p0 = 0; // Succeed without losing any warbands (including skulls).
-    var p1 = 0; // Succeed without losing any warbands (not including skulls).
+    // let p1 = 0; // Succeed without losing any warbands (not including skulls).
     var p2 = 0; // Succeed but lose half your warbands rounded down.
     var p3 = 0; // Succeed but have no warbands left.
     for (var ii = 0; ii < iters; ii++) {
@@ -50,7 +50,7 @@ function score(attackWarbands, defenseDice, defenseWarbands, iters) {
             if (attack.skulls === 0) {
                 p0++;
             }
-            p1++;
+            // p1++;
         }
         if (result + Math.floor(wb / 2) > 0) {
             p2++;
@@ -59,7 +59,9 @@ function score(attackWarbands, defenseDice, defenseWarbands, iters) {
             p3++;
         }
     }
-    console.log(attackWarbands, defenseDice, defenseWarbands, (p0 / iters).toFixed(3), (p1 / iters).toFixed(3), (p2 / iters).toFixed(3), (p3 / iters).toFixed(3));
+    console.log(attackWarbands, defenseDice, defenseWarbands, (p0 / iters).toFixed(3), 
+    // (p1 / iters).toFixed(3),
+    (p2 / iters).toFixed(3), (p3 / iters).toFixed(3));
 }
 score(5, 2, 1, 1000000);
 score(4, 2, 1, 1000000);
