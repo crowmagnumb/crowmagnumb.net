@@ -41,4 +41,11 @@ fs.readFile("pcts.json", "utf8", (err, data) => {
     score(2, 1, 1);
     score(3, 1, 1);
     score(4, 1, 1);
+
+    score(2, 1, 1);
+    score(2, 2, 1);
+    score(2, 3, 1);
+    score(2, 4, 1);
+    score(2, 4, 2);
+    score(2, 5, 2);
 });
