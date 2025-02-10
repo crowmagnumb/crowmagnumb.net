@@ -11,6 +11,7 @@ sudo apt-get install apache2-utils
 sudo htpasswd -c /etc/radicale/users crowmagnumb
 sudo nano /etc/radicale/config
 ```
+
 ```conf
 [auth]
 type = htpasswd
@@ -59,7 +60,6 @@ sudo chown -R radicale:radicale /var/lib/radicale/collections
 sudo chmod -R o= /var/lib/radicale/collections
 sudo systemctl enable radicale
 sudo systemctl start radicale
-sudo systemctl status radicale
 sudo journalctl --unit radicale.service
 ```
 
@@ -68,6 +68,7 @@ sudo journalctl --unit radicale.service
 ```sh
 sudo nano /etc/apache2/sites-available/radicale.conf
 ```
+sudo systemctl status radicale
 
 ```conf
 RewriteEngine On
@@ -88,3 +89,19 @@ RewriteRule ^/radicale$ /radicale/ [R,L]
 ```sh
 sudo systemctl reload apache2
 ```
+
+### Querying
+
+Search through vcf files in radicale on crowmagnumb.net. For now I'm using root because I don't want to change the permissions in /var/lib to ken.
+
+```
+ssh root@crowmagnumb.net
+cd /var/lib/radicale/collections/collection-root/crowmagnumb/51ef49e4-103b-0be4-db0b-077e203934bd/
+grep -rlc "EMAIL" . | xargs -I {} bash -c 'if [ $(grep -o "EMAIL" {} | wc -l) -eq 2 ]; then echo {}; fi'
+```
+
+### Starting AUCore app
+
+- Create Critterspot DB with structure only and then remove everything CS related. Then save that as a starting point with appropriate flyway version locking. So have whatever entry you need in that one table, or instructions for adding it after loading so that updates from that point take affect.
+- Publish crowjson, crowlang, crowdb, au-root, au-http, etc. (with source) so that you can import these. Some at least only locally?
+- Figure the best way to locally publish the javascript libraries as well.
