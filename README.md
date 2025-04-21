@@ -1,5 +1,9 @@
 # crowmagnumb.net
 
+## Digital Ocean
+
+In DO I have the text record `_atproto.crowmagnumb.net` which I added so that BlueSky can verify my account against a valid domain.
+
 ## CalDAV/CardDAV
 
 Using `radicale.org`. Followed setup in `https://radicale.org/v3.html` but had to use `--break-system-packages` to get this to work.
