@@ -109,3 +109,8 @@ grep -rlc "EMAIL" . | xargs -I {} bash -c 'if [ $(grep -o "EMAIL" {} | wc -l) -e
 - Create Critterspot DB with structure only and then remove everything CS related. Then save that as a starting point with appropriate flyway version locking. So have whatever entry you need in that one table, or instructions for adding it after loading so that updates from that point take affect.
 - Publish crowjson, crowlang, crowdb, au-root, au-http, etc. (with source) so that you can import these. Some at least only locally?
 - Figure the best way to locally publish the javascript libraries as well.
+
+## Four Square Places
+
+- https://docs.foursquare.com/data-products/docs/access-fsq-os-places
+- https://opensource.foursquare.com/os-places/
