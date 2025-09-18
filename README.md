@@ -1,5 +1,12 @@
 # crowmagnumb.net
 
+## Things to add
+
+- Random Names generator (get from croword or put it up there)
+- Photo manipulator fun code
+- Oathroll
+- How to expose/edit my contacts via the web rather than having to use my phone app to do it
+
 ## Digital Ocean
 
 In DO I have the text record `_atproto.crowmagnumb.net` which I added so that BlueSky can verify my account against a valid domain.
