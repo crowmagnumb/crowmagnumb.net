@@ -11,7 +11,7 @@
 
 In DO I have the text record `_atproto.crowmagnumb.net` which I added so that BlueSky can verify my account against a valid domain.
 
-# Docker
+## Docker
 
 We will ultimately have a structure like this....
 
@@ -41,6 +41,54 @@ cp -r <data_dir> /opt/crowmagnumb.net/data
 ```
 
 Where <user_file> is a backup of you user/passwd file. And <data_dir> is your untarred backup of your radicale data.
+
+### compose file
+
+```yml
+networks:
+  webnet:
+    driver: bridge
+```
+
+This creates a private Docker network called webnet.
+`Bridge driver` is the default Docker networking mode for containers on a single host.
+When the compose file starts, Docker automatically builds an isolated virtual LAN (a Linux bridge) and attaches every service that declares `networks: - webnet` to it.
+
+This gives you:
+- Service‑to‑service communication.
+    - Containers can talk to each other by service name (traefik, radicale, etc.) instead of IP addresses. E.g. Traefik forwards a request to radicale:5232 because both are on webnet.
+- Isolation from the host network
+    - Only containers on webnet can see each other. Other containers on different networks (or the host itself) cannot reach the Radicale port unless you explicitly publish it (ports:) – which you don’t for the internal services.
+- Simplifies DNS resolution
+    - Docker supplies an internal DNS server for the network, so radicale resolves to the correct container IP automatically.
+- Consistent IP addressing
+    - Docker assigns stable IPs within the network for the lifetime of the compose stack, avoiding clashes with other apps you might run on the same host.
+- Scope for future services
+    - If you later add a web UI, a backup container, or a monitoring agent, you just attach it to webnet and it can reach Radicale (or any other service) without exposing extra ports to the public internet.
+
+#### How Traefik discovers and interprets Docker labels
+
+Traefik is a dynamic reverse‑proxy.
+
+When it starts (or when the Docker daemon notifies it of a change), it asks Docker for a list of running containers and reads the metadata that Docker stores on each container.
+That metadata includes the key‑value pairs you define with the labels: section of a docker‑compose.yml file.
+
+Traefik treats any label on other services whose key begins with the `traefik.` prefix as configuration that belongs to it. Everything after that prefix follows a strict naming scheme that tells Traefik what to create (router, service, middleware, etc.) and how to wire them together.
+
+Below is a step‑by‑step walk‑through of the whole process.
+
+Traefik’s Docker provider must be enabled hence the lines...
+
+```yml
+command:
+  - "--providers.docker=true"
+  - "--providers.docker.exposedbydefault=false"
+```
+
+`--providers.docker=true` – tells Traefik to watch the Docker API.
+`--providers.docker.exposedbydefault=false` – prevents every container from being automatically exposed; only containers that carry a traefik.enable=true label (or any other explicit label) will be considered.
+
+When Traefik boots, it opens a connection to the Docker socket (/var/run/docker.sock) and continuously receives events (container start, stop, die, update, …). Every time an event occurs, Traefik re‑reads the container list and rebuilds its internal configuration.
 
 ## CalDAV/CardDAV
 
