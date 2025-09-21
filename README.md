@@ -11,6 +11,37 @@
 
 In DO I have the text record `_atproto.crowmagnumb.net` which I added so that BlueSky can verify my account against a valid domain.
 
+# Docker
+
+We will ultimately have a structure like this....
+
+```sh
+/opt/crowmagnumb.net/
+├─ docker-compose.yml
+├─ website/
+│   ├─ index.html
+│   └─ <etc.>
+├─ radicale/
+│   ├─ config/
+│   │   └─ radicale.conf          
+│   ├─ users # <-- the htpasswd file
+│   └─ data/ # <-- calendar/contact storage
+```
+
+```sh
+scp -r docker crowmagnumb.net:/opt/crowmagnumb.net
+```
+
+On crowmagnumb.net do ...
+
+```sh
+cd /opt/crowmagnumb.net
+cp <user_file> /opt/crowmagnumb.net/radicale
+cp -r <data_dir> /opt/crowmagnumb.net/data
+```
+
+Where <user_file> is a backup of you user/passwd file. And <data_dir> is your untarred backup of your radicale data.
+
 ## CalDAV/CardDAV
 
 Using `radicale.org`. Followed setup in `https://radicale.org/v3.html` but had to use `--break-system-packages` to get this to work.
@@ -19,17 +50,18 @@ Using `radicale.org`. Followed setup in `https://radicale.org/v3.html` but had t
 python3 -m pip install --upgrade https://github.com/Kozea/Radicale/archive/master.tar.gz --break-system-packages
 sudo mkdir -p /etc/radicale
 sudo apt-get install apache2-utils
+
 sudo htpasswd -c /etc/radicale/users crowmagnumb
+# To add another user leave off the -c, I think radicale reads this on every request so
+# there should be no need to restart it.
+sudo htpasswd /etc/radicale/users <other_user>
+```
+Create the config file...
+```sh
 sudo nano /etc/radicale/config
 ```
 
 ```conf
-[auth]
-type = htpasswd
-htpasswd_filename = /etc/radicale/users
-htpasswd_encryption = autodetect
-[server]
-hosts = 0.0.0.0:5232, [::]:5232
 ```
 
 ```sh
@@ -74,31 +106,10 @@ sudo systemctl start radicale
 sudo journalctl --unit radicale.service
 ```
 
-### Apache
+### Backing up
 
 ```sh
-sudo nano /etc/apache2/sites-available/radicale.conf
-```
-sudo systemctl status radicale
-
-```conf
-RewriteEngine On
-RewriteRule ^/radicale$ /radicale/ [R,L]
-
-<Location "/radicale/">
-    ProxyPass        http://localhost:5232/ retry=0
-    ProxyPassReverse http://localhost:5232/
-    RequestHeader    set X-Script-Name /radicale
-    RequestHeader    set X-Forwarded-Port "%{SERVER_PORT}s"
-    RequestHeader    unset X-Forwarded-Proto
-    <If "%{HTTPS} =~ /on/">
-    RequestHeader    set X-Forwarded-Proto "https"
-    </If>
-</Location>
-```
-
-```sh
-sudo systemctl reload apache2
+ssh crowmagnumb.net tar -czf ~/radicale.tgz -C /var/lib radicale; scp crowmagnumb.net:./radicale.tgz ~/Documents/personal
 ```
 
 ### Querying
@@ -121,3 +132,8 @@ grep -rlc "EMAIL" . | xargs -I {} bash -c 'if [ $(grep -o "EMAIL" {} | wc -l) -e
 
 - https://docs.foursquare.com/data-products/docs/access-fsq-os-places
 - https://opensource.foursquare.com/os-places/
+
+## TODO
+
+- If I switch radicale successfully to the docker, I can get rid of my system user `radicale` that I created above. And uninstall radicale too!
+- I have my contacts in `/var/lib/radicale/collections/collection-root/crowmagnumb/51ef49e4-103b-0be4-db0b-077e203934bd/` but I have no idea where the large hex-string came from. Why is it not just `contacts`? Also, I don't think we need `collections/collection-root`. Can we just get rid of that?
