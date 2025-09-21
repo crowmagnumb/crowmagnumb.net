@@ -137,3 +137,4 @@ grep -rlc "EMAIL" . | xargs -I {} bash -c 'if [ $(grep -o "EMAIL" {} | wc -l) -e
 
 - If I switch radicale successfully to the docker, I can get rid of my system user `radicale` that I created above. And uninstall radicale too!
 - I have my contacts in `/var/lib/radicale/collections/collection-root/crowmagnumb/51ef49e4-103b-0be4-db0b-077e203934bd/` but I have no idea where the large hex-string came from. Why is it not just `contacts`? Also, I don't think we need `collections/collection-root`. Can we just get rid of that?
+- Bring in docker stuff from `crowmail` repo. We would just need a `mailman` volume under the `/opt/crowmagnumb.net`.
