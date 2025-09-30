@@ -196,3 +196,5 @@ grep -rlc "EMAIL" . | xargs -I {} bash -c 'if [ $(grep -o "EMAIL" {} | wc -l) -e
 - If I switch radicale successfully to the docker, I can get rid of my system user `radicale` that I created above. And uninstall radicale too!
 - I have my contacts in `/var/lib/radicale/collections/collection-root/crowmagnumb/51ef49e4-103b-0be4-db0b-077e203934bd/` but I have no idea where the large hex-string came from. Why is it not just `contacts`? Also, I don't think we need `collections/collection-root`. Can we just get rid of that?
 - Bring in docker stuff from `crowmail` repo. We would just need a `mailman` volume under the `/opt/crowmagnumb.net`.
+- Put my static page at something like `/users/crowmagnumb/mypage` just for now until I figure out where static pages could go. Because I want to add a basic angular app to start adding my ideas of oathroll, etc.
+- Can I have a part of the site or just some other app where I can write a super quick markdown file on my computer and then have it be immediately available on my phone. I need something super quick like that all the time. What to do tonight? Some one-off recipe I want to try. etc.
