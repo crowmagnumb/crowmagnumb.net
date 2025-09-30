@@ -4,3 +4,5 @@ htpasswd_filename = /etc/radicale/users
 htpasswd_encryption = autodetect
 [server]
 hosts = 0.0.0.0:5232, [::]:5232
+[storage]
+filesystem_folder=/data/collections

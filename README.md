@@ -174,7 +174,8 @@ grep -rlc "EMAIL" . | xargs -I {} bash -c 'if [ $(grep -o "EMAIL" {} | wc -l) -e
 
 - Create Critterspot DB with structure only and then remove everything CS related. Then save that as a starting point with appropriate flyway version locking. So have whatever entry you need in that one table, or instructions for adding it after loading so that updates from that point take affect.
 - Publish crowjson, crowlang, crowdb, au-root, au-http, etc. (with source) so that you can import these. Some at least only locally?
-- Figure the best way to locally publish the javascript libraries as well.
+- Figure the best way to locally publishsudo cp -r /etc/radicale/users /opt/crowmagnumb.net/radicale
+ the javascript libraries as well.
 
 ## Four Square Places
 
@@ -198,3 +199,8 @@ grep -rlc "EMAIL" . | xargs -I {} bash -c 'if [ $(grep -o "EMAIL" {} | wc -l) -e
 - Bring in docker stuff from `crowmail` repo. We would just need a `mailman` volume under the `/opt/crowmagnumb.net`.
 - Put my static page at something like `/users/crowmagnumb/mypage` just for now until I figure out where static pages could go. Because I want to add a basic angular app to start adding my ideas of oathroll, etc.
 - Can I have a part of the site or just some other app where I can write a super quick markdown file on my computer and then have it be immediately available on my phone. I need something super quick like that all the time. What to do tonight? Some one-off recipe I want to try. etc.
+
+```sh
+sudo cp -r /var/lib/radicale/collections/collection-root /opt/crowmagnumb.net/radicale/data
+sudo cp -r /etc/radicale/users /opt/crowmagnumb.net/radicale
+```
