@@ -1,0 +1,11 @@
+[auth]
+type = htpasswd
+htpasswd_filename = /config/users
+htpasswd_encryption = autodetect
+[server]
+hosts = 0.0.0.0:5232, [::]:5232
+[storage]
+filesystem_folder=/data/collections
+#[logging]
+#level = DEBUG          ; ← change from INFO/WARNING to DEBUG
+#format = %(asctime)s - %(levelname)s - %(message)s

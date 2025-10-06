@@ -45,12 +45,9 @@ services:
         image: tomsquest/docker-radicale:latest
         expose:
             - "5232"
-        environment:
-            - RADICALE_CONFIG=/etc/radicale/config
         volumes:
-            - "./radicale/config:/etc/radicale/config:ro"
-            - "./radicale/users:/etc/radicale/users:ro"
-            - "./radicale/data:/var/lib/radicale"
+            - "./radicale/config:/config:ro"
+            - "./radicale/data:/data"
         labels:
             - "traefik.enable=true"
             - "traefik.http.routers.radicale.rule=Host(`radicale.crowmagnumb.net`)"

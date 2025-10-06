@@ -29,18 +29,11 @@ We will ultimately have a structure like this....
 ```
 
 ```sh
-scp -r docker crowmagnumb.net:/opt/crowmagnumb.net
+rsync -avz docker/ crowmagnumb.net:/opt/crowmagnumb.net
+scp systemd/crowmagnumb.net.service root@crowmagnumb.net:/etc/systemd/system
+ssh crowmagnumb.net sudo systemctl daemon-reload
+ssh crowmagnumb.net sudo systemctl enable crowmagnumb.net
 ```
-
-On crowmagnumb.net do ...
-
-```sh
-cd /opt/crowmagnumb.net
-cp <user_file> /opt/crowmagnumb.net/radicale
-cp -r <data_dir> /opt/crowmagnumb.net/data
-```
-
-Where <user_file> is a backup of you user/passwd file. And <data_dir> is your untarred backup of your radicale data.
 
 ### compose file
 
@@ -66,6 +59,42 @@ This gives you:
 - Scope for future services
     - If you later add a web UI, a backup container, or a monitoring agent, you just attach it to webnet and it can reach Radicale (or any other service) without exposing extra ports to the public internet.
 
+Start it
+```sh
+cd /opt/crowmagnumb.net
+docker compose up -d
+```
+
+Stop it
+```sh
+docker compose stop
+```
+
+List running dockers ...
+```sh
+docker compose ls
+```
+
+Run a command inside a running docker container ...
+
+```sh
+docker compose exec -it <container-name> <cmd>
+```
+e.g.
+```sh
+docker compose exec -it radicale cat /etc/radicale/users
+```
+
+logs
+```sh
+docker logs <-f> <container-name>
+```
+
+restart...
+```sh
+docker compose restart
+```
+
 #### How Traefik discovers and interprets Docker labels
 
 Traefik is a dynamic reverse‑proxy.
@@ -90,74 +119,16 @@ command:
 
 When Traefik boots, it opens a connection to the Docker socket (/var/run/docker.sock) and continuously receives events (container start, stop, die, update, …). Every time an event occurs, Traefik re‑reads the container list and rebuilds its internal configuration.
 
-## CalDAV/CardDAV
-
-Using `radicale.org`. Followed setup in `https://radicale.org/v3.html` but had to use `--break-system-packages` to get this to work.
+## Add User
 
 ```sh
-python3 -m pip install --upgrade https://github.com/Kozea/Radicale/archive/master.tar.gz --break-system-packages
-sudo mkdir -p /etc/radicale
-sudo apt-get install apache2-utils
-
-sudo htpasswd -c /etc/radicale/users crowmagnumb
-# To add another user leave off the -c, I think radicale reads this on every request so
-# there should be no need to restart it.
-sudo htpasswd /etc/radicale/users <other_user>
-```
-Create the config file...
-```sh
-sudo nano /etc/radicale/config
-```
-
-```conf
-```
-
-```sh
-sudo useradd --system --user-group --home-dir / --shell /sbin/nologin radicale
-sudo nano /etc/systemd/system/radicale.service
-```
-
-```conf
-[Unit]
-Description=A simple CalDAV (calendar) and CardDAV (contact) server
-After=network.target
-Requires=network.target
-
-[Service]
-ExecStart=/usr/bin/env python3 -m radicale
-Restart=on-failure
-User=radicale
-# Deny other users access to the calendar data
-UMask=0027
-# Optional security settings
-PrivateTmp=true
-ProtectSystem=strict
-ProtectHome=true
-PrivateDevices=true
-ProtectKernelTunables=true
-ProtectKernelModules=true
-ProtectControlGroups=true
-NoNewPrivileges=true
-ReadWritePaths=/var/lib/radicale/collections
-
-[Install]
-WantedBy=multi-user.target
-```
-
-```sh
-# collections are by default stored in `/var/lib/radicale/collections`
-sudo mkdir -p /var/lib/radicale/collections
-sudo chown -R radicale:radicale /var/lib/radicale/collections
-sudo chmod -R o= /var/lib/radicale/collections
-sudo systemctl enable radicale
-sudo systemctl start radicale
-sudo journalctl --unit radicale.service
+docker compose exec -it radicale sudo htpasswd /config/users <other_user>
 ```
 
 ### Backing up
 
 ```sh
-ssh crowmagnumb.net tar -czf ~/radicale.tgz -C /var/lib radicale; scp crowmagnumb.net:./radicale.tgz ~/Documents/personal
+ssh crowmagnumb.net sudo tar -czf ~/radicale.tgz -C /opt crowmagnumb.net; scp crowmagnumb.net:./radicale.tgz ~/Documents/personal
 ```
 
 ### Querying
@@ -174,8 +145,7 @@ grep -rlc "EMAIL" . | xargs -I {} bash -c 'if [ $(grep -o "EMAIL" {} | wc -l) -e
 
 - Create Critterspot DB with structure only and then remove everything CS related. Then save that as a starting point with appropriate flyway version locking. So have whatever entry you need in that one table, or instructions for adding it after loading so that updates from that point take affect.
 - Publish crowjson, crowlang, crowdb, au-root, au-http, etc. (with source) so that you can import these. Some at least only locally?
-- Figure the best way to locally publishsudo cp -r /etc/radicale/users /opt/crowmagnumb.net/radicale
- the javascript libraries as well.
+- Figure the best way to locally publish the javascript libraries as well.
 
 ## Four Square Places
 
@@ -185,22 +155,9 @@ grep -rlc "EMAIL" . | xargs -I {} bash -c 'if [ $(grep -o "EMAIL" {} | wc -l) -e
 ## TODO
 
 - Next Steps
-  1. First comment out the radicale section of `docker-compose.yml`
-  2. Shut down apache2
-  3. Start docker
-  4. See if the website and radicale are still both accessible
-  5. Comment radicale back in.
-  6. Shut down radicale locally.
-  7. Now see if radicale working again. Please try and change weird uuid behaviour below.
   8. Then, finally get mailman working in there as noted below.
   9. Get rid of crowmail repo which is no longer needed.
 - If I switch radicale successfully to the docker, I can get rid of my system user `radicale` that I created above. And uninstall radicale too!
-- I have my contacts in `/var/lib/radicale/collections/collection-root/crowmagnumb/51ef49e4-103b-0be4-db0b-077e203934bd/` but I have no idea where the large hex-string came from. Why is it not just `contacts`? Also, I don't think we need `collections/collection-root`. Can we just get rid of that?
 - Bring in docker stuff from `crowmail` repo. We would just need a `mailman` volume under the `/opt/crowmagnumb.net`.
 - Put my static page at something like `/users/crowmagnumb/mypage` just for now until I figure out where static pages could go. Because I want to add a basic angular app to start adding my ideas of oathroll, etc.
 - Can I have a part of the site or just some other app where I can write a super quick markdown file on my computer and then have it be immediately available on my phone. I need something super quick like that all the time. What to do tonight? Some one-off recipe I want to try. etc.
-
-```sh
-sudo cp -r /var/lib/radicale/collections/collection-root /opt/crowmagnumb.net/radicale/data
-sudo cp -r /etc/radicale/users /opt/crowmagnumb.net/radicale
-```
